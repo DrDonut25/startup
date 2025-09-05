@@ -2,7 +2,7 @@
 
 [My Notes](notes.md)
 
-A brief description of the application here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+This project is an interactable cheat sheet for the popular tower defense game BTD6. Will allow the player to select one of 25 towers (each of which has 15 possible upgrades) and fetch up to date stats about each of the towers' upgrades, including upgrade crosspath functionality and listings of Bloon type weaknesses/strengths.
 
 
 > [!NOTE]
@@ -18,7 +18,7 @@ A brief description of the application here. Lorem ipsum dolor sit amet, consect
 
 For this deliverable I did the following. I checked the box `[x]` and added a description for things I completed.
 
-- [ ] Proper use of Markdown
+- [x] Proper use of Markdown
 - [ ] A concise and compelling elevator pitch
 - [ ] Description of key features
 - [ ] Description of how you will use each technology
@@ -26,7 +26,7 @@ For this deliverable I did the following. I checked the box `[x]` and added a de
 
 ### Elevator pitch
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+My startup project will be an interactable cheat sheet for a video game that I and my family like to play: BTD6. BTD6 is a tower defense video game that involves strategic placement/upgrading of monkey "towers" that will pop waves of Bloons that spawn on a track before they reach the exit. While the game does a good job describing at a surface level what each tower and its upgrades do, it still hides a lot of specific stats for said towers that would only be accessible outside the game itself and on the web. What good is buying the final upgrade for a Banana Farm if its in-game description is "You want Banana? We have Banana!" That doesn't tell you much, does it? The goal of this project is to create an interactable diagram for all of a given tower's upgrades that'll tell the player exactly what they may want to know about the tower. With this resource available, it'll become much easier to come up with a viable strategy for popping those pesky Bloons before they reach the exit and end your game!
 
 ### Design
 
