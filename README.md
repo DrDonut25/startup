@@ -39,7 +39,10 @@ The diagram above shows an upgrade tree for any given monkey tower in BTD6. It l
 sequenceDiagram
     actor You
     actor Website
-    You->>Website: Replace this with your design
+    You->>Website: Select tower/upgrade
+    Website->>You: Selection success/failure
+    You->>Website: Retrieve key vocab definition
+    Website->>You: Display key vocab definition
 ```
 
 ### Key features
