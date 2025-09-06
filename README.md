@@ -19,10 +19,10 @@ This project is an interactable cheat sheet for the popular tower defense game B
 For this deliverable I did the following. I checked the box `[x]` and added a description for things I completed.
 
 - [x] Proper use of Markdown
-- [ ] A concise and compelling elevator pitch
-- [ ] Description of key features
-- [ ] Description of how you will use each technology
-- [ ] One or more rough sketches of your application. Images must be embedded in this file using Markdown image references.
+- [x] A concise and compelling elevator pitch
+- [x] Description of key features
+- [x] Description of how you will use each technology
+- [x] One or more rough sketches of your application. Images must be embedded in this file using Markdown image references.
 
 ### Elevator pitch
 
@@ -30,9 +30,10 @@ My startup project will be an interactable cheat sheet for a video game that I a
 
 ### Design
 
-![Design image](placeholder.png)
+![IMG_5922](https://github.com/user-attachments/assets/32210b56-127f-462d-949a-dbf22cf6b000)
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+The diagram above shows an upgrade tree for any given monkey tower in BTD6. It lists all 3 possible upgrade paths, the upgrade names, and their upgrade costs. Detailed stats will become available once the player "upgrades" the tower by selecting one of the upgrade boxes depicted in the sketch. There are limitations on how many upgrades can be selected at once—upgrades can only be selected from two rows. One row can be upgraded in sequence all the way to tier 5 (abbreviated as T5 in the sketch), while an additional row can be upgraded to Tier 2. Upgrades cannot be bought from all three rows at once.
 
 ```mermaid
 sequenceDiagram
@@ -43,20 +44,21 @@ sequenceDiagram
 
 ### Key features
 
-- Describe your key feature
-- Describe your key feature
-- Describe your key feature
+- The chosen tower will be shown on the left side alongside some basic info that can be referred to in a pinch (e.g. what Bloon types the tower can/cannot pop, the selected game difficulty, etc.)
+- User can select any valid combination of upgrades from the three-branched tree
+- Once selected, the user can open/view detailed stats of each upgrade (e.g. range, pierce, attack speed, abilities)
+- May also include pop-up definitions for BTD6 vocabulary (e.g. pierce, de-camo, crosspath, ability)
 
 ### Technologies
 
 I am going to use the required technologies in the following ways.
 
-- **HTML** - Description here
-- **CSS** - Description here
-- **React** - Description here
-- **Service** - Description here
-- **DB/Login** - Description here
-- **WebSocket** - Description here
+- **HTML** - Basic layout of upgrade tree (likely in the form of a table); 
+- **CSS** - Text/table styling, drop down menus to avoid overwhelming the user with too much info at once
+- **React** - Pop-up definitions for BTD6 vocabulary; programming valid upgrade/crosspath combination rules
+- **Service** - Retrieving up-to-date information on each tower's stats (since content updates often change tower stats for balancing purposes)
+- **DB/Login** - User login, storing of stats/other info for all 25 towers
+- **WebSocket** - Notification handling (upgrade selection, invalid upgrade attempt, etc.)
 
 ## 🚀 AWS deliverable
 
