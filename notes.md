@@ -11,7 +11,6 @@
 ## AWS
 
 My IP address is:
-No issues encountered while setting up IP/domain name.
 
 ## Caddy
 
