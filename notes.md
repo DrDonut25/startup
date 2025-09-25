@@ -10,11 +10,13 @@
 
 ## AWS
 
-My IP address is:
+My IP address is: 44.205.58.248
+
+I had no issues assigning this IP address a domain name, nor was it too difficult to assign it an elastic IP address.
 
 ## Caddy
 
-No problems worked just like it said in the [instruction](https://github.com/webprogramming260/.github/blob/main/profile/webServers/https/https.md).
+No problems worked just like it said in the [instruction](https://github.com/webprogramming260/.github/blob/main/profile/webServers/https/https.md). I just had to figure out how to edit documents with the "vi" command, which was tricky at first.
 
 ## HTML
 
