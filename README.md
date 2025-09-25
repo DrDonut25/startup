@@ -1,4 +1,4 @@
-# Your startup name here
+# BTD6 Cheat Sheet
 
 [My Notes](notes.md)
 
