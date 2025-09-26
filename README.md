@@ -77,8 +77,8 @@ For this deliverable I did the following. I checked the box `[x]` and added a de
 - [x] **Proper HTML element usage**
 - [x] **Links**
 - [x] **Text**
-- [ ] **3rd party API placeholder** - I did not complete this part of the deliverable.
-- [ ] **Images** - I did not complete this part of the deliverable.
+- [x] **3rd party API placeholder**
+- [x] **Images**
 - [x] **Login placeholder**
 - [x] **DB data placeholder**
 - [x] **WebSocket placeholder**
