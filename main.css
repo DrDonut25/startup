@@ -9,9 +9,21 @@ header {
 }
 
 main {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.login {
+    flex: 1;
+}
+
+nav {
     flex: 3;
 }
 
 footer {
-    flex: 0 100px;
+    flex: 0;
 }
