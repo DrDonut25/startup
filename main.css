@@ -5,12 +5,17 @@ body {
 }
 
 header {
-    flex: 0 80px; 
+    flex: 0 50px; 
 }
 
 main {
     display: flex;
-    flex: 1;
+    flex: 1 calc(100vh - 80px);
+    flex-direction: column;
+}
+
+#home {
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -25,5 +30,17 @@ nav {
 }
 
 footer {
-    flex: 0;
+    flex: 0 30px;
+}
+
+@media (max-height: 600px) {
+  header {
+    display: none;
+  }
+  footer {
+    display: none;
+  }
+  main {
+    flex: 1 100vh;
+  }
 }
