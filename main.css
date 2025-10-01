@@ -16,8 +16,6 @@ main {
 
 #home {
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
 }
 
 #login {
@@ -27,13 +25,16 @@ main {
 
 #tower_selection {
     flex: 3;
-    flex-direction: column;
+    justify-content: space-evenly;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(autofill, minmax(300px, 1fr));
-    grid-gap: 1em;
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-right: 1em;
+  padding-left: 1em;
 }
 
 footer {
