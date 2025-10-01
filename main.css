@@ -22,6 +22,12 @@ main {
 #login {
     flex: 1;
     flex-direction: column;
+    background-color:slategray;
+    align-content: center;
+}
+
+#signup {
+  background-color: lightgray;
 }
 
 #tower_heading {
