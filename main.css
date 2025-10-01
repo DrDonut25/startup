@@ -62,27 +62,27 @@ li {
   color: dimgray;
 }
 
-#primary {
+.primary {
   background-color: rgb(154, 189, 254);
   color:azure;
 }
 
-#military {
+.military {
   background-color:lightgreen;
   color:azure;
 }
 
-#magic {
+.magic {
   background-color:rgb(191, 170, 233);
   color: azure;
 }
 
-#support {
+.support {
   background-color: burlywood;
   color: azure;
 }
 
-.tower_type {
+.tower_heading {
   text-shadow:
     -1px -1px 0 dimgray,
     1px -1px 0 dimgray,
