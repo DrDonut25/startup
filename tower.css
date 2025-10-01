@@ -4,11 +4,13 @@
     align-content: center;
     margin: 1em;
     border-radius: 10px;
+    border-collapse: collapse;
 }
 
 .base_head {
     text-align: center;
     font-size: 14pt;
+    border-width: 0 0 0 0;
 }
 
 .upgrade_table_container {
@@ -25,9 +27,25 @@
     border-radius: 10px;
     table-layout: fixed;
     width: 100%;
+    border-collapse: collapse;
 }
 
-th, thead, td {
+th, td {
     padding-left: 0.5em;
     padding-right: 0.5em;
+    border-width: 1px 1px 0 0;
+    border-color: rgb(65, 65, 65);
+    border-style: solid;
+}
+
+.top_row {
+    border-width: 0 1px 0 0;
+}
+
+.upgrade_table th:last-child {
+    border-width: 0 0 0 0;
+}
+
+td:last-child {
+    border-width: 1px 0 0 0;
 }
