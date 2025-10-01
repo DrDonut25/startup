@@ -37,6 +37,54 @@ nav {
   padding-left: 1em;
 }
 
+.tower_container {
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 1em;
+  border-radius: 10px;
+  margin: 1em;
+}
+
+#primary {
+  background-color: rgb(134, 169, 234);
+  color:azure;
+}
+
+#military {
+  background-color:lightgreen;
+  color:azure;
+}
+
+#magic {
+  background-color:rgb(171, 150, 213);
+  color: azure;
+}
+
+#support {
+  background-color: burlywood;
+  color: azure;
+}
+
+.tower_type {
+  text-shadow:
+    -1px -1px 0 dimgray,
+    1px -1px 0 dimgray,
+    -1px 1px 0 dimgray,
+    1px 1px 0 dimgray;
+}
+
+nav a:link, a:visited {
+  color: dimgray;
+}
+
+nav a:hover {
+  color:azure;
+}
+
+nav a:active {
+  color:lightgray;
+}
+
 footer {
     flex: 0 30px;
 }
