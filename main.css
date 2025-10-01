@@ -5,7 +5,8 @@ body {
 }
 
 header {
-    flex: 0 50px; 
+    flex: 0 50px;
+    background-color: steelblue;
 }
 
 main {
@@ -23,9 +24,14 @@ main {
     flex-direction: column;
 }
 
+#tower_heading {
+  text-align: center;
+}
+
 #tower_selection {
     flex: 3;
     justify-content: space-evenly;
+    align-content: center;
 }
 
 nav {
@@ -73,7 +79,11 @@ nav {
     1px 1px 0 dimgray;
 }
 
-nav a:link, a:visited {
+nav a:link{
+  color: dimgray;
+}
+
+nav a:visited {
   color: dimgray;
 }
 
@@ -87,6 +97,27 @@ nav a:active {
 
 footer {
     flex: 0 30px;
+    background-color: steelblue;
+    padding-left: 1em;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-size: 16pt;
+}
+
+footer a:link {
+  color: azure;
+}
+
+footer a:visited {
+  color: azure;
+}
+
+footer a:hover {
+  color: dimgray;
+}
+
+footer a:active {
+  color: lightgray;
 }
 
 @media (max-height: 600px) {
