@@ -26,6 +26,7 @@ main {
 
 #tower_heading {
   text-align: center;
+  margin-top: 1em;
 }
 
 #tower_selection {
@@ -51,8 +52,12 @@ nav {
   margin: 1em;
 }
 
+li {
+  color: dimgray;
+}
+
 #primary {
-  background-color: rgb(134, 169, 234);
+  background-color: rgb(154, 189, 254);
   color:azure;
 }
 
@@ -62,7 +67,7 @@ nav {
 }
 
 #magic {
-  background-color:rgb(171, 150, 213);
+  background-color:rgb(191, 170, 233);
   color: azure;
 }
 
