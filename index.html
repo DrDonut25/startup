@@ -14,68 +14,76 @@
         crossorigin="anonymous"
     />
 </head>
-<body>
+<body class="bg-dark text-light">
     <header>
         <h1>BTD6 Cheat Sheet</h1>
     </header>
 
-    <main>
-        <h1 class="login">Welcome to the BTD6 Cheat Sheet!</h1>
-        <form class="login">
-            <div>
-                <span>@</span>
-                <input type ="text" placeholder="name@emailname.com"/>
-            </div>
-            <div>
-                <span>Password</span>
-                <input type="password" placeholder="password"/>
-            </div>
-            <button type="submit">Login</button>
-            <button type="submit">Sign Up</button>
-        </form>
+    <main id="home">
+        <div id="login" class="container-fluid bg-light text-black">
+            <h1>Welcome to the BTD6 Cheat Sheet!</h1>
+            <form>
+                <div>
+                    <span>@</span>
+                    <input type ="text" placeholder="name@emailname.com"/>
+                </div>
+                <div>
+                    <span>Password</span>
+                    <input type="password" placeholder="password"/>
+                </div>
+                <button type="submit">Login</button>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+        
         
         <hr />
 
-        <h2>Select a Tower:</h2>
-        <nav>
-            <h3>Primary Monkeys</h3>
-            <menu>
-                <li><a href="dart.html">Dart Monkey</a></li>
-                <li><a href="boomerang.html">Boomerang Monkey</a></li>
-                <li><a href="bomb.html">Bomb Shooter</a></li>
-                <li><a href="tack.html">Tack Shooter</a></li>
-                <li><a href="ice.html">Ice Monkey</a></li>
-                <li><a href="glue.html">Glue Gunner</a></li>
-                <li><a href="desperado.html">Desperado</a></li>
-            </menu>
-            <h3>Military Monkeys</h3>
-            <menu>
-                <li><a href="sniper.html">Sniper Monkey</a></li>
-                <li><a href="sub.html">Monkey Sub</a></li>
-                <li><a href="buccaneer.html">Monkey Buccaneer</a></li>
-                <li><a href="ace.html">Monkey Ace</a></li>
-                <li><a href="heli.html">Heli Pilot</a></li>
-                <li><a href="mortar.html">Mortar Monkey</a></li>
-                <li><a href="dartling.html">Dartling Gunner</a></li>
-            </menu>
-            <h3>Magic Monkeys</h3>
-            <menu>
-                <li><a href="wizard.html">Wizard Monkey</a></li>
-                <li><a href="super.html">Super Monkey</a></li>
-                <li><a href="ninja.html">Ninja Monkey</a></li>
-                <li><a href="alchemist.html">Alchemist</a></li>
-                <li><a href="druid.html">Druid</a></li>
-                <li><a href="mermonkey.html">Mermonkey</a></li>
-            </menu>
-            <h3>Support Monkeys</h3>
-            <menu>
-                <li><a href="banana.html">Banana Farm</a></li>
-                <li><a href="spikefactory.html">Spike Factory</a></li>
-                <li><a href="village.html">Monkey Village</a></li>
-                <li><a href="engineer.html">Engineer Monkey</a></li>
-                <li><a href="beasthandler.html">Beast Handler</a></li>
-            </menu>
-        </nav>
+        <div id="tower_selection">
+            <h2>Select a Tower:</h2>
+            <nav>
+                <div class="grid">
+                    <h3>Primary Monkeys</h3>
+                    <menu>
+                        <li><a href="dart.html">Dart Monkey</a></li>
+                        <li><a href="boomerang.html">Boomerang Monkey</a></li>
+                        <li><a href="bomb.html">Bomb Shooter</a></li>
+                        <li><a href="tack.html">Tack Shooter</a></li>
+                        <li><a href="ice.html">Ice Monkey</a></li>
+                        <li><a href="glue.html">Glue Gunner</a></li>
+                        <li><a href="desperado.html">Desperado</a></li>
+                    </menu>
+                    <h3>Military Monkeys</h3>
+                    <menu>
+                        <li><a href="sniper.html">Sniper Monkey</a></li>
+                        <li><a href="sub.html">Monkey Sub</a></li>
+                        <li><a href="buccaneer.html">Monkey Buccaneer</a></li>
+                        <li><a href="ace.html">Monkey Ace</a></li>
+                        <li><a href="heli.html">Heli Pilot</a></li>
+                        <li><a href="mortar.html">Mortar Monkey</a></li>
+                        <li><a href="dartling.html">Dartling Gunner</a></li>
+                    </menu>
+                    <h3>Magic Monkeys</h3>
+                    <menu>
+                        <li><a href="wizard.html">Wizard Monkey</a></li>
+                        <li><a href="super.html">Super Monkey</a></li>
+                        <li><a href="ninja.html">Ninja Monkey</a></li>
+                        <li><a href="alchemist.html">Alchemist</a></li>
+                        <li><a href="druid.html">Druid</a></li>
+                        <li><a href="mermonkey.html">Mermonkey</a></li>
+                    </menu>
+                    <h3>Support Monkeys</h3>
+                    <menu>
+                        <li><a href="banana.html">Banana Farm</a></li>
+                        <li><a href="spikefactory.html">Spike Factory</a></li>
+                        <li><a href="village.html">Monkey Village</a></li>
+                        <li><a href="engineer.html">Engineer Monkey</a></li>
+                        <li><a href="beasthandler.html">Beast Handler</a></li>
+                    </menu>
+                </div>
+            </nav>
+        </div>
+        
 
         <hr />
     </main>

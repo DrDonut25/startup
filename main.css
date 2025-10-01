@@ -15,18 +15,25 @@ main {
 }
 
 #home {
-    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 
-.login {
+#login {
     flex: 1;
+    flex-direction: column;
 }
 
-nav {
+#tower_selection {
     flex: 3;
+    flex-direction: column;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(autofill, minmax(300px, 1fr));
+    grid-gap: 1em;
 }
 
 footer {
