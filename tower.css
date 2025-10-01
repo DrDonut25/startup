@@ -1,0 +1,33 @@
+.base_stats {
+    flex: 1;
+    background-color: slategray;
+    align-content: center;
+    margin: 1em;
+    border-radius: 10px;
+}
+
+.base_head {
+    text-align: center;
+    font-size: 14pt;
+}
+
+.upgrade_table_container {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-right: 1em;
+}
+
+.upgrade_table {
+    background-color: rgb(192, 208, 224);
+    color: rgb(65, 65, 65);
+    border-radius: 10px;
+    table-layout: fixed;
+    width: 100%;
+}
+
+th, thead, td {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
