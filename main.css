@@ -9,6 +9,7 @@ body {
 header {
     flex: 0 50px;
     background-color: steelblue;
+    padding-left: 1em;
 }
 
 main {
