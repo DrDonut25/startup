@@ -37,6 +37,7 @@ th, td {
     border-color: rgb(65, 65, 65);
     border-style: solid;
     word-wrap: break-word;
+    text-align: center;
 }
 
 .top_row {
