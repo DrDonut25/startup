@@ -24,48 +24,9 @@ This was a little difficult. I had some roadblocks with trying to get Git to wor
 
 ## CSS
 
-This took a couple hours to get it how I wanted. It was important to make it responsive and Bootstrap helped with that. It looks great on all kinds of screen sizes.
+Figuring oout how to get Flexbox was tricky for me. But thankfully, I learned a lot as I worked on and experimented with the code. I eventually found some flex proportions I liked and applied them to all of my html files. However, adding all the relevant class attributes to all 27 of my html files proved to be rather tedious. I wonder if there's a certain refactor shortcut that I could have used to save 2 hours of copy/paste work.
 
-Bootstrap seems a bit like magic. It styles things nicely, but is very opinionated. You either do, or you do not. There doesn't seem to be much in between.
-
-I did like the navbar it made it super easy to build a responsive header.
-
-```html
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand">
-            <img src="logo.svg" width="30" height="30" class="d-inline-block align-top" alt="" />
-            Calmer
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" href="play.html">Play</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Logout</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-```
-
-I also used SVG to make the icon and logo for the app. This turned out to be a piece of cake.
-
-```html
-<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
-  <rect width="100" height="100" fill="#0066aa" rx="10" ry="10" />
-  <text x="50%" y="50%" dominant-baseline="central" text-anchor="middle" font-size="72" font-family="Arial" fill="white">C</text>
-</svg>
-```
+I also tried using Bootstrap as an easy way to create some simple formatting, but it ended up causing serious issues with my table styling (namely, that my preferred styling on my tables were getting overridden by hidden Bootstrap styling that I didn't know was in effect). As a result, I ended up pulling all Bootstrap styling out of all of my html files except for my index file.
 
 ## React Part 1: Routing
 
