@@ -4,8 +4,8 @@ import '../tower.css';
 
 export function DartHeader() {
   return (
-    <header>
-        <h1>Tower name here</h1> 
+    <header className="primary tower_heading">
+        <h1>Dart Monkey</h1>
     </header>
   );
 }
