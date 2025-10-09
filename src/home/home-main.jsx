@@ -1,9 +1,11 @@
 import React from 'react';
 
+import { NavLink } from 'react-router-dom';
+
 export function HomeMain() {
   return (
     <main>
-        <div id="login" class="container-fluid text-light">
+        <div id="login" className="container-fluid text-light">
             <h2>Welcome to the BTD6 Cheat Sheet!</h2>
             <form>
                 <div>
@@ -15,8 +17,8 @@ export function HomeMain() {
                     <input type="password" placeholder="password"/>
                 </div>
                 <div>
-                    <button type="submit" class="btn btn-primary">Login</button>
-                    <button id="signup" type="submit" class="btn">Sign Up</button>
+                    <button type="submit" className="btn btn-primary">Login</button>
+                    <button id="signup" type="submit" className="btn">Sign Up</button>
                 </div>
             </form>
         </div>
@@ -24,49 +26,49 @@ export function HomeMain() {
         <div id="tower_selection">
             <h2 id="tower_heading">Select a Tower:</h2>
             <nav>
-                <div class="primary tower_container">
-                    <h3 class="tower_heading">Primary Monkeys</h3>
+                <div className="primary tower_container">
+                    <h3 className="tower_heading">Primary Monkeys</h3>
                     <menu>
-                        <li><a href="dart.html">Dart Monkey</a></li>
-                        <li><a href="boomerang.html">Boomerang Monkey</a></li>
-                        <li><a href="bomb.html">Bomb Shooter</a></li>
-                        <li><a href="tack.html">Tack Shooter</a></li>
-                        <li><a href="ice.html">Ice Monkey</a></li>
-                        <li><a href="glue.html">Glue Gunner</a></li>
-                        <li><a href="desperado.html">Desperado</a></li>
+                        <li><NavLink className="a" to="dart">Dart Monkey</NavLink></li>
+                        <li><NavLink className="a" to="boomerang">Boomerang Monkey</NavLink></li>
+                        <li><NavLink className="a" to="bomb">Bomb Shooter</NavLink></li>
+                        <li><NavLink className="a" to="tack">Tack Shooter</NavLink></li>
+                        <li><NavLink className="a" to="ice">Ice Monkey</NavLink></li>
+                        <li><NavLink className="a" to="glue">Glue Gunner</NavLink></li>
+                        <li><NavLink className="a" to="desperado">Desperado</NavLink></li>
                     </menu>
                 </div>
-                <div class="military tower_container">
-                    <h3 class="tower_heading">Military Monkeys</h3>
+                <div className="military tower_container">
+                    <h3 className="tower_heading">Military Monkeys</h3>
                     <menu>
-                        <li><a href="sniper.html">Sniper Monkey</a></li>
-                        <li><a href="sub.html">Monkey Sub</a></li>
-                        <li><a href="buccaneer.html">Monkey Buccaneer</a></li>
-                        <li><a href="ace.html">Monkey Ace</a></li>
-                        <li><a href="heli.html">Heli Pilot</a></li>
-                        <li><a href="mortar.html">Mortar Monkey</a></li>
-                        <li><a href="dartling.html">Dartling Gunner</a></li>
+                        <li><NavLink className="a" to="sniper">Sniper Monkey</NavLink></li>
+                        <li><NavLink className="a" to="sub">Monkey Sub</NavLink></li>
+                        <li><NavLink className="a" to="buccaneer">Monkey Buccaneer</NavLink></li>
+                        <li><NavLink className="a" to="ace">Monkey Ace</NavLink></li>
+                        <li><NavLink className="a" to="heli">Heli Pilot</NavLink></li>
+                        <li><NavLink className="a" to="mortar">Mortar Monkey</NavLink></li>
+                        <li><NavLink className="a" to="dartling">Dartling Gunner</NavLink></li>
                     </menu>
                 </div>
-                <div class="magic tower_container">
-                    <h3 class="tower_heading">Magic Monkeys</h3>
+                <div className="magic tower_container">
+                    <h3 className="tower_heading">Magic Monkeys</h3>
                     <menu>
-                        <li><a href="wizard.html">Wizard Monkey</a></li>
-                        <li><a href="super.html">Super Monkey</a></li>
-                        <li><a href="ninja.html">Ninja Monkey</a></li>
-                        <li><a href="alchemist.html">Alchemist</a></li>
-                        <li><a href="druid.html">Druid</a></li>
-                        <li><a href="mermonkey.html">Mermonkey</a></li>
+                        <li><NavLink className="a" to="wizard">Wizard Monkey</NavLink></li>
+                        <li><NavLink className="a" to="super">Super Monkey</NavLink></li>
+                        <li><NavLink className="a" to="ninja">Ninja Monkey</NavLink></li>
+                        <li><NavLink className="a" to="alchemist">Alchemist</NavLink></li>
+                        <li><NavLink className="a" to="druid">Druid</NavLink></li>
+                        <li><NavLink className="a" to="mermonkey">Mermonkey</NavLink></li>
                     </menu>
                 </div>
-                <div class="support tower_container">
-                    <h3 class="tower_heading">Support Monkeys</h3>
+                <div className="support tower_container">
+                    <h3 className="tower_heading">Support Monkeys</h3>
                     <menu>
-                        <li><a href="banana.html">Banana Farm</a></li>
-                        <li><a href="spikefactory.html">Spike Factory</a></li>
-                        <li><a href="village.html">Monkey Village</a></li>
-                        <li><a href="engineer.html">Engineer Monkey</a></li>
-                        <li><a href="beasthandler.html">Beast Handler</a></li>
+                        <li><NavLink className="a" to="banana">Banana Farm</NavLink></li>
+                        <li><NavLink className="a" to="spikefactory">Spike Factory</NavLink></li>
+                        <li><NavLink className="a" to="village">Monkey Village</NavLink></li>
+                        <li><NavLink className="a" to="engineer">Engineer Monkey</NavLink></li>
+                        <li><NavLink className="a" to="beasthandler">Beast Handler</NavLink></li>
                     </menu>
                 </div>
             </nav>

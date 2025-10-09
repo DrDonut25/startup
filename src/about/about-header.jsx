@@ -1,9 +1,9 @@
 import React from 'react';
 
-export function HomeHeader() {
+export function AboutHeader() {
   return (
     <header className="container-fluid">
-        <h1>BTD6 Cheat Sheet</h1>
+        <h1>About BTD6</h1>
     </header>
   );
 }

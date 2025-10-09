@@ -93,19 +93,19 @@ li {
     1px 1px 0 dimgray;
 }
 
-nav a:link{
+nav .a:link{
   color: dimgray;
 }
 
-nav a:visited {
+nav .a:visited {
   color: dimgray;
 }
 
-nav a:hover {
+nav .a:hover {
   color:azure;
 }
 
-nav a:active {
+nav .a:active {
   color:lightgray;
 }
 
@@ -118,19 +118,19 @@ footer {
     font-size: 16pt;
 }
 
-footer a:link {
+footer .a:link, a {
   color: azure;
 }
 
-footer a:visited {
+footer .a:visited, a {
   color: azure;
 }
 
-footer a:hover {
+footer .a:hover, a {
   color: dimgray;
 }
 
-footer a:active {
+footer .a:active, a {
   color: lightgray;
 }
 
