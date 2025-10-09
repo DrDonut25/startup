@@ -4,8 +4,8 @@ import '../tower.css';
 
 export function BananaHeader() {
   return (
-    <header>
-        <h1>Tower name here</h1> 
+    <header className="support tower_heading">
+        <h1>Banana Farm</h1>
     </header>
   );
 }

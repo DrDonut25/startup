@@ -4,8 +4,8 @@ import '../tower.css';
 
 export function BeastHandlerHeader() {
   return (
-    <header>
-        <h1>Tower name here</h1> 
+    <header className="support tower_heading">
+        <h1>Beast Handler</h1>
     </header>
   );
 }
