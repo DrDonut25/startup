@@ -4,8 +4,8 @@ import '../tower.css';
 
 export function HeliHeader() {
   return (
-    <header>
-        <h1>Tower name here</h1> 
+    <header className="military tower_heading">
+        <h1>Heli Pilot</h1>
     </header>
   );
 }

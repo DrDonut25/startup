@@ -4,8 +4,8 @@ import '../tower.css';
 
 export function EngineerHeader() {
   return (
-    <header>
-        <h1>Tower name here</h1> 
+    <header className="support tower_heading">
+        <h1>Engineer Monkey</h1>
     </header>
   );
 }

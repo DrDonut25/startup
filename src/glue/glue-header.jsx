@@ -4,8 +4,8 @@ import '../tower.css';
 
 export function GlueHeader() {
   return (
-    <header>
-        <h1>Tower name here</h1> 
+    <header className="primary tower_heading">
+        <h1>Glue Gunner</h1>
     </header>
   );
 }
