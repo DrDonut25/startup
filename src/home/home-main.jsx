@@ -1,24 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BTD6 Cheat Sheet - Home</title>
+import React from 'react';
 
-    <link rel="stylesheet" href="main.css"/>
-
-    <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
-        rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" 
-        crossorigin="anonymous"
-    />
-</head>
-<body class="bg-dark text-light">
-    <header class="container-fluid">
-        <h1>BTD6 Cheat Sheet</h1>
-    </header>
-
+export function HomeMain() {
+  return (
     <main>
         <div id="login" class="container-fluid text-light">
             <h2>Welcome to the BTD6 Cheat Sheet!</h2>
@@ -31,9 +14,10 @@
                     <span>Password</span>
                     <input type="password" placeholder="password"/>
                 </div>
-                <br>
-                <button type="submit" class="btn btn-primary">Login</button>
-                <button id="signup" type="submit" class="btn">Sign Up</button>
+                <div>
+                    <button type="submit" class="btn btn-primary">Login</button>
+                    <button id="signup" type="submit" class="btn">Sign Up</button>
+                </div>
             </form>
         </div>
 
@@ -88,12 +72,5 @@
             </nav>
         </div>
     </main>
-
-    <footer class="container-fluid">
-        <a href="about.html">About BTD6</h1>
-        <div>
-            <a href="https://github.com/DrDonut25/startup">Startup GitHub Link (created by Parker Remund)</a>
-        </div>
-    </footer>
-</body>
-</html>
+  );
+}
