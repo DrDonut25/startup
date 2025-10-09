@@ -3,12 +3,18 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './app.css';
 
 import { BrowserRouter, NavLink, Route, Routes } from 'react-router-dom';
+
 import { HomeHeader } from './home/home-header';
 import { HomeMain } from './home/home-main';
 import { HomeFooter } from './home/home-footer';
+
 import { AboutHeader } from './about/about-header';
 import { AboutMain } from './about/about-main';
 import { AboutFooter } from './about/about-footer';
+
+import { AceHeader } from './ace/ace-header';
+import { AceMain } from './ace/ace-main';
+import { AceFooter } from './ace/ace-footer';
 
 export default function App() {
   return (
@@ -17,18 +23,21 @@ export default function App() {
         <Routes>
           <Route path='/' element={<HomeHeader />} exact />
           <Route path='/about' element={<AboutHeader />} />
+          <Route path='/ace' element={<AceHeader />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
 
         <Routes>
           <Route path='/' element={<HomeMain />} exact />
           <Route path='/about' element={<AboutMain />} />
+          <Route path='/ace' element={<AceMain />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
 
         <Routes>
           <Route path='/' element={<HomeFooter />} exact />
           <Route path='/about' element={<AboutFooter />} />
+          <Route path='/ace' element={<AceFooter />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
       </div>

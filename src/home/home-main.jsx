@@ -9,11 +9,11 @@ export function HomeMain() {
             <h2>Welcome to the BTD6 Cheat Sheet!</h2>
             <form>
                 <div>
-                    <span>Email</span>
+                    <span>Email </span>
                     <input type ="text" placeholder="name@emailname.com"/>
                 </div>
                 <div>
-                    <span>Password</span>
+                    <span>Password </span>
                     <input type="password" placeholder="password"/>
                 </div>
                 <div>
