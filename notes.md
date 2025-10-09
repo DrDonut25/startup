@@ -24,13 +24,13 @@ This was a little difficult. I had some roadblocks with trying to get Git to wor
 
 ## CSS
 
-Figuring oout how to get Flexbox was tricky for me. But thankfully, I learned a lot as I worked on and experimented with the code. I eventually found some flex proportions I liked and applied them to all of my html files. However, adding all the relevant class attributes to all 27 of my html files proved to be rather tedious. I wonder if there's a certain refactor shortcut that I could have used to save 2 hours of copy/paste work.
+Figuring out how to get Flexbox was tricky for me. But thankfully, I learned a lot as I worked on and experimented with the code. I eventually found some flex proportions I liked and applied them to all of my html files. However, adding all the relevant class attributes to all 27 of my html files proved to be rather tedious. I wonder if there's a certain refactor shortcut that I could have used to save 2 hours of copy/paste work.
 
 I also tried using Bootstrap as an easy way to create some simple formatting, but it ended up causing serious issues with my table styling (namely, that my preferred styling on my tables were getting overridden by hidden Bootstrap styling that I didn't know was in effect). As a result, I ended up pulling all Bootstrap styling out of all of my html files except for my index file.
 
 ## React Part 1: Routing
 
-Setting up Vite and React was pretty simple. I had a bit of trouble because of conflicting CSS. This isn't as straight forward as you would find with Svelte or Vue, but I made it work in the end. If there was a ton of CSS it would be a real problem. It sure was nice to have the code structured in a more usable way.
+This was a tough one for me. Unlike Simon, my startup had differing headers/footers across all of my different page files, so I had to figure out how to accomodate that in my startup. I figured that making multiple "Routes" tags did the trick. It just made creating/editing 3 files each for 27 page files super tedious.
 
 ## React Part 2: Reactivity
 
