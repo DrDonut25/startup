@@ -16,6 +16,10 @@ import { AceHeader } from './ace/ace-header';
 import { AceMain } from './ace/ace-main';
 import { AceFooter } from './ace/ace-footer';
 
+import { AlchemistHeader } from './alchemist/alchemist-header';
+import { AlchemistMain } from './alchemist/alchemist-main';
+import { AlchemistFooter } from './alchemist/alchemist-footer';
+
 export default function App() {
   return (
     <BrowserRouter>
@@ -24,6 +28,7 @@ export default function App() {
           <Route path='/' element={<HomeHeader />} exact />
           <Route path='/about' element={<AboutHeader />} />
           <Route path='/ace' element={<AceHeader />} />
+          <Route path='/alchemist' element={<AlchemistHeader />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
 
@@ -31,6 +36,7 @@ export default function App() {
           <Route path='/' element={<HomeMain />} exact />
           <Route path='/about' element={<AboutMain />} />
           <Route path='/ace' element={<AceMain />} />
+          <Route path='/alchemist' element={<AlchemistMain />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
 
@@ -38,6 +44,7 @@ export default function App() {
           <Route path='/' element={<HomeFooter />} exact />
           <Route path='/about' element={<AboutFooter />} />
           <Route path='/ace' element={<AceFooter />} />
+          <Route path='/alchemist' element={<AlchemistFooter />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
       </div>
