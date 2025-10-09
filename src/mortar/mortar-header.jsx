@@ -4,8 +4,8 @@ import '../tower.css';
 
 export function MortarHeader() {
   return (
-    <header>
-        <h1>Tower name here</h1> 
+    <header className="military tower_heading">
+        <h1>Mortar Monkey</h1>
     </header>
   );
 }

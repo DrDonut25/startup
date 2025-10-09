@@ -4,8 +4,8 @@ import '../tower.css';
 
 export function IceHeader() {
   return (
-    <header>
-        <h1>Tower name here</h1> 
+    <header className="primary tower_heading">
+        <h1>Ice Monkey</h1>
     </header>
   );
 }

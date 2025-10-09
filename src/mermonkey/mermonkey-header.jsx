@@ -4,8 +4,8 @@ import '../tower.css';
 
 export function MermonkeyHeader() {
   return (
-    <header>
-        <h1>Tower name here</h1> 
+    <header className="magic tower_heading">
+        <h1>Mermonkey</h1>
     </header>
   );
 }

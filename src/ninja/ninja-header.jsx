@@ -4,8 +4,8 @@ import '../tower.css';
 
 export function NinjaHeader() {
   return (
-    <header>
-        <h1>Tower name here</h1> 
+    <header className="magic tower_heading">
+        <h1>Ninja Monkey</h1>
     </header>
   );
 }
