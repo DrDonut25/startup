@@ -57,7 +57,7 @@ export function BananaMain() {
                         <th className="top_row upgrade_button">Greater Production</th>
                         <th className="top_row upgrade_button">Banana Plantation</th>
                         <th className="top_row upgrade_button">Banana Research Facility</th>
-                        <th className="top_row upgrade_button">Banana Central</th>
+                        <th className="top_row upgrade_button last_upgrade_button">Banana Central</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -115,7 +115,7 @@ export function BananaMain() {
                         <th className="top_row upgrade_button">Valuable Bananas</th>
                         <th className="top_row upgrade_button">Monkey Bank</th>
                         <th className="top_row upgrade_button">IMF Loan</th>
-                        <th className="top_row upgrade_button">Monkey-Nomics</th>
+                        <th className="top_row upgrade_button last_upgrade_button">Monkey-Nomics</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -174,7 +174,7 @@ export function BananaMain() {
                         <th className="top_row upgrade_button">Banana Salvage</th>
                         <th className="top_row upgrade_button">Marketplace</th>
                         <th className="top_row upgrade_button">Central Market</th>
-                        <th className="top_row upgrade_button">Monkey Wall Street</th>
+                        <th className="top_row upgrade_button last_upgrade_button">Monkey Wall Street</th>
                     </tr>
                 </thead>
                 <tbody>
