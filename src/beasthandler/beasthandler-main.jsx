@@ -276,8 +276,8 @@ export function BeastHandlerMain() {
                         <td class="change_cell">
                             <ul class="change_list">
                                 <li>Summons Horned Owl: gains Camo detection and can grab/damage Ceramics</li>
-                                <li>Horned Owl min stats (3 *BP): 1 damage, 6 grab pierce, 1s attack cooldown</li>
-                                <li>Horned Owl max *BP stats: +50% flight speed, 2 damage, 18 grab pierce, 0.6s attack cooldown</li>
+                                <li>Horned Owl min stats (3 BP): 1 damage, 6 grab pierce, 1s attack cooldown</li>
+                                <li>Horned Owl max BP stats: +50% flight speed, 2 damage, 18 grab pierce, 0.6s attack cooldown</li>
                                 <li><i>Note: Ceramics take up 4 grab pierce each rather than 1</i></li>
                                 <li>+Can pop Camo/Ceramic</li>
                                 <li><u>Beast Power capacity: 6</u></li>
@@ -288,8 +288,8 @@ export function BeastHandlerMain() {
                             <ul class="change_list">
                                 <li>Summons Golden Eagle: enhanced damage, pierce, grab radius</li>
                                 <li><i>At max beast power, Golden Eagle can grab blue MOABs</i></li>
-                                <li>Golden Eagle min stats (8 *BP): 1 damage, 30 grab pierce, 1s attack cooldown</li>
-                                <li>Golden Eagle max *BP stats: +50% flight speed, 3 damage, 90 grab pierce, 0.48s attack cooldown</li>
+                                <li>Golden Eagle min stats (8 BP): 1 damage, 30 grab pierce, 1s attack cooldown</li>
+                                <li>Golden Eagle max BP stats: +50% flight speed, 3 damage, 90 grab pierce, 0.48s attack cooldown</li>
                                 <li><u>Beast Power capacity: 24</u></li>
                                 <li><u>Beast Power per Golden Eagle: 8</u></li>
                             </ul>
@@ -298,8 +298,8 @@ export function BeastHandlerMain() {
                             <ul class="change_list">
                                 <li>Summons Giant Condor: can grab multiple MOABs and can grab BFBs, also dealing +10 MOAB damage</li>
                                 <li><i>At max beast power, Giant Condor can damage (but not grab) BADs/Boss Bloons</i></li>
-                                <li>Giant Condor min stats (16 *BP): 2 damage, +10 MOAB damage, 30 grab pierce, 1s attack cooldown</li>
-                                <li>Giant Condor max *BP stats: +50% flight speed, 6 damage, +10 MOAB damage, 90 grab pierce,
+                                <li>Giant Condor min stats (16 BP): 2 damage, +10 MOAB damage, 30 grab pierce, 1s attack cooldown</li>
+                                <li>Giant Condor max BP stats: +50% flight speed, 6 damage, +10 MOAB damage, 90 grab pierce,
                                      0.48s attack cooldown</li>
                                 <li>Grab pierce penalties for Ceramics/MOABs/BFBs are +1/+14/+29 (respectively)</li>
                                 <li><u>Beast Power capacity: 64</u></li>
@@ -312,8 +312,8 @@ export function BeastHandlerMain() {
                                      this upgrade</u></i></li>
                                 <li>Summons Pouākai: can pop all Bloon types, +80 MOAB damage, can damage (but not grab)
                                      BADs/Boss Bloons, Ceramic pierce penalty removed</li>
-                                <li>Pouākai min stats (84 *BP): 50 damage, +80 MOAB damage, 300 grab pierce, 0.54s attack cooldown</li>
-                                <li>Pouākai max *BP stats: +50% flight speed, 90 damage, +80 MOAB damage, 450 grab pierce, 0.28s
+                                <li>Pouākai min stats (84 BP): 50 damage, +80 MOAB damage, 300 grab pierce, 0.54s attack cooldown</li>
+                                <li>Pouākai max BP stats: +50% flight speed, 90 damage, +80 MOAB damage, 450 grab pierce, 0.28s
                                      attack cooldown</li>
                                 <li>Grab pierce penalties for MOABs/BFBs/DDTs/ZOMGs are +14/+29/+29/+59 (respectively)</li>
                                 <li>+Can pop ALL Bloon types</li>
