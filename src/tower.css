@@ -21,6 +21,7 @@
     margin-bottom: 10em;
     margin-right: 1em;
     padding: 10px;
+    height: 300px;
 }
 
 .upgrade_table_container {
@@ -28,7 +29,10 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    margin-top: 1em;
+    margin-bottom: 1em;
     margin-right: 1em;
+    gap: 2rem;
 }
 
 .upgrade_table {
@@ -41,13 +45,49 @@
 }
 
 th, td {
-    padding-left: 0.5em;
-    padding-right: 0.5em;
+    padding-left: 5px;
+    padding-right: 5px;
     border-width: 1px 1px 0 0;
     border-color: rgb(65, 65, 65);
     border-style: solid;
     word-wrap: break-word;
     text-align: center;
+}
+
+th:nth-child(1), td:nth-child(1) {
+    width: 100px;
+}
+
+th:nth-child(2), td:nth-child(2) {
+    width: 125px;
+}
+
+th:nth-child(3), td:nth-child(3) {
+    width: 125px;
+}
+
+th:nth-child(4), td:nth-child(4) {
+    width: 150px;
+}
+
+th:nth-child(5), td:nth-child(5) {
+    width: 175px;
+}
+
+.change_cell {
+    text-align: left;
+}
+
+.change_list {
+    overflow-y: scroll;
+    list-style-position: inside;
+    height: 150px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.change_list li {
+    color: rgb(65, 65, 65);
 }
 
 .top_row {
@@ -60,4 +100,8 @@ th, td {
 
 td:last-child {
     border-width: 1px 0 0 0;
+}
+
+.ability {
+    font-weight: bold;
 }
