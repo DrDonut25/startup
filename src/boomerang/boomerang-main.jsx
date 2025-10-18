@@ -64,12 +64,12 @@ export function BoomerangMain() {
             <table className="upgrade_table">
                 <thead>
                     <tr>
-                        <th className="top_row">Top Upgrade Path</th>
-                        <th className="top_row">Improved Rangs</th>
-                        <th className="top_row">Glaives</th>
-                        <th className="top_row">Glaive Ricochet</th>
-                        <th className="top_row">MOAR Glaives</th>
-                        <th className="top_row">Glaive Lord</th>
+                        <th className="top_row path_label">Top Upgrade Path</th>
+                        <th className="top_row upgrade_button">Improved Rangs</th>
+                        <th className="top_row upgrade_button">Glaives</th>
+                        <th className="top_row upgrade_button">Glaive Ricochet</th>
+                        <th className="top_row upgrade_button">MOAR Glaives</th>
+                        <th className="top_row upgrade_button last_upgrade_button">Glaive Lord</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -83,11 +83,43 @@ export function BoomerangMain() {
                     </tr>
                     <tr>
                         <th>Changes</th>
-                        <td>To be added</td>
-                        <td>To be added</td>
-                        <td>To be added</td>
-                        <td>To be added</td>
-                        <td>To be added</td>
+                        <td class="change_cell">
+                            <ul class="change_list">
+                                <li>Pierce 4 -&gt; 8</li>
+                            </ul>
+                        </td>
+                        <td class="change_cell">
+                            <ul class="change_list">
+                                <li>Pierce 8 -&gt; 13</li>
+                                <li>Larger projectiles</li>
+                            </ul>
+                        </td>
+                        <td class="change_cell">
+                            <ul class="change_list">
+                                <li>Pierce 13 -&gt; 30</li>
+                                <li><i>Ricochet mechanic: glaives jump from Bloon to Bloon, even past map obstacles</i></li>
+                            </ul>
+                        </td>
+                        <td class="change_cell">
+                            <ul class="change_list">
+                                <li>Pierce 30 -&gt; 60</li>
+                                <li>Attack speed tripled</li>
+                                <li>+1 Ceramic damage</li>
+                                <li><i>Ricochet jump distance tripled</i></li>
+                                <li>Faster projectile speed</li>
+                            </ul>
+                        </td>
+                        <td class="change_cell">
+                            <ul class="change_list">
+                                <li>Damage 1 -&gt; 6</li>
+                                <li>Ceramic bonus damage 1 -&gt; 10</li>
+                                <li><i>Infinite ricochet jump distance</i></li>
+                                <li>Can re-hit Bloons with same glaive after 0.6s</li>
+                                <li>Deals 100 damage/second to MOABs for 10s</li>
+                                <li><i>Orbiting Glaives attack: 200 pierce, 4 damage (with 4 bonus damage to Ceramics),
+                                     0.05s attack cooldown, can hit Camo</i></li>
+                            </ul>
+                        </td>
                     </tr>
                 </tbody>
             </table>
@@ -95,12 +127,12 @@ export function BoomerangMain() {
             <table className="upgrade_table">
                 <thead>
                     <tr>
-                        <th className="top_row">Middle Upgrade Path</th>
-                        <th className="top_row">Faster Throwing</th>
-                        <th className="top_row">Faster Rangs</th>
-                        <th className="top_row">Bionic Boomerang</th>
-                        <th className="top_row">Turbo Charge</th>
-                        <th className="top_row">Perma Charge</th>
+                        <th className="top_row path_label">Middle Upgrade Path</th>
+                        <th className="top_row upgrade_button">Faster Throwing</th>
+                        <th className="top_row upgrade_button">Faster Rangs</th>
+                        <th className="top_row upgrade_button">Bionic Boomerang</th>
+                        <th className="top_row upgrade_button">Turbo Charge</th>
+                        <th className="top_row upgrade_button last_upgrade_button">Perma Charge</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -114,11 +146,39 @@ export function BoomerangMain() {
                     </tr>
                     <tr>
                         <th>Changes</th>
-                        <td>To be added</td>
-                        <td>To be added</td>
-                        <td>To be added</td>
-                        <td>To be added</td>
-                        <td>To be added</td>
+                        <td class="change_cell">
+                            <ul class="change_list">
+                                <li>Attack cooldown 1.2s -&gt; 0.9s</li>
+                            </ul>
+                        </td>
+                        <td class="change_cell">
+                            <ul class="change_list">
+                                <li>Attack cooldown 0.9s -&gt; 0.6s</li>
+                                <li>Increased boomerang speed</li>
+                            </ul>
+                        </td>
+                        <td class="change_cell">
+                            <ul class="change_list">
+                                <li>Attack cooldown 0.6s -&gt; 0.238s</li>
+                                <li>+2 MOAB damage</li>
+                            </ul>
+                        </td>
+                        <td class="change_cell">
+                            <ul class="change_list">
+                                <li><span class="ability">Ability: gain 7x attack speed and +1 damage for 10s</span></li>
+                                <li><span class="ability">Ability cooldown: 45s</span></li>
+                                <li><span class="ability">Ability grants Camo detection (with Monkey Knowledge)</span></li>
+                            </ul>
+                        </td>
+                        <td class="change_cell">
+                            <ul class="change_list">
+                                <li>7x greater attack speed</li>
+                                <li>Damage 1 -&gt; 4</li>
+                                <li><span class="ability">Ability: gain +8 damage for 10s</span></li>
+                                <li><span class="ability">Ability cooldown: 45s</span></li>
+                                <li><span class="ability">Ability grants Camo detection (with Monkey Knowledge)</span></li>
+                            </ul>
+                        </td>
                     </tr>
                 </tbody>
             </table>
@@ -126,12 +186,12 @@ export function BoomerangMain() {
             <table className="upgrade_table">
                 <thead>
                     <tr>
-                        <th className="top_row">Bottom Upgrade Path</th>
-                        <th className="top_row">Long Range Rangs</th>
-                        <th className="top_row">Red Hot Rangs</th>
-                        <th className="top_row">Kylie Boomerang</th>
-                        <th className="top_row">MOAB Press</th>
-                        <th className="top_row">MOAB Domination</th>
+                        <th className="top_row path_label">Bottom Upgrade Path</th>
+                        <th className="top_row upgrade_button">Long Range Rangs</th>
+                        <th className="top_row upgrade_button">Red Hot Rangs</th>
+                        <th className="top_row upgrade_button">Kylie Boomerang</th>
+                        <th className="top_row upgrade_button">MOAB Press</th>
+                        <th className="top_row upgrade_button last_upgrade_button">MOAB Domination</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -145,11 +205,49 @@ export function BoomerangMain() {
                     </tr>
                     <tr>
                         <th>Changes</th>
-                        <td>To be added</td>
-                        <td>To be added</td>
-                        <td>To be added</td>
-                        <td>To be added</td>
-                        <td>To be added</td>
+                        <td class="change_cell">
+                            <ul class="change_list">
+                                <li>+33% range</li>
+                            </ul>
+                        </td>
+                        <td class="change_cell">
+                            <ul class="change_list">
+                                <li>Damage 1 -&gt; 2</li>
+                                <li>+Can pop Lead</li>
+                            </ul>
+                        </td>
+                        <td class="change_cell">
+                            <ul class="change_list">
+                                <li>Pierce 4 -&gt; 18</li>
+                                <li><i>Boomerangs now fly in straight path rather than curved</i></li>
+                                <li>Can rehit Bloons w/ same boomerang ever 0.3s</li>
+                            </ul>
+                        </td>
+                        <td class="change_cell">
+                            <ul class="change_list">
+                                <li><i>+Heavy Kylie boomerangs that target MOABs only (thrown separately from Kylie boomerangs)</i></li>
+                                <li><i>Heavy Kylie damage: 5</i></li>
+                                <li><i>Heavy Kylie pierce: 200</i></li>
+                                <li><i>Heavy Kylie attack cooldown: 10s</i></li>
+                                <li><i>Heavy Kylie rehit frequency: 0.1s</i></li>
+                                <li><i>Heavy Kylie pushes back MOABs/BFBs/ZOMGs/DDTs 2/1/0.5/0.5 units (respectively)</i></li>
+                            </ul>
+                        </td>
+                        <td class="change_cell">
+                            <ul class="change_list">
+                                <li>Kylie damage 2 -&gt; 12</li>
+                                <li>Kylie pierce 18 -&gt; 54</li>
+                                <li>Kylie attack speed doubled</li>
+                                <li><i>Heavy Kylie damage 5 -&gt; 25</i></li>
+                                <li><i>Heavy Kylie pierce 200 -&gt; 300</i></li>
+                                <li><i>Heavy Kylie attack speed doubled</i></li>
+                                <li><i><u>Heavy Kylies explode</u> rather than returning: 100 explosion damage w/ 50-unit blast radius
+                                 and 40 pierce. Explosion sets Bloons on fire for 50 damage/s for 4s</i></li>
+                                <li><i>Heavy Kylies ignore map obstacles</i></li>
+                                <li><i>Heavy Kylies can hit BADs and Boss Bloons</i></li>
+                                <li><i>Heavy Kylies now also <u>stun</u> MOABs for 0.25s</i></li>
+                            </ul>
+                        </td>
                     </tr>
                 </tbody>
             </table>
