@@ -4,18 +4,21 @@
     min-width: 400px;
     background-color: #212529;
     color: #f8f9fa;
+    overflow-x: auto;
 }
 
 header {
     flex: 0 50px;
     background-color: steelblue;
     padding-left: 1em;
+    overflow-x: auto;
 }
 
 main {
     display: flex;
     flex: 1 calc(100vh - 80px);
     flex-direction: row;
+    overflow-x: auto;
 }
 
 #about {
