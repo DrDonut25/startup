@@ -64,12 +64,12 @@ export function AceMain() {
             <table className="upgrade_table">
                 <thead>
                     <tr>
-                        <th className="top_row">Top Upgrade Path</th>
-                        <th className="top_row">Rapid Fire</th>
-                        <th className="top_row">Lots More Darts</th>
-                        <th className="top_row">Fighter Plane</th>
-                        <th className="top_row">Operation: Dart Storm</th>
-                        <th className="top_row">Sky Shredder</th>
+                        <th className="top_row path_label">Top Upgrade Path</th>
+                        <th className="top_row upgrade_button">Rapid Fire</th>
+                        <th className="top_row upgrade_button">Lots More Darts</th>
+                        <th className="top_row upgrade_button">Fighter Plane</th>
+                        <th className="top_row upgrade_button">Operation: Dart Storm</th>
+                        <th className="top_row upgrade_button last_upgrade_button">Sky Shredder</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -130,12 +130,12 @@ export function AceMain() {
             <table className="upgrade_table">
                 <thead>
                     <tr>
-                        <th className="top_row">Middle Upgrade Path</th>
-                        <th className="top_row">Exploding Pineapple</th>
-                        <th className="top_row">Spy Plane</th>
-                        <th className="top_row">Bomber Ace</th>
-                        <th className="top_row">Ground Zero</th>
-                        <th className="top_row">Tsar Bomba</th>
+                        <th className="top_row path_label">Middle Upgrade Path</th>
+                        <th className="top_row upgrade_button">Exploding Pineapple</th>
+                        <th className="top_row upgrade_button">Spy Plane</th>
+                        <th className="top_row upgrade_button">Bomber Ace</th>
+                        <th className="top_row upgrade_button">Ground Zero</th>
+                        <th className="top_row upgrade_button last_upgrade_button">Tsar Bomba</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -192,12 +192,12 @@ export function AceMain() {
             <table className="upgrade_table">
                 <thead>
                     <tr>
-                        <th className="top_row">Bottom Upgrade Path</th>
-                        <th className="top_row">Sharper Darts</th>
-                        <th className="top_row">Centered Path</th>
-                        <th className="top_row">Neva-Miss Targeting</th>
-                        <th className="top_row">Spectre</th>
-                        <th className="top_row">Flying Fortress</th>
+                        <th className="top_row path_label">Bottom Upgrade Path</th>
+                        <th className="top_row upgrade_button">Sharper Darts</th>
+                        <th className="top_row upgrade_button">Centered Path</th>
+                        <th className="top_row upgrade_button">Neva-Miss Targeting</th>
+                        <th className="top_row upgrade_button">Spectre</th>
+                        <th className="top_row last_upgrade_button">Flying Fortress</th>
                     </tr>
                 </thead>
                 <tbody>

@@ -44,6 +44,27 @@
     border-collapse: collapse;
 }
 
+.path_label {
+    background-color: slategray;
+    color: azure;
+    border-radius: 10px 0 0 0;
+}
+
+.upgrade_button, .last_upgrade_button {
+    cursor: pointer;
+    background-color: lightgreen;
+    text-decoration: underline;
+    transition: background-color 0.25s ease-in-out;
+}
+
+.upgrade_button:hover, .last_upgrade_button:hover {
+    background-color: rgb(124, 218, 124);
+}
+
+.last_upgrade_button {
+    border-radius: 0 10px 0 0;
+}
+
 th, td {
     padding-left: 5px;
     padding-right: 5px;
