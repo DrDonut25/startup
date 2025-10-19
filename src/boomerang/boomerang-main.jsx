@@ -83,25 +83,25 @@ export function BoomerangMain() {
                     </tr>
                     <tr>
                         <th>Changes</th>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>Pierce 4 -&gt; 8</li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>Pierce 8 -&gt; 13</li>
                                 <li>Larger projectiles</li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>Pierce 13 -&gt; 30</li>
                                 <li><i>Ricochet mechanic: glaives jump from Bloon to Bloon, even past map obstacles</i></li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>Pierce 30 -&gt; 60</li>
                                 <li>Attack speed tripled</li>
                                 <li>+1 Ceramic damage</li>
@@ -109,8 +109,8 @@ export function BoomerangMain() {
                                 <li>Faster projectile speed</li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>Damage 1 -&gt; 6</li>
                                 <li>Ceramic bonus damage 1 -&gt; 10</li>
                                 <li><i>Infinite ricochet jump distance</i></li>
@@ -146,37 +146,37 @@ export function BoomerangMain() {
                     </tr>
                     <tr>
                         <th>Changes</th>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>Attack cooldown 1.2s -&gt; 0.9s</li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>Attack cooldown 0.9s -&gt; 0.6s</li>
                                 <li>Increased boomerang speed</li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>Attack cooldown 0.6s -&gt; 0.238s</li>
                                 <li>+2 MOAB damage</li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
-                                <li><span class="ability">Ability: gain 7x attack speed and +1 damage for 10s</span></li>
-                                <li><span class="ability">Ability cooldown: 45s</span></li>
-                                <li><span class="ability">Ability grants Camo detection (with Monkey Knowledge)</span></li>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li><span className="ability">Ability: gain 7x attack speed and +1 damage for 10s</span></li>
+                                <li><span className="ability">Ability cooldown: 45s</span></li>
+                                <li><span className="ability">Ability grants Camo detection (with Monkey Knowledge)</span></li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>7x greater attack speed</li>
                                 <li>Damage 1 -&gt; 4</li>
-                                <li><span class="ability">Ability: gain +8 damage for 10s</span></li>
-                                <li><span class="ability">Ability cooldown: 45s</span></li>
-                                <li><span class="ability">Ability grants Camo detection (with Monkey Knowledge)</span></li>
+                                <li><span className="ability">Ability: gain +8 damage for 10s</span></li>
+                                <li><span className="ability">Ability cooldown: 45s</span></li>
+                                <li><span className="ability">Ability grants Camo detection (with Monkey Knowledge)</span></li>
                             </ul>
                         </td>
                     </tr>
@@ -205,26 +205,26 @@ export function BoomerangMain() {
                     </tr>
                     <tr>
                         <th>Changes</th>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>+33% range</li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>Damage 1 -&gt; 2</li>
                                 <li>+Can pop Lead</li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>Pierce 4 -&gt; 18</li>
                                 <li><i>Boomerangs now fly in straight path rather than curved</i></li>
                                 <li>Can rehit Bloons w/ same boomerang ever 0.3s</li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li><i>+Heavy Kylie boomerangs that target MOABs only (thrown separately from Kylie boomerangs)</i></li>
                                 <li><i>Heavy Kylie damage: 5</i></li>
                                 <li><i>Heavy Kylie pierce: 200</i></li>
@@ -233,8 +233,8 @@ export function BoomerangMain() {
                                 <li><i>Heavy Kylie pushes back MOABs/BFBs/ZOMGs/DDTs 2/1/0.5/0.5 units (respectively)</i></li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>Kylie damage 2 -&gt; 12</li>
                                 <li>Kylie pierce 18 -&gt; 54</li>
                                 <li>Kylie attack speed doubled</li>

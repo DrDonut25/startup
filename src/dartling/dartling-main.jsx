@@ -83,20 +83,20 @@ export function DartlingMain() {
                     </tr>
                     <tr>
                         <th>Changes</th>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>Projectile spread 23° -&gt; 9.2°</li>
                                 <li>Increased projectile lifespan</li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li><i>+Hit Bloons become shocked for 1s: takes +1 from all other 2xx Dartling Gunners—shocked Bloons
                                      take 1 damage/s for 1s</i></li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>Damage 1 -&gt; 2</li>
                                 <li>Pierce 1 -&gt; 6</li>
                                 <li>+~43% projectile speed</li>
@@ -105,8 +105,8 @@ export function DartlingMain() {
                                 <li>Shots can pop Frozen, but not Lead/Purple</li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>Lasers replaced w/ continuous plasma beam that extends to selected target point: beam deals
                                      frequent damage, but tip of beam even more powerful </li>
                                 <li>Beam stats: 1 damage, 50 pierce, 0.2s attack cooldown</li>
@@ -114,8 +114,8 @@ export function DartlingMain() {
                                 <li>+Can pop Lead</li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>Laser beam is larger and extends infinitely rather than to selected target point</li>
                                 <li>Damage 1 -&gt; 30</li>
                                 <li>Pierce 50 -&gt; 999</li>
@@ -151,42 +151,42 @@ export function DartlingMain() {
                     </tr>
                     <tr>
                         <th>Changes</th>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>+Camo detection</li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>Attack cooldown 0.2s -&gt; 0.132s</li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>Now fires missiles that explode up to 3 times: 2 explosion damage, 6 pierce, 8-unit blast radius</li>
                                 <li>(Explosion count can be increased by external pierce buffs)</li>
                                 <li>+Can pop ALL Bloon types</li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>Explosion count 3 -&gt; 4</li>
                                 <li>Explosion pierce 6 -&gt; 8</li>
-                                <li><span class="ability">Ability: repeatedly fire waves of 10 missiles in 90° cone every 0.5s for 7.5s:
+                                <li><span className="ability">Ability: repeatedly fire waves of 10 missiles in 90° cone every 0.5s for 7.5s:
                                      5 damage, +1 Ceramic damage, 8 explosion pierce, 4 explosions per missile</span></li>
-                                <li><span class="ability">Ability cooldown: 40s</span></li>
+                                <li><span className="ability">Ability cooldown: 40s</span></li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>Main attacks now fire mega missiles that fire 3x more slowly, but deal much more damage to MOABs
                                      (see below)</li>
                                 <li>Explosion count 4 -&gt; 10</li>
                                 <li>Explosion damage 2 -&gt; 3</li>
                                 <li>MOABs hit directly by mega missiles (not their explosions) take +450 damage</li>
-                                <li><span class="ability">Ability missile explosion count 4 -&gt; 9</span></li>
-                                <li><span class="ability">Ability missile bonus Ceramic damage 1 -&gt; 5</span></li>
-                                <li><span class="ability">+250 MOAB damage (ability missiles)</span></li>
+                                <li><span className="ability">Ability missile explosion count 4 -&gt; 9</span></li>
+                                <li><span className="ability">Ability missile bonus Ceramic damage 1 -&gt; 5</span></li>
+                                <li><span className="ability">+250 MOAB damage (ability missiles)</span></li>
                             </ul>
                         </td>
                     </tr>
@@ -215,34 +215,34 @@ export function DartlingMain() {
                     </tr>
                     <tr>
                         <th>Changes</th>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>Swivel speed 180°/s -&gt; 440°/s</li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>Pierce 1 -&gt; 3</li>
                                 <li>+~34% dart speed</li>
                                 <li>+Can pop Frozen</li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>Now fires 6 buckshots/attack—buckshots are faster and knock back non-MOAB Bloons</li>
                                 <li>Buckshot stats: 4 damage, 4 pierce, 46° spread, 1.5s attack cooldown</li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>Attack cooldown 1.5s -&gt; 0.375s</li>
                                 <li><i>+Target Independent targeting option: when selected, 4 barrels will target First/Last/Close/Strong
                                      Bloons all at once (1 target priority per barrel)</i></li>
                                 <li><i>Target Independent range: 130 units</i></li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>Attack cooldown 0.375s -&gt; 0.25s</li>
                                 <li>Pierce 4 -&gt; 6</li>
                                 <li>Damage 4 -&gt; 8</li>

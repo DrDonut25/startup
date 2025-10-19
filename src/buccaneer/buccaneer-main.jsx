@@ -83,23 +83,23 @@ export function BuccaneerMain() {
                     </tr>
                     <tr>
                         <th>Changes</th>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>Attack cooldown 1s -&gt; 0.75s</li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>+1 dart/attack</li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>Attack cooldown 0.75s -&gt; 0.15s</li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li><i>+3 mini fighter planes: have infinite range and have 3 different attack types (see below)</i></li>
                                 <li><i>Forward dart attack: 2 darts fired in rapid succession as plane approaches target—2 damage,
                                      4 pierce, attack cooldown 0.18s per dart</i></li>
@@ -109,8 +109,8 @@ export function BuccaneerMain() {
                                      3 pierce, 3s attack cooldown per missile (note: missiles cannot pop Black)</i></li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>Buccaneer attack pierce 4 -&gt; 7</li>
                                 <li><i>+3 Ceramic damage (forward dart & radial dart attacks)</i></li>
                                 <li><i>Forward dart attack pierce 4 -&gt; 7</i></li>
@@ -149,20 +149,20 @@ export function BuccaneerMain() {
                     </tr>
                     <tr>
                         <th>Changes</th>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li><i>+Grape shot attack: fires 5 grapes in 90° forward cone—1 damage, 1 pierce, attack cooldown
                                      1.3s per grape</i></li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>+Grapes set Bloons on fire, dealing 2 damage every 1.5s for 3.1s</li>
                                 <li>+Grapes can pop Lead, but not Purple</li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li><i>Dart attack replaced w/ cannon attack: fires explosive bombs that release 8 shrapnel fragments
                                      in all directions—2 damage, 28 pierce, 1.3s attack cooldown</i></li>
                                 <li><i>Bomb shrapnel stats: 1 damage, 1 pierce per shrapnel fragment</i></li>
@@ -170,29 +170,29 @@ export function BuccaneerMain() {
                                 <li>+Cannon can pop Lead, but not Black</li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>+2 cannons: fires 3 bombs per attack instead of 1</li>
                                 <li>Bomb damage 2 -&gt; 3</li>
                                 <li>+5 MOAB damage (bomb)</li>
                                 <li>Grape damage 3 -&gt; 5</li>
                                 <li>+2 Ceramic damage (grape)</li>
-                                <li><span class="ability">MOAB Takedown Ability: destroy 1 MOAB/BFB/DDT (if visible) from anywhere on
+                                <li><span className="ability">MOAB Takedown Ability: destroy 1 MOAB/BFB/DDT (if visible) from anywhere on
                                      screen</span></li>
-                                <li><span class="ability">Ability cooldown: 45s</span></li>
+                                <li><span className="ability">Ability cooldown: 45s</span></li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>Grapeshot & cannon attack cooldown 1.3s -&gt; 0.65s</li>
                                 <li>Bomb frag damage 1 -&gt; 6; +3 MOAB damage (bomb frag)</li>
                                 <li>Bomb MOAB bonus damage 5 -&gt; 8</li>
                                 <li>Grape damage 5 -&gt; 8</li>
                                 <li>Grape Ceramic bonus damage 2 -&gt; 8</li>
-                                <li><span class="ability">MOAB Takedown can now hook/destroy 6 MOABs at once (though ZOMGs require 3
+                                <li><span className="ability">MOAB Takedown can now hook/destroy 6 MOABs at once (though ZOMGs require 3
                                      hooks each to destroy)</span></li>
-                                <li><span class="ability">Ability cooldown 45s -&gt; 30s</span></li>
-                                <li><span class="ability">+MOABs popped by ability now generate 2x their normal income</span></li>
+                                <li><span className="ability">Ability cooldown 45s -&gt; 30s</span></li>
+                                <li><span className="ability">+MOABs popped by ability now generate 2x their normal income</span></li>
                             </ul>
                         </td>
                     </tr>
@@ -221,33 +221,33 @@ export function BuccaneerMain() {
                     </tr>
                     <tr>
                         <th>Changes</th>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>+11 range</li>
                                 <li>Pierce 4 -&gt; 6</li>
                                 <li>+25% projectile speed</li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>+Camo detection</li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>+Generates $200 at end of each round</li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>Cash generated/round $200 -&gt; $500</li>
                                 <li>Attack cooldown 1s -&gt; 0.5s</li>
                                 <li><i>+Increased sellback buff: increases sell value of in-range towers by 4% (stacks 3
                                      times up to 12%)</i></li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>Cash generated/round $500 -&gt; $800</li>
                                 <li>Damage 1 -&gt; 2</li>
                                 <li><i>Up to 20 Merchantmen on screen receive +1 damage, +1 Ceramic damage, +1 MOAB damage to all

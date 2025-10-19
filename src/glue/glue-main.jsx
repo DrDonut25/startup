@@ -95,34 +95,34 @@ export function GlueMain() {
                     </tr>
                     <tr>
                         <th>Changes</th>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>Layers glued/glob 3 -&gt; Infinite</li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li><i>+Damage over time effect: Glued Bloons take 1 damage every 2 seconds</i></li>
                                 <li>+Glue can damage MOABs (but cannot slow them)</li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>Damage over time increased to 2 damage/s</li>
                                 <li>+2 Ceramic damage/s</li>
                                 <li>Pierce 1 -&gt; 2</li>
                                 <li>Attack cooldown 1s -&gt; 0.5s</li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>Damage over time increased to 10 damage/s</li>
                                 <li><i>Acid puddle mechanic: when Bloon glued by this tower pops, it drops puddle of acid that lingers
                                      on track for 7.7s. Each puddle deals 4 damage to up to 3 Bloons</i></li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>Ceramic bonus 2 damage/s -&gt; 80 damage/s</li>
                                 <li>+40 MOAB damage/s</li>
                                 <li>Acid puddle damage 4 -&gt; 15</li>
@@ -158,34 +158,34 @@ export function GlueMain() {
                     </tr>
                     <tr>
                         <th>Changes</th>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>Pierce 1 -&gt; 2</li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>+Splatter glue can hit 4 additional Bloons per shot</li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>Attack cooldown  1s -&gt; 0.34s</li>
                                 <li>+12 range</li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
-                                <li><span class="ability">Ability: glue all Bloons (including MOAB/Camo) on screen for 11s</span></li>
-                                <li><span class="ability">Ability cooldown: 30s</span></li>
-                                <li><span class="ability">+Bloons glued by ability take +2 damage & temporarily lose Lead/Frozen properties</span></li>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li><span className="ability">Ability: glue all Bloons (including MOAB/Camo) on screen for 11s</span></li>
+                                <li><span className="ability">Ability cooldown: 30s</span></li>
+                                <li><span className="ability">+Bloons glued by ability take +2 damage & temporarily lose Lead/Frozen properties</span></li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
-                                <li><span class="ability">Ability now glues all Bloons on screen every second for 10s (glue duration
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li><span className="ability">Ability now glues all Bloons on screen every second for 10s (glue duration
                                      is still 11s)</span></li>
-                                <li><span class="ability">Ability cooldown 30s -&gt; 40s</span></li>
+                                <li><span className="ability">Ability cooldown 30s -&gt; 40s</span></li>
                             </ul>
                         </td>
                     </tr>
@@ -214,31 +214,31 @@ export function GlueMain() {
                     </tr>
                     <tr>
                         <th>Changes</th>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>Glue duration 11s -&gt; 24s</li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>Glue slow intensity -50% -&gt; -75% Bloon speed</li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>+Can now glue/slow MOABs for 9s</li>
                                 <li>MOAB glue slow intensity: -37.5% MOAB speed</li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li><i>+Glue Stun mechanic: Glued Bloons release splatter that stun up to 6 nearby Bloons when popped</i></li>
                                 <li><i>Stun duration: 1s (non-MOAB-class), 0.25s (Blue MOABs/DDTs) </i></li>
                                 <li>Glue on MOAB duration 9s -&gt; 12s</li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>Glue slow intensity -75% -&gt; -100% Bloon speed (aka Glued Bloons and MOABs are completely immobilized)</li>
                                 <li>Glue projectiles now deal 30 damage to MOABs and 1 damage to non-MOABs on contact</li>
                                 <li>Glue glob pierce 1 -&gt; 6</li>

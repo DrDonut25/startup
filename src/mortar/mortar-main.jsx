@@ -64,12 +64,12 @@ export function MortarMain() {
             <table className="upgrade_table">
                 <thead>
                     <tr>
-                        <th className="top_row">Top Upgrade Path</th>
-                        <th className="top_row">Bigger Blast</th>
-                        <th className="top_row">Bloon Buster</th>
-                        <th className="top_row">Shell Shock</th>
-                        <th className="top_row">The Big One</th>
-                        <th className="top_row">The Biggest One</th>
+                        <th className="top_row path_label">Top Upgrade Path</th>
+                        <th className="top_row upgrade_button">Bigger Blast</th>
+                        <th className="top_row upgrade_button">Bloon Buster</th>
+                        <th className="top_row upgrade_button">Shell Shock</th>
+                        <th className="top_row upgrade_button">The Big One</th>
+                        <th className="top_row upgrade_button last_upgrade_button">The Biggest One</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -83,11 +83,49 @@ export function MortarMain() {
                     </tr>
                     <tr>
                         <th>Changes</th>
-                        <td>To be added</td>
-                        <td>To be added</td>
-                        <td>To be added</td>
-                        <td>To be added</td>
-                        <td>To be added</td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li>Blast radius 20 units -&gt; 28 units</li>
+                                <li>Pierce 25 -&gt; 45</li>
+                            </ul>
+                        </td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li>Damage 2 -&gt; 3</li>
+                            </ul>
+                        </td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li>Blast radius 28 units -&gt; 38 units</li>
+                                <li><i>+Shockwave blasts: deal 1 damage to up to 45 Bloons within 57-unit radius</i></li>
+                                <li>+Stunning blasts: stun up to 45 Bloons within 19-unit radius for 0.5s</li>
+                            </ul>
+                        </td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li>Blast radius 38 units -&gt; 58 units</li>
+                                <li>Damage 3 -&gt; 10</li>
+                                <li><i>Shockwave radius 57 units -&gt; 87 units</i></li>
+                                <li><i>Shockwave damage 1 -&gt; 2</i></li>
+                                <li><i>+2 Ceramic damage (shockwave)</i></li>
+                                <li><i>+Shockwaves can now pop Black (other 2 blast types can't though)</i></li>
+                                <li><i>Stun radius 19 units -&gt; 29 units</i></li>
+                                <li><i>Stun duration 0.5s -&gt; 0.75s</i></li>
+                                <li>Pierce 45 -&gt; 85 (all blasts)</li>
+                            </ul>
+                        </td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li>Blast radius 58 units -&gt; 74 units</li>
+                                <li>Damage 10 -&gt; 25</li>
+                                <li>+30 Ceramic/MOAB damage (main blast)</li>
+                                <li><i>Shockwave radius 87 units -&gt; 111 units</i></li>
+                                <li><i>Ceramic bonus damage 2 -&gt; 20 (shockwave)</i></li>
+                                <li><i>Stun radius 29 units -&gt; 37 units</i></li>
+                                <li><i>+Can now stun blue MOABs/BFBs/DDTs/ZOMGs for 0.5s/0.3s/0.3s/0.1s (respectively)</i></li>
+                                <li>Pierce 85 -&gt; 200 (all blasts)</li>
+                            </ul>
+                        </td>
                     </tr>
                 </tbody>
             </table>
@@ -95,12 +133,12 @@ export function MortarMain() {
             <table className="upgrade_table">
                 <thead>
                     <tr>
-                        <th className="top_row">Middle Upgrade Path</th>
-                        <th className="top_row">Faster Reload</th>
-                        <th className="top_row">Rapid Reload</th>
-                        <th className="top_row">Heavy Shells</th>
-                        <th className="top_row">Artillery Battery</th>
-                        <th className="top_row">Pop and Awe</th>
+                        <th className="top_row path_label">Middle Upgrade Path</th>
+                        <th className="top_row upgrade_button">Faster Reload</th>
+                        <th className="top_row upgrade_button">Rapid Reload</th>
+                        <th className="top_row upgrade_button">Heavy Shells</th>
+                        <th className="top_row upgrade_button">Artillery Battery</th>
+                        <th className="top_row upgrade_button last_upgrade_button">Pop and Awe</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -114,11 +152,43 @@ export function MortarMain() {
                     </tr>
                     <tr>
                         <th>Changes</th>
-                        <td>To be added</td>
-                        <td>To be added</td>
-                        <td>To be added</td>
-                        <td>To be added</td>
-                        <td>To be added</td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li>Attack cooldown 2s -&gt; 1.5s</li>
+                            </ul>
+                        </td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li>Attack cooldown 1.5s -&gt; 1.08s</li>
+                            </ul>
+                        </td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li>Attack cooldown 1.08s -&gt; 0.81s</li>
+                                <li>+1 Lead/DDT/MOAB-class/Fortified damage</li>
+                                <li>+2 damage to stunned Bloons</li>
+                                <li>+3 Ceramic damage</li>
+                                <li>+Can now pop all Bloon types</li>
+                            </ul>
+                        </td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li>Attack cooldown 0.81s -&gt; 0.27s</li>
+                                <li><span className="ability">Ability: gain 4x attack speed and 15% blast radius for 8s</span></li>
+                                <li><span className="ability">Ability cooldown: 60s</span></li>
+                            </ul>
+                        </td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li>Attack cooldown 0.27s -&gt; 0.0675s</li>
+                                <li>Blast radius 20 -&gt; 23</li>
+                                <li>Stunned Bloon bonus damage 2 -&gt; 8</li>
+                                <li>Other Artillery Batteries gain '+1 damage to BADs/Boss Bloons</li>
+                                <li><span className="ability">Ability: repeatedly deal 20 damage to & stun all Bloons on screen every
+                                     second for 8s</span></li>
+                                <li><span className="ability">Ability cooldown: 60s</span></li>
+                            </ul>
+                        </td>
                     </tr>
                 </tbody>
             </table>
@@ -126,12 +196,12 @@ export function MortarMain() {
             <table className="upgrade_table">
                 <thead>
                     <tr>
-                        <th className="top_row">Bottom Upgrade Path</th>
-                        <th className="top_row">Increased Accuracy</th>
-                        <th className="top_row">Burny Stuff</th>
-                        <th className="top_row">Signal Flare</th>
-                        <th className="top_row">Shattering Shells</th>
-                        <th className="top_row">Blooncineration</th>
+                        <th className="top_row path_label">Bottom Upgrade Path</th>
+                        <th className="top_row upgrade_button">Increased Accuracy</th>
+                        <th className="top_row upgrade_button">Burny Stuff</th>
+                        <th className="top_row upgrade_button">Signal Flare</th>
+                        <th className="top_row upgrade_button">Shattering Shells</th>
+                        <th className="top_row upgrade_button last_upgrade_button">Blooncineration</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -145,11 +215,37 @@ export function MortarMain() {
                     </tr>
                     <tr>
                         <th>Changes</th>
-                        <td>To be added</td>
-                        <td>To be added</td>
-                        <td>To be added</td>
-                        <td>To be added</td>
-                        <td>To be added</td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li>Explosions have ~50% reduced spread</li>
+                            </ul>
+                        </td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li><i>+Attacks set Bloons on fire: 1 every 1.25s for 3.85s (cannot pop Purple)</i></li>
+                            </ul>
+                        </td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li>+Camo detection</li>
+                                <li><i>+Secondary explosions remove Camo from up to 50 Bloons within 52-unit radius (including DDTs)</i></li>
+                            </ul>
+                        </td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li>+Main blasts now remove Regrow/Fortified property from all Bloons up to BFBs</li>
+                                <li><i>Burny stuff now deals 5 damage every 1.25s for 3.85s</i></li>
+                                <li><i>+20 Burny Stuff damage/1.25s to MOABs</i></li>
+                            </ul>
+                        </td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li>+Main blasts now remove Fortified property from DDTs</li>
+                                <li><i>Burny Stuff now deals 5 damage every 0.75s for 3.85s</i></li>
+                                <li><i>Burny Stuff MOAB bonus damage over time 20/1.25s -&gt; 95/0.75s</i></li>
+                                <li><i>Blasts now leave behind a wall of fire: 1 damage, 20 pierce, rehits every 0.1s, lasts 4.5s</i></li>
+                            </ul>
+                        </td>
                     </tr>
                 </tbody>
             </table>

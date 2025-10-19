@@ -87,37 +87,37 @@ export function AlchemistMain() {
                     </tr>
                     <tr>
                         <th>Changes</th>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>Potion splash radius 14 units -&gt; 21 units</li>
                                 <li>Pierce 15 -&gt; 20</li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li><i>+Now gives in-range towers Acidic Mixture Dip buff every 10s: wears off after affected
                                      tower attacks 10 times (though this buff can be stacked up to 3 times)</i></li>
                                 <li><i>Acidic Mixture Dip buff benefits: can pop Lead, +1 Ceramic damage, +1 MOAB damage,
                                      +1 Fortified Lead damage</i></li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li><i>+Now gives in-range towers Berserker Brew buff (in addition to Acidic Mixture Dip,
                                      which is applied separately) every 8s—buff wears off after 25 attacks or 5 seconds</i></li>
                                 <li><i>Berserker Brew buff benefits: +1 damage, +2 pierce, +10% range, -10% attack cooldown
                                      (faster attack speed)</i></li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li><i>Berserker Brew improvements: Pierce bonus +2 -&gt; +3, range bonus +10% -&gt; +15%,
                                      attack cooldown reduction 10% -&gt; 15%</i></li>
                                 <li><i>Berserker Brew duration 25 attacks/5s -&gt; 40 attacks/12s</i></li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li><i>Acidic Mixture Dip and Berserker Brew no longer wear off</i></li>
                             </ul>
                         </td>
@@ -147,21 +147,21 @@ export function AlchemistMain() {
                     </tr>
                     <tr>
                         <th>Changes</th>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>Damage over time 1 damage / 2s -&gt; 1 damage / 1.5s</li>
                                 <li>+Acid effect lasts an extra 0.5s</li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>+4 MOAB damage</li>
                                 <li>+15 Fortified MOAB damage</li>
                                 <li>+Potions remove Fortified property from Ceramics and Leads</li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li><i>+Concoction attack: throws secondary potion that can coat up to 3 MOABs at once—coated
                                      MOABs explode when popped, damaging up to 50 other nearby Bloons
                                       (not including children of popped/exploding MOAB)</i></li>
@@ -177,27 +177,27 @@ export function AlchemistMain() {
                                 <li><i>Explosions can pop all Bloon types except Camo</i></li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
-                                <li><span class="ability">Ability: transform Alchemist into monster for 20s, replacing all attacks
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li><span className="ability">Ability: transform Alchemist into monster for 20s, replacing all attacks
                                      with eye-laser attack: 3 damage, 6 pierce, 0.03s attack cooldown, 72-unit range</span></li>
-                                <li><span class="ability">Ability cooldown: 60s</span></li>
-                                <li><span class="ability">Transformed Alchemist can pop all Bloon types except Purple/Camo</span></li>
+                                <li><span className="ability">Ability cooldown: 60s</span></li>
+                                <li><span className="ability">Transformed Alchemist can pop all Bloon types except Purple/Camo</span></li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
-                                <li><span class="ability">+Ability now transforms up to 5 nearby monkeys nearby:
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li><span className="ability">+Ability now transforms up to 5 nearby monkeys nearby:
                                      these monkeys also gain eye-laser attack</span></li>
-                                <li><span class="ability">Transformed monkey stats (not Alchemist's): 2 damage, 10 pierce,
+                                <li><span className="ability">Transformed monkey stats (not Alchemist's): 2 damage, 10 pierce,
                                      0.03s attack cooldown, 72-unit range</span></li>
-                                <li><span class="ability"><u>Note: only monkeys that are Tier 3 or lower can be transformed—and
+                                <li><span className="ability"><u>Note: only monkeys that are Tier 3 or lower can be transformed—and
                                      the following towers cannot be transformed at all: Bomb Shooter, Tack Shooter,
                                       all Military monkeys except Sniper, Monkey Village, Banana Farm, Spike Factory,
                                        Beast Handler</u></span></li>
-                                <li><span class="ability">Transformed monkeys retain tower-specific buffs
+                                <li><span className="ability">Transformed monkeys retain tower-specific buffs
                                      (e.g. Monkey Sense, Poplust, Shinobi Tactics)</span></li>
-                                <li><span class="ability">Ability cooldown 60s -&gt; 40s</span></li>
+                                <li><span className="ability">Ability cooldown 60s -&gt; 40s</span></li>
                             </ul>
                         </td>
                     </tr>
@@ -226,35 +226,35 @@ export function AlchemistMain() {
                     </tr>
                     <tr>
                         <th>Changes</th>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>-20% attack cooldown reduction</li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li><i>+Acid Pool attack: when Alchemist sees no Bloons in range, drop acid pool onto random spot
                                      on track at same speed as Alchemist's base attack (1.6s)</i></li>
                                 <li><i>Acid pool stats: 1 damage, 5 pierce, 7s lifespan, same damage-over-time effect as base attack</i></li>
                                 <li>+Every 5th base attack also creates acid pool where potion landed</li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>+Base attacks and acid can now destroy Leads and Fortified Leads in one shot (aka +9 Lead damage)</li>
                                 <li><i>+Leads popped by this Alchemist generate $50 each in addition to their regular pop income</i></li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li><i>+Rubber to Gold attack: throw gold potion at Bloons—gold potion deals no damage, but gives
                                      hit Bloons gold effect for 14s (see below)</i></li>
                                 <li><i>Gold effect makes Bloons give +100% pop income and temporarily lose all Bloon types immunities</i></li>
                                 <li><i>Gold potion stats: 15 pierce, 2s attack cooldown, 21-unit splash radius</i></li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li><i>+Shrink potion attack: throws a shrink potion at strongest Bloon on screen, turning it
                                      and nearby Bloons into Red Bloons</i></li>
                                 <li><i>Shrink potion stats: infinite range, 200 pierce, 10s attack cooldown</i></li>

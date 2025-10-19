@@ -83,18 +83,18 @@ export function DartMain() {
                     </tr>
                     <tr>
                         <th>Changes</th>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>Pierce 2 -&gt; 3</li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>Pierce 3 -&gt; 5</li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>+4.8 range</li>
                                 <li>-17.4% attack speed</li>
                                 <li>Damage 1 -&gt; 2</li>
@@ -103,8 +103,8 @@ export function DartMain() {
                                 <li>+Can pop Frozen</li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>+15% attack speed</li>
                                 <li>Doubled projectile speed</li>
                                 <li>Pierce 18 -&gt; 60</li>
@@ -114,8 +114,8 @@ export function DartMain() {
                                 <li>+Bloon knockback</li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>Damage 2 -&gt; 5</li>
                                 <li>Fortified bonus damage 2 -&gt; 5</li>
                                 <li>Ceramic bonus damage 3 -&gt; 8</li>
@@ -150,41 +150,41 @@ export function DartMain() {
                     </tr>
                     <tr>
                         <th>Changes</th>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>+15% attack speed</li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>+18% attack speed</li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>+25% attack speed</li>
                                 <li>Now throws 3 darts/attack in 30° cone</li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>+100% attack speed</li>
-                                <li><span class="ability">Ability: transform 10 nearby Dart Monkeys (including this one) into Super
+                                <li><span className="ability">Ability: transform 10 nearby Dart Monkeys (including this one) into Super
                                      Monkeys for 15s</span></li>
-                                <li><span class="ability">Transformed Dart Monkey stats: 2 pierce, 0.06 attack cooldown,
+                                <li><span className="ability">Transformed Dart Monkey stats: 2 pierce, 0.06 attack cooldown,
                                      40 base range</span></li>
-                                <li><span class="ability">Transformed Dart Monkeys inherit crosspath stats
+                                <li><span className="ability">Transformed Dart Monkeys inherit crosspath stats
                                      (not crosspath stats from this tower)</span></li>
-                                <li><span class="ability">Ability cooldown: 50s</span></li>
+                                <li><span className="ability">Ability cooldown: 50s</span></li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
-                                <li><span class="ability">Ability: transform 20 nearby Dart Monkeys into Plasma Monkeys for 15s</span></li>
-                                <li><span class="ability">Transformed Dart Monkey Stats: 5 pierce, 0.03 attack cooldown, 2 damage</span></li>
-                                <li><span class="ability">Transformed Dart Monkeys inherit crosspath stats
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li><span className="ability">Ability: transform 20 nearby Dart Monkeys into Plasma Monkeys for 15s</span></li>
+                                <li><span className="ability">Transformed Dart Monkey Stats: 5 pierce, 0.03 attack cooldown, 2 damage</span></li>
+                                <li><span className="ability">Transformed Dart Monkeys inherit crosspath stats
                                      (not crosspath stats from this tower)</span></li>
-                                <li><span class="ability">Ability cooldown: 50s</span></li>
+                                <li><span className="ability">Ability cooldown: 50s</span></li>
                             </ul>
                         </td>
                     </tr>
@@ -213,38 +213,38 @@ export function DartMain() {
                     </tr>
                     <tr>
                         <th>Changes</th>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>+8 range</li>
                                 <li>Enhanced projectile lifespan</li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>+8 range</li>
                                 <li>Further enhanced projectile lifespan</li>
                                 <li>+Faster projectile speed</li>
                                 <li>+Camo detection</li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>+12 range</li>
                                 <li>Damage 1 -&gt; 3</li>
                                 <li>Pierce 2 -&gt; 4</li>
                                 <li>+Faster projectile speed</li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>Damage 3 -&gt; 6</li>
                                 <li>+100% attack speed</li>
                                 <li>+Faster projectile speed</li>
                                 <li><i>Critical Hit mechanic: every 10th attack deals 50 damage instead of 6</i></li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>Damage 6 -&gt; 8</li>
                                 <li>+100% attack speed</li>
                                 <li>Pierce 4 -&gt; 8</li>

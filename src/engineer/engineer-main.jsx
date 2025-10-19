@@ -83,25 +83,25 @@ export function EngineerMain() {
                     </tr>
                     <tr>
                         <th>Changes</th>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li><i>+Now deploys sentry turrets every 10s—turrets last 25s before expiring</i></li>
                                 <li><i>Sentry stats: 1 damage, 2 pierce, 0.95s attack cooldown, 45-unit range</i></li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li><i>Now deploys sentry turrets every 5s instead of 10s</i></li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>Attack cooldown 0.7s -&gt; 0.35s</li>
                                 <li><i>Sentry attack cooldown 0.95s -&gt; 0.475s</i></li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li><i>Depending on what Bloon types are on screen, Engineer now deploys 1 of 4 types of new sentry guns
                                      (replaces standard green sentries from previous upgrades)</i></li>
                                 <li><i>+Red Crushing Sentry (deployed when Purple/Ceramic present): fires spike balls that bounce off
@@ -120,8 +120,8 @@ export function EngineerMain() {
                                      (Boom), White (Cold), Purple (Energy), MOAB (Cold)</i></li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li><i>No longer deploys any sentries from previous upgrades, instead deploying champion sentry guns</i></li>
                                 <li><i>Champion sentries shoot plasma balls and explode after they expire</i></li>
                                 <li><i>Champion sentry attack stats: 3 damage, 5 pierce, 0.06s attack cooldown, 50-unit range</i></li>
@@ -155,41 +155,41 @@ export function EngineerMain() {
                     </tr>
                     <tr>
                         <th>Changes</th>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>+50% range</li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>+1 MOAB/Fortified damage</li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li><i>+Foam attack: deploys foam pools on user-selected point on Track—Bloons that pass through it lose
                                      Regrow/Camo properties, and outer layer of Leads are popped</i></li>
                                 <li><i>Foam stats: 10 pierce, 2s attack cooldown, 8.5s lifespan</i></li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
-                                <li><span class="ability">Overclock ability: give user-selected tower +66.67% attack speed</span></li>
-                                <li><span class="ability">Overclock duration dependent on tower's upgrades: Tier 5/Tier 4/Tier 3 or lower
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li><span className="ability">Overclock ability: give user-selected tower +66.67% attack speed</span></li>
+                                <li><span className="ability">Overclock duration dependent on tower's upgrades: Tier 5/Tier 4/Tier 3 or lower
                                      towers receive overclock buff for 30s/45s/60s</span></li>
-                                <li><span class="ability">If Banana Farm overclocked, it generates +66.67% more income</span></li>
-                                <li><span class="ability">Ability cooldown: 45s</span></li>
+                                <li><span className="ability">If Banana Farm overclocked, it generates +66.67% more income</span></li>
+                                <li><span className="ability">Ability cooldown: 45s</span></li>
                                 <li>Pierce 3 -&gt; 15</li>
                                 <li><i>Cleansing foam pierce 10 -&gt; 14</i></li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
-                                <li><span class="ability">+Overclock ability now gives permanent -4% attack cooldown mini-boost to
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li><span className="ability">+Overclock ability now gives permanent -4% attack cooldown mini-boost to
                                      affected towers: permanent mini-boosts stack up to 10 times</span></li>
-                                <li><span class="ability">Overclock duration is now 60s for all towers (regardless of upgrade tier)</span></li>
-                                <li><span class="ability">Mini-boosts also boost income generation of Banana Farms</span></li>
-                                <li><span class="ability">Ability cooldown 45s -&gt; 35s</span></li>
+                                <li><span className="ability">Overclock duration is now 60s for all towers (regardless of upgrade tier)</span></li>
+                                <li><span className="ability">Mini-boosts also boost income generation of Banana Farms</span></li>
+                                <li><span className="ability">Ability cooldown 45s -&gt; 35s</span></li>
                                 <li>Pierce 15 -&gt; 30</li>
                                 <li><i>Cleansing foam pierce 14 -&gt; 24</i></li>
                             </ul>
@@ -220,24 +220,24 @@ export function EngineerMain() {
                     </tr>
                     <tr>
                         <th>Changes</th>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>Pierce 3 -&gt; 8</li>
                                 <li>+Can pop Frozen (sentries included)</li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li><i>+Nails now stun non-Lead/Ceramic/MOAB Bloons for 1s</i></li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>Attack cooldown 0.7s -&gt; 0.35s</li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li><i>+Bloon trap attack: places mechanical trap on track that instantly pops up to 500 *RBE-worth of
                                      Bloons (but cannot trap MOABs/Camo)</i></li>
                                 <li><i>Bloons popped/trapped by Bloon Trap produce +100% more cash—cash generated when trap fills
@@ -245,8 +245,8 @@ export function EngineerMain() {
                                 <li><i>+Traps can pop/trap Lead</i></li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li><i>Trap capacity 500 RBE -&gt; 10,000 RBE</i></li>
                                 <li><i>+Trap can now trap/insta-pop MOAB-class Bloons</i></li>
                                 <li><i>Trap cash bonus +100% -&gt; +200%</i></li>

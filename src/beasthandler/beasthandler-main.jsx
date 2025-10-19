@@ -87,8 +87,8 @@ export function BeastHandlerMain() {
                     </tr>
                     <tr>
                         <th>Changes</th>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li><i>Note: this upgrade/path can only be purchased when water is in range of Beast Handler</i></li>
                                 <li>Summons Piranha: 1 damage, 1 pierce, 0.6s attack cooldown, 25-unit range</li>
                                 <li>+Piranha can pop Frozen (but not Camo/Lead)</li>
@@ -97,8 +97,8 @@ export function BeastHandlerMain() {
                                 <li><u>Beast Power per Piranha: 1</u></li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>Summons Barracuda: has splash attack and can knock back Bloons—range increased by 5</li>
                                 <li>Barracuda min stats (3 BP): 2 damage, 4 splash pierce, 0.6s attack cooldown</li>
                                 <li>Barracuda max BP stats: 4 damage, 12 splash pierce, 0.3937s attack cooldown</li>
@@ -107,8 +107,8 @@ export function BeastHandlerMain() {
                                 <li><u>Beast Power per Barracuda: 3</u></li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>Summons Great White Shark: +10 range, latches onto a target Bloon, <u>thrashes</u> around with it
                                  in its jaws—thrashes deal repeated damage to target Bloon while also creating <u>damaging splashes
                                  that knock back</u> surrounding Bloons</li>
@@ -124,8 +124,8 @@ export function BeastHandlerMain() {
                                 <li><u>Beast Power per Great White Shark: 8</u></li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>Summons Orca: thrashes create larger splashes, increased knockback duration, +10 range,
                                      and can drag/insta-pop blue MOABs/BFBs</li>
                                 <li><u>At max BP, Orca can drag ZOMGs (and DDTs, if visible)</u></li>
@@ -137,8 +137,8 @@ export function BeastHandlerMain() {
                                 <li><u>Beast Power per Orca: 16</u></li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li><i><u>Note: you must have 3 other Orcas merged to this Beast Handler before you can purchase
                                      this upgrade</u></i></li>
                                 <li>Summons Megalodon: +10 range, thrash splash radius doubled, improved knockback against MOAB-class
@@ -177,8 +177,8 @@ export function BeastHandlerMain() {
                     </tr>
                     <tr>
                         <th>Changes</th>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>Summons Microraptor: 1 damage, 5 splash pierce, 1s attack cooldown, 20-unit range</li>
                                 <li>Microraptor cannot pop Camo/Lead</li>
                                 <li><i>Microraptor can be redeployed to anywhere in range of Beast Handler</i></li>
@@ -186,8 +186,8 @@ export function BeastHandlerMain() {
                                 <li><u>Beast Power per Microtaptor: 1</u></li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>Summons Adasaurus: can pop Lead and damage/pierce improved</li>
                                 <li>Adasaurus min stats (3 BP): 3 damage, 8 splash pierce, 1s attack cooldown</li>
                                 <li>Adasaurus max BP stats: 6 damage, 20 splash pierce, 0.6561s attack cooldown</li>
@@ -196,8 +196,8 @@ export function BeastHandlerMain() {
                                 <li><u>Beast Power per Adasaurus: 3</u></li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>Summons Velociraptor: +4 range, and bonus damage to Stunned Bloons</li>
                                 <li>Velociraptor min stats (8 BP): 8 damage, +3 Stunned damage, 14 splash damage, 1s attack cooldown</li>
                                 <li>Velociraptor max BP stats: 24 damage, +8 Stunned damage, 35 splash pierce, 0.6561s attack cooldown</li>
@@ -205,13 +205,13 @@ export function BeastHandlerMain() {
                                 <li><u>Beast Power per Velociraptor: 8</u></li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>Summons T-Rex: +6 range, <b>gains Stomp Ability—deal damage to & stun up to 400 Bloons in 100-unit
                                      radius for 6s (3s for MOABs/BFBs & 2s for ZOMGs/DDTs)</b></li>
-                                <li><span class="ability">Stomp Ability min stats (16 BP): 40s cooldown, 150 damage, 400 pierce</span></li>
-                                <li><span class="ability">Stomp Ability max BP stats: 19.03s cooldown, 202 damage, 433 pierce</span></li>
-                                <li><span class="ability"> At max BP, Stomp Ability damage can soak through MOAB layers and damage
+                                <li><span className="ability">Stomp Ability min stats (16 BP): 40s cooldown, 150 damage, 400 pierce</span></li>
+                                <li><span className="ability">Stomp Ability max BP stats: 19.03s cooldown, 202 damage, 433 pierce</span></li>
+                                <li><span className="ability"> At max BP, Stomp Ability damage can soak through MOAB layers and damage
                                      child Ceramics</span></li>
                                 <li>T-Rex min stats (16 BP): 26 damage, +8 Stunned damage, 22 splash pierce, 1s attack cooldown</li>
                                 <li>T-Rex max BP stats: 78 damage, +25 Stunned damage, 55 splash pierce, 0.6561s attack cooldown</li>
@@ -219,14 +219,14 @@ export function BeastHandlerMain() {
                                 <li><u>Beast Power per T-Rex: 16</u></li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li><i><u>Note: you must have 3 other T-Rexes merged to this Beast Handler before you can purchase
                                      this upgrade</u></i></li>
                                 <li>Summons Giganotosaurus: +10 range, can see over all map obstacles—<b>Stomp damages Bloons
                                      anywhere on screen and stuns them for 12s (6s for MOABs/BFBs & 4s for ZOMGs/DDTs)</b></li>
-                                <li><span class="ability">Stomp Ability min stats (84 BP): 21.01s cooldown, 700 damage, 645 pierce</span></li>
-                                <li><span class="ability">Stomp Ability max BP stats: 15.51s, 1100 damage, 690 pierce</span></li>
+                                <li><span className="ability">Stomp Ability min stats (84 BP): 21.01s cooldown, 700 damage, 645 pierce</span></li>
+                                <li><span className="ability">Stomp Ability max BP stats: 15.51s, 1100 damage, 690 pierce</span></li>
                                 <li>Giganotosaurus min stats (84 BP): 1150 damage, +383 Stunned damage, 105 splash pierce,
                                      1.078s attack cooldown</li>
                                 <li>Giganotosaurus max BP stats: 1550 damage, +516 Stunned damage, 150 splash pierce,
@@ -261,8 +261,8 @@ export function BeastHandlerMain() {
                     </tr>
                     <tr>
                         <th>Changes</th>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li><i>Note: this upgrade path can only be purchased when track is in range of Beast Handler</i></li>
                                 <li>Summons Gyrfalcon: <u>attacks Bloons anywhere in range of Beast Handler: damaging Bloons if
                                      uptrack</u> of user-selected location. If Bloons move downtrack of said location,
@@ -273,8 +273,8 @@ export function BeastHandlerMain() {
                                 <li><u>Beast Power per Gyrfalcon: 1</u></li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>Summons Horned Owl: gains Camo detection and can grab/damage Ceramics</li>
                                 <li>Horned Owl min stats (3 BP): 1 damage, 6 grab pierce, 1s attack cooldown</li>
                                 <li>Horned Owl max BP stats: +50% flight speed, 2 damage, 18 grab pierce, 0.6s attack cooldown</li>
@@ -284,8 +284,8 @@ export function BeastHandlerMain() {
                                 <li><u>Beast Power per Horned Owl: 3</u></li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>Summons Golden Eagle: enhanced damage, pierce, grab radius</li>
                                 <li><i>At max beast power, Golden Eagle can grab blue MOABs</i></li>
                                 <li>Golden Eagle min stats (8 BP): 1 damage, 30 grab pierce, 1s attack cooldown</li>
@@ -294,8 +294,8 @@ export function BeastHandlerMain() {
                                 <li><u>Beast Power per Golden Eagle: 8</u></li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>Summons Giant Condor: can grab multiple MOABs and can grab BFBs, also dealing +10 MOAB damage</li>
                                 <li><i>At max beast power, Giant Condor can damage (but not grab) BADs/Boss Bloons</i></li>
                                 <li>Giant Condor min stats (16 BP): 2 damage, +10 MOAB damage, 30 grab pierce, 1s attack cooldown</li>
@@ -306,8 +306,8 @@ export function BeastHandlerMain() {
                                 <li><u>Beast Power per Giant Condor: 16</u></li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li><i><u>Note: you must have 3 other Condors merged to this Beast Handler before you can purchase
                                      this upgrade</u></i></li>
                                 <li>Summons Pouākai: can pop all Bloon types, +80 MOAB damage, can damage (but not grab)

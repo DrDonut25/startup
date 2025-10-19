@@ -87,27 +87,27 @@ export function HeliMain() {
                     </tr>
                     <tr>
                         <th>Changes</th>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>Darts/shot 2 -&gt; 4</li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li><i>+Pursuit Targeting: Heli Pilot will target/fly toward farthest Bloon along track (equivalent
                                      to First Targeting)</i></li>
                                 <li><i>If Heli set to Patrol Points Targeting, Heli will pursue Bloons that pass in between the two
                                      selected points</i></li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li><i>+Razor rotors attack: up to 10 Bloons within 35 units of Heli take 2 damage every 0.45s
                                      (can pop Lead)</i></li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li><i>+Machine gun attack: rapidly fires darts: 1 damage, 7 pierce, 0.05s attack cooldown per dart
                                      (cannot pop Lead)</i></li>
                                 <li><i>+Missile array attack: fires 4 homing missiles per shot from up to twice Heli's range: 2 damage,
@@ -117,8 +117,8 @@ export function HeliMain() {
                                 <li>+25% flight speed</li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>Machine gun damage 1 -&gt; 5; pierce 7 -&gt; 11; can now pop all Bloon types except Purple</li>
                                 <li>+15 MOAB damage (missile array)</li>
                                 <li>Quad darts replaced with quad lasers (can pop Frozen but not Lead/Purple);
@@ -152,51 +152,51 @@ export function HeliMain() {
                     </tr>
                     <tr>
                         <th>Changes</th>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>+75% movement speed</li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>+Camo detection</li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li><i>+Downdraft attack: blows back up to 2 Bloons (or 1 Ceramic) every 0.2s</i></li>
                                 <li><i>Blown back Bloons lose glued/frozen properties</i></li>
                                 <li>Downdraft blowback distance: 32-150 units</li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>Damage 1 -&gt; 2</li>
                                 <li>2x dart size</li>
                                 <li><i>Downdraft attack cooldown 0.2s -&gt; 0.15s</i></li>
                                 <li><i>Downdraft pierce 2 -&gt; 4</i></li>
                                 <li><i>Downdraft minimum blowback distance 32 units -&gt; 64 units</i></li>
                                 <li>+~14% flight speed</li>
-                                <li><span class="ability">Reposition Ability: move a non-heavy tower to a new position
+                                <li><span className="ability">Reposition Ability: move a non-heavy tower to a new position
                                      (cannot move e.g. banana farms, villages, sun temples)</span></li>
-                                <li><span class="ability">Reposition ability cooldown: 45s</span></li>
-                                <li><span class="ability">Supply Crate Ability: drop 2 crates: one gives +10 lives and the other
+                                <li><span className="ability">Reposition ability cooldown: 45s</span></li>
+                                <li><span className="ability">Supply Crate Ability: drop 2 crates: one gives +10 lives and the other
                                      gives $1,550</span></li>
-                                <li><span class="ability">Supply Crate ability cooldown: 90s (cannot be used more than twice per round)</span></li>
+                                <li><span className="ability">Supply Crate ability cooldown: 90s (cannot be used more than twice per round)</span></li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li><i>Downdraft attack cooldown 0.15s -&gt; 0.075s</i></li>
                                 <li>+25% flight speed</li>
-                                <li><span class="ability">Monkey Marine Ability: deploy a marine monkey that attacks Bloons for 30s:
+                                <li><span className="ability">Monkey Marine Ability: deploy a marine monkey that attacks Bloons for 30s:
                                      6 damage, 20 pierce, 0.05s attack cooldown, 50 range. Marine can pop all Bloon types.</span></li>
-                                <li><span class="ability">Monkey Marine ability cooldown: 25s</span></li>
-                                <li><span class="ability">Door Gunner ability (Monkey Knowledge required): Heli can pick up Tier 4 towers
+                                <li><span className="ability">Monkey Marine ability cooldown: 25s</span></li>
+                                <li><span className="ability">Door Gunner ability (Monkey Knowledge required): Heli can pick up Tier 4 towers
                                      or lower. Picked up tower can continue attacking from the helicopter even as it flies around</span></li>
-                                <li><span class="ability">Door Gunner ability cooldown: 15s</span></li>
-                                <li><span class="ability">Reposition ability cooldown 45s -&gt; 15s</span></li>
-                                <li><span class="ability">Supply Crate ability drops +10 lives/+$1,550 -&gt; +25 lives/+$4,500</span></li>
+                                <li><span className="ability">Door Gunner ability cooldown: 15s</span></li>
+                                <li><span className="ability">Reposition ability cooldown 45s -&gt; 15s</span></li>
+                                <li><span className="ability">Supply Crate ability drops +10 lives/+$1,550 -&gt; +25 lives/+$4,500</span></li>
                             </ul>
                         </td>
                     </tr>
@@ -225,27 +225,27 @@ export function HeliMain() {
                     </tr>
                     <tr>
                         <th>Changes</th>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>+60% dart speed</li>
                                 <li>+30% Heli range</li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li>Attack cooldown 0.57s -&gt; 0.456s</li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li><i>+MOAB Shove attack: pushes back or slows 1 MOAB at a time: blue MOABs pushed back,
                                      BFBs/DDTs/ZOMGs slowed</i></li>
                                 <li><i>+Missile attack: fires homing missiles with infinite range: 2 damage, +2 Ceramic/MOAB damage,
                                      10 pierce, 3s attack cooldown (cannot pop Black)</i></li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li><i>Summons 1/2/3 mini Comanches for 15s when furthest Bloons gets 25%/50%/75% of the way through
                                      the track, respectively</i></li>
                                 <li><i>Mini Comanche dart attack stats: 3 darts/shot—1 damage, 4 pierce, 0.228s attack cooldown per dart
@@ -257,8 +257,8 @@ export function HeliMain() {
                                 <li>MOAB Shove pushes back MOABs & slows BFBs/DDTs/ZOMGs slightly more</li>
                             </ul>
                         </td>
-                        <td class="change_cell">
-                            <ul class="change_list">
+                        <td className="change_cell">
+                            <ul className="change_list">
                                 <li><i>Mini Comanches are summoned permanently</i></li>
                                 <li><i>Mini Comanche dart damage 1 -&gt; 3</i></li>
                                 <li><i>Mini Comanche missile damage 2 -&gt; 15, Ceramic bonus damage 2 -&gt; 10</i></li>
