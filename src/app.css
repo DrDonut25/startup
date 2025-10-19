@@ -97,11 +97,11 @@ li {
 }
 
 nav .a:link{
-  color: dimgray;
+  color: rgb(65, 65, 65);
 }
 
 nav .a:visited {
-  color: dimgray;
+  color: rgb(65, 65, 65);
 }
 
 nav .a:hover {

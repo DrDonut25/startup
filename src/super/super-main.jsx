@@ -64,12 +64,12 @@ export function SuperMain() {
             <table className="upgrade_table">
                 <thead>
                     <tr>
-                        <th className="top_row">Top Upgrade Path</th>
-                        <th className="top_row">Laser Blasts</th>
-                        <th className="top_row">Plasma Blasts</th>
-                        <th className="top_row">Sun Avatar</th>
-                        <th className="top_row">Sun Temple</th>
-                        <th className="top_row">True Sun God</th>
+                        <th className="top_row path_label">Top Upgrade Path</th>
+                        <th className="top_row upgrade_button">Laser Blasts</th>
+                        <th className="top_row upgrade_button">Plasma Blasts</th>
+                        <th className="top_row upgrade_button">Sun Avatar</th>
+                        <th className="top_row upgrade_button">Sun Temple</th>
+                        <th className="top_row upgrade_button last_upgrade_button">True Sun God</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -83,11 +83,49 @@ export function SuperMain() {
                     </tr>
                     <tr>
                         <th>Changes</th>
-                        <td>To be added</td>
-                        <td>To be added</td>
-                        <td>To be added</td>
-                        <td>To be added</td>
-                        <td>To be added</td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li>Pierce 1 -&gt; 2</li>
+                                <li>+Can pop Frozen, but not Purple</li>
+                                <li>Slightly increased projectile size</li>
+                            </ul>
+                        </td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li>Attack cooldown 0.045s -&gt; 0.03s</li>
+                                <li>Slightly increased projectile size</li>
+                                <li>+Can pop Lead</li>
+                            </ul>
+                        </td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li>Now fires 3 sun projectiles/attack in 30° cone</li>
+                                <li>Pierce 2 -&gt; 6</li>
+                                <li>Doubled projectile speed</li>
+                            </ul>
+                        </td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li><i>DEV NOTE: I ran out of time before I could implement functionality for the sacrifice mechanic
+                                     for this upgrade. It is a very complex gameplay mechanic, one that I could not simulate in time
+                                     for this class assignment.</i></li>
+                                <li><i>Sacrifices all in-range towers (will count up to $50,001 spent on each tower category to
+                                     determine sacrifice buffs)</i></li>
+                                <li><i> Note: only 3 tower category sacrifices will count. When 4 tower categories are in range, Sun
+                                     Temple will select 3 categories that are worth most total money</i></li>
+                                <li>Base stats (no sacrifices): 5 damage, 20 pierce, 0.06s attack cooldown (1 projectile/attack)</li>
+                                <li>+15 range, now ignores map obstacles</li>
+                            </ul>
+                        </td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li>Accepts another set of sacrifices, giving same sacrifice benefits in addition to Sun Temple
+                                     sacrifices</li>
+                                <li><i>True Sun God will also accept sacrifices from all 4 tower categories instead of 3</i></li>
+                                <li>Base stats (no sacrifices): 15 damage, 20 pierce, 0.06s attack cooldown</li>
+                                <li>If Level-20 Adora is in range, she will transform into a more powerful True Adora</li>
+                            </ul>
+                        </td>
                     </tr>
                 </tbody>
             </table>
@@ -95,12 +133,12 @@ export function SuperMain() {
             <table className="upgrade_table">
                 <thead>
                     <tr>
-                        <th className="top_row">Middle Upgrade Path</th>
-                        <th className="top_row">Super Range</th>
-                        <th className="top_row">Epic Range</th>
-                        <th className="top_row">Robo Monkey</th>
-                        <th className="top_row">Tech Terror</th>
-                        <th className="top_row">The Anti-Bloon</th>
+                        <th className="top_row path_label">Middle Upgrade Path</th>
+                        <th className="top_row upgrade_button">Super Range</th>
+                        <th className="top_row upgrade_button">Epic Range</th>
+                        <th className="top_row upgrade_button">Robo Monkey</th>
+                        <th className="top_row upgrade_button">Tech Terror</th>
+                        <th className="top_row upgrade_button last_upgrade_button">The Anti-Bloon</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -114,11 +152,48 @@ export function SuperMain() {
                     </tr>
                     <tr>
                         <th>Changes</th>
-                        <td>To be added</td>
-                        <td>To be added</td>
-                        <td>To be added</td>
-                        <td>To be added</td>
-                        <td>To be added</td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li>+10 range</li>
+                                <li>Pierce 1 -&gt; 2</li>
+                            </ul>
+                        </td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li>+12 range</li>
+                                <li>Pierce 2 -&gt; 4</li>
+                                <li>+75% projectile speed</li>
+                            </ul>
+                        </td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li><i>Now fires independently from two arms/guns at once (can change targeting for either one)</i></li>
+                                <li><i>Deals a critical hit after every 15-20 shots—critical hits deal +9 damage</i></li>
+                                <li>Pierce 4 -&gt; 5</li>
+                            </ul>
+                        </td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li><span className="ability">Ability: deal 2,600 damage to up to 2,000 Bloons within 70-unit radius
+                                     (can pop all Bloon types including Camo)</span></li>
+                                <li><span className="ability">Every 3rd ability use deals 3,900 damage</span></li>
+                                <li><span className="ability">Ability cooldown: 45s</span></li>
+                                <li>Pierce 5 -&gt; 7</li>
+                                <li>+Can pop Lead, but not Purple</li>
+                            </ul>
+                        </td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li><span className="ability">Ability damage 2,600 -&gt; 10,400</span></li>
+                                <li><span className="ability">Ability radius 70 units -&gt; 120 units</span></li>
+                                <li><span className="ability">Every 3rd ability use now deals 15,600 damage</span></li>
+                                <li><span className="ability">Ability cooldown 45s -&gt; 30s</span></li>
+                                <li>Damage 1 -&gt; 5</li>
+                                <li>Crit damage 10 -&gt; 50</li>
+                                <li>Pierce 7 -&gt; 12</li>
+                                <li>+10 range</li>
+                            </ul>
+                        </td>
                     </tr>
                 </tbody>
             </table>
@@ -126,12 +201,12 @@ export function SuperMain() {
             <table className="upgrade_table">
                 <thead>
                     <tr>
-                        <th className="top_row">Bottom Upgrade Path</th>
-                        <th className="top_row">Knockback</th>
-                        <th className="top_row">Ultravision</th>
-                        <th className="top_row">Dark Knight</th>
-                        <th className="top_row">Dark Champion</th>
-                        <th className="top_row">Legend of the Night</th>
+                        <th className="top_row path_label">Bottom Upgrade Path</th>
+                        <th className="top_row upgrade_button">Knockback</th>
+                        <th className="top_row upgrade_button">Ultravision</th>
+                        <th className="top_row upgrade_button">Dark Knight</th>
+                        <th className="top_row upgrade_button">Dark Champion</th>
+                        <th className="top_row upgrade_button last_upgrade_button">Legend of the Night</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -145,11 +220,59 @@ export function SuperMain() {
                     </tr>
                     <tr>
                         <th>Changes</th>
-                        <td>To be added</td>
-                        <td>To be added</td>
-                        <td>To be added</td>
-                        <td>To be added</td>
-                        <td>To be added</td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li><i>+Projectiles apply knockback effect for 0.5s</i></li>
+                                <li><i>While under knockback effect, MOABs move at 70% speed and Ceramics/Leads move at 40% speed</i></li>
+                                <li><i>All other Bloons move backwards at 25% speed while under knockback effect</i></li>
+                            </ul>
+                        </td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li>+Camo detection</li>
+                                <li>+3 range</li>
+                                <li>+1 Camo damage</li>
+                            </ul>
+                        </td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li>+2 MOAB damage</li>
+                                <li>Pierce 1 -&gt; 4</li>
+                                <li>Doubled projectile size</li>
+                                <li><i>Ceramic/Lead slow 40% speed -&gt; 10% speed</i></li>
+                                <li><span className="ability">Darkshift Ability: move Dark Knight to any valid position within range</span></li>
+                                <li><span className="ability">Ability cooldown: 20s</span></li>
+                            </ul>
+                        </td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li>Attack cooldown 0.045s -&gt; 0.0225s (alternates fire between both hands)</li>
+                                <li>Damage 1 -&gt; 2</li>
+                                <li>MOAB bonus damage 2 -&gt; 3</li>
+                                <li>Camo bonus damage 1 -&gt; 2</li>
+                                <li>+2 Ceramic damage</li>
+                                <li>Pierce 4 -&gt; 8</li>
+                                <li>+4 range</li>
+                                <li><i>+Blades can now bounce Glaive Ricochet-style to up to 6 targets (8 if projectile
+                                     lifespan buffed)</i></li>
+                                <li>Knockback now stops Lead/Ceramic movement completely</li>
+                                <li><span className="ability">Darkshift ability can now move Dark Champion to anywhere on the map</span></li>
+                                <li>+Can pop ALL Bloon types</li>
+                            </ul>
+                        </td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li>Damage 2 -&gt; 10</li>
+                                <li>MOAB bonus damage 3 -&gt; 25</li>
+                                <li>Camo bonus damage 2 -&gt; 4</li>
+                                <li>Ceramic bonus damage 2 -&gt; 4</li>
+                                <li>Pierce 8 -&gt; 16</li>
+                                <li>Blade bounce count 6 -&gt; 21</li>
+                                <li><i>+Black Hole passive ability: when Bloon leaks, prevent all loss of additional lives for 8s (does
+                                     not stop life loss from leaked BADs)</i></li>
+                                <li><i>Black Hole ability cooldown: 180s (can only activate twice per round)</i></li>
+                            </ul>
+                        </td>
                     </tr>
                 </tbody>
             </table>
