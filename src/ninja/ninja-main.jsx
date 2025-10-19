@@ -64,12 +64,12 @@ export function NinjaMain() {
             <table className="upgrade_table">
                 <thead>
                     <tr>
-                        <th className="top_row">Top Upgrade Path</th>
-                        <th className="top_row">Ninja Discipline</th>
-                        <th className="top_row">Sharp Shurikens</th>
-                        <th className="top_row">Double Shot</th>
-                        <th className="top_row">Bloonjitsu</th>
-                        <th className="top_row">Grandmaster Ninja</th>
+                        <th className="top_row path_label">Top Upgrade Path</th>
+                        <th className="top_row upgrade_button">Ninja Discipline</th>
+                        <th className="top_row upgrade_button">Sharp Shurikens</th>
+                        <th className="top_row upgrade_button">Double Shot</th>
+                        <th className="top_row upgrade_button">Bloonjitsu</th>
+                        <th className="top_row upgrade_button last_upgrade_button">Grandmaster Ninja</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -83,11 +83,34 @@ export function NinjaMain() {
                     </tr>
                     <tr>
                         <th>Changes</th>
-                        <td>To be added</td>
-                        <td>To be added</td>
-                        <td>To be added</td>
-                        <td>To be added</td>
-                        <td>To be added</td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li>Attack cooldown 0.62s -&gt; 0.434s</li>
+                            </ul>
+                        </td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li>Pierce 2 -&gt; 4</li>
+                            </ul>
+                        </td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li>Now throws 2 shurikens per attack in 18° cone</li>
+                            </ul>
+                        </td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li>Now throws 5 shurikens per attack in 45° cone</li>
+                            </ul>
+                        </td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li>Now throws 8 shurikens per attack in 72° cone</li>
+                                <li>Damage 1 -&gt; 2</li>
+                                <li>Attack cooldown 0.434s -&gt; 0.217s</li>
+                                <li>+10 range</li>
+                            </ul>
+                        </td>
                     </tr>
                 </tbody>
             </table>
@@ -95,12 +118,12 @@ export function NinjaMain() {
             <table className="upgrade_table">
                 <thead>
                     <tr>
-                        <th className="top_row">Middle Upgrade Path</th>
-                        <th className="top_row">Distraction</th>
-                        <th className="top_row">Counter-Espionage</th>
-                        <th className="top_row">Shinobi Tactics</th>
-                        <th className="top_row">Bloon Sabotage</th>
-                        <th className="top_row">Grand Saboteur</th>
+                        <th className="top_row path_label">Middle Upgrade Path</th>
+                        <th className="top_row upgrade_button">Distraction</th>
+                        <th className="top_row upgrade_button">Counter-Espionage</th>
+                        <th className="top_row upgrade_button">Shinobi Tactics</th>
+                        <th className="top_row upgrade_button">Bloon Sabotage</th>
+                        <th className="top_row upgrade_button last_upgrade_button">Grand Saboteur</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -114,11 +137,41 @@ export function NinjaMain() {
                     </tr>
                     <tr>
                         <th>Changes</th>
-                        <td>To be added</td>
-                        <td>To be added</td>
-                        <td>To be added</td>
-                        <td>To be added</td>
-                        <td>To be added</td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li><i>Shurikens have a 15% chance of sending Bloons backwards by 100-150 units</i></li>
+                                <li>Ceramics distracted by half of distance above, MOABs unaffected</li>
+                            </ul>
+                        </td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li><i>Bloons popped/damaged by Ninja Monkey lose Camo property</i></li>
+                            </ul>
+                        </td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li><i>Shinobi Buff: all in-range Shinobi Tactics ninjas (including this one) receive -8% attack
+                                     cooldown reduction, +8% pierce</i></li>
+                                <li><i>Shinobi buff stacks up to 20 times (when buffs maxed out, Shinobi Tactics ninjas receive ~5.3x
+                                     attack speed and 2.6x pierce)</i></li>
+                            </ul>
+                        </td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li><span className="ability">Ability: cut speed of all Bloons on screen in half for 15s</span></li>
+                                <li><span className="ability">Ability does not slow BADs/Boss Bloons</span></li>
+                                <li><span className="ability">Ability cooldown: 60s</span></li>
+                            </ul>
+                        </td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li><span className="ability">Sabotage ability duration 15s -&gt; 30s</span></li>
+                                <li><span className="ability">Deals damage to every newly spawned MOAB equal to 25% of said MOAB's health,
+                                     including BADs (aka all MOABs spawn with 75% health)</span></li>
+                                <li><span className="ability">While Sabotage ability active, all Shinobi Tactics ninjas receive +10
+                                     range and +2 MOAB damage</span></li>
+                            </ul>
+                        </td>
                     </tr>
                 </tbody>
             </table>
@@ -126,12 +179,12 @@ export function NinjaMain() {
             <table className="upgrade_table">
                 <thead>
                     <tr>
-                        <th className="top_row">Bottom Upgrade Path</th>
-                        <th className="top_row">Seeking Shuriken</th>
-                        <th className="top_row">Caltrops</th>
-                        <th className="top_row">Flash Bomb</th>
-                        <th className="top_row">Sticky Bomb</th>
-                        <th className="top_row">Master Bomber</th>
+                        <th className="top_row path_label">Bottom Upgrade Path</th>
+                        <th className="top_row upgrade_button">Seeking Shuriken</th>
+                        <th className="top_row upgrade_button">Caltrops</th>
+                        <th className="top_row upgrade_button">Flash Bomb</th>
+                        <th className="top_row upgrade_button">Sticky Bomb</th>
+                        <th className="top_row upgrade_button last_upgrade_button">Master Bomber</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -145,11 +198,52 @@ export function NinjaMain() {
                     </tr>
                     <tr>
                         <th>Changes</th>
-                        <td>To be added</td>
-                        <td>To be added</td>
-                        <td>To be added</td>
-                        <td>To be added</td>
-                        <td>To be added</td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li>Shurikens now home in on targets</li>
+                                <li>+7 range</li>
+                            </ul>
+                        </td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li><i>+Caltrop attack: places caltrops onto random points on track every 3.9s—1 damage, 6 pierce,
+                                     35s lifespan</i></li>
+                            </ul>
+                        </td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li><i>Every 4th shuriken replaced with Flash Bomb attack: 40-unit-radius explosion, 3 damage,
+                                     30 pierce</i></li>
+                                <li><i>Flash bombs stun non-MOAB Bloons for 1.3s</i></li>
+                                <li><i>Flash bombs can pop all Bloon types</i></li>
+                                <li>Shuriken pierce 2 -&gt; 4</li>
+                                <li>+4 Stunned Bloon shuriken damage</li>
+                            </ul>
+                        </td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li><i>+Sticky Bomb attack: stick bomb to MOAB-class Bloon, exploding 3s later—450 damage to main target,
+                                     100 explosion damage to surrounding Bloons, 10 explosion pierce</i></li>
+                                <li><i>Sticky Bomb attack cooldown: 4.5s</i></li>
+                                <li><i>Sticky Bombs/explosion can pop all Bloon types</i></li>
+                                <li>Shurikens deal +4 damage to MOABs with undetonated Sticky Bombs bound to them</li>
+                            </ul>
+                        </td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li><i>Sticky Bomb attack cooldown 4.5s -&gt; 2.25s</i></li>
+                                <li><i>Sticky Bomb attack now has infinite range</i></li>
+                                <li><i>Sticky Bomb main target damage 450 -&gt; 3,000</i></li>
+                                <li><i>Sticky Bomb explosion damage 100 -&gt; 600</i></li>
+                                <li><i>+Sticky Bombs stun targeted MOABs for 1s when first attached</i></li>
+                                <li><i>+Flash Bombs can stun MOABs for 0.325s</i></li>
+                                <li><i>Flash Bomb damage 3 -&gt; 10</i></li>
+                                <li><i>Caltrop damage 1 -&gt; 5</i></li>
+                                <li><i>+5 Ceramic damage (caltrops)</i></li>
+                                <li>Shuriken Stunned Bloon bonus damage 4 -&gt; 19</li>
+                                <li>Shuriken Stickied-MOAB bonus damage 4 -&gt; 19</li>
+                            </ul>
+                        </td>
                     </tr>
                 </tbody>
             </table>
