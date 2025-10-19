@@ -64,12 +64,12 @@ export function SpikeFactoryMain() {
             <table className="upgrade_table">
                 <thead>
                     <tr>
-                        <th className="top_row">Top Upgrade Path</th>
-                        <th className="top_row">Bigger Stacks</th>
-                        <th className="top_row">White Hot Spikes</th>
-                        <th className="top_row">Spiked Balls</th>
-                        <th className="top_row">Spiked Mines</th>
-                        <th className="top_row">Super Mines</th>
+                        <th className="top_row path_label">Top Upgrade Path</th>
+                        <th className="top_row upgrade_button">Bigger Stacks</th>
+                        <th className="top_row upgrade_button">White Hot Spikes</th>
+                        <th className="top_row upgrade_button">Spiked Balls</th>
+                        <th className="top_row upgrade_button">Spiked Mines</th>
+                        <th className="top_row upgrade_button last_upgrade_button">Super Mines</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -83,11 +83,52 @@ export function SpikeFactoryMain() {
                     </tr>
                     <tr>
                         <th>Changes</th>
-                        <td>To be added</td>
-                        <td>To be added</td>
-                        <td>To be added</td>
-                        <td>To be added</td>
-                        <td>To be added</td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li>Pierce 5 -&gt; 10</li>
+                            </ul>
+                        </td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li>+Can pop Lead</li>
+                            </ul>
+                        </td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li>Damage 1 -&gt; 2</li>
+                                <li>+3 Ceramic damage</li>
+                                <li>+1 Fortified damage</li>
+                                <li>Pierce 10 -&gt; 11</li>
+                            </ul>
+                        </td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li><i>Spike balls replaced with spike mines: when mines lose all their spikes, they explode, setting
+                                     Bloons on fire</i></li>
+                                <li><i>Explosion stats: 10 damage, +2 Ceramic damage, +3 Fortified damage, 30 pierce
+                                     (cannot pop Black)</i></li>
+                                <li><i>Burn stats: 5 damage/s for 6s (cannot burn Purple)</i></li>
+                                <li>Spike Ceramic bonus damage 3 -&gt; 6</li>
+                                <li>Spike Fortified bonus damage 1 -&gt; 3</li>
+                            </ul>
+                        </td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li>Attack cooldown 1.75s -&gt; 3.5s</li>
+                                <li><i>+Every time a spike is depleted, non-burning mini explosion is created</i></li>
+                                <li><i>Mini-explosion stats: 20 damage, +15 Ceramic damage, +5 Fortified damage, 30 pierce</i></li>
+                                <li><i>Mine explosion damage 10 -&gt; 1,000</i></li>
+                                <li><i>Mine explosion Ceramic bonus damage 2 -&gt; 500</i></li>
+                                <li><i>Mine explosion Fortified bonus damage 3 -&gt; 250</i></li>
+                                <li><i>Mine explosion pierce 30 -&gt; 60</i></li>
+                                <li><i>Mine explosion radius more than tripled</i></li>
+                                <li><i>Mine explosion burn damage over time 5 damage/s -&gt; 1,250 damage/s</i></li>
+                                <li>Spike damage 2 -&gt; 50</li>
+                                <li>Spike Ceramic bonus damage 6 -&gt; 30</li>
+                                <li>Spike Fortified bonus damage 3 -&gt; 15</li>
+                                <li>+Explosions/mini-explosions can pop all Bloon types</li>
+                            </ul>
+                        </td>
                     </tr>
                 </tbody>
             </table>
@@ -95,12 +136,12 @@ export function SpikeFactoryMain() {
             <table className="upgrade_table">
                 <thead>
                     <tr>
-                        <th className="top_row">Middle Upgrade Path</th>
-                        <th className="top_row">Faster Production</th>
-                        <th className="top_row">Even Faster Production</th>
-                        <th className="top_row">MOAB SHREDR</th>
-                        <th className="top_row">Spike Storm</th>
-                        <th className="top_row">Carpet of Spikes</th>
+                        <th className="top_row path_label">Middle Upgrade Path</th>
+                        <th className="top_row upgrade_button">Faster Production</th>
+                        <th className="top_row upgrade_button">Even Faster Production</th>
+                        <th className="top_row upgrade_button">MOAB SHREDR</th>
+                        <th className="top_row upgrade_button">Spike Storm</th>
+                        <th className="top_row upgrade_button last_upgrade_button">Carpet of Spikes</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -114,11 +155,39 @@ export function SpikeFactoryMain() {
                     </tr>
                     <tr>
                         <th>Changes</th>
-                        <td>To be added</td>
-                        <td>To be added</td>
-                        <td>To be added</td>
-                        <td>To be added</td>
-                        <td>To be added</td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li>Attack cooldown 1.75s -&gt; 1.4s</li>
+                            </ul>
+                        </td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li>Attack cooldown 1.4s -&gt; 1.05s</li>
+                            </ul>
+                        </td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li>+7 MOAB damage/spike (not per spike pile)</li>
+                            </ul>
+                        </td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li><span className="ability">Ability: produce/send 1 spike pile torandom position on all available lanes
+                                     every 0.04s for 2s—ability spikes last only 9s-11s</span></li>
+                                <li><span className="ability">Ability cooldown: 50s</span></li>
+                            </ul>
+                        </td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li><span className="ability">+In addition to activated ability, passive Spike Storm ability activates
+                                     every 15s</span></li>
+                                <li><span className="ability">Ability spike duration 9s-11s -&gt; 18s-22s</span></li>
+                                <li>Spike damage 1 -&gt; 3</li>
+                                <li>Pierce 5 -&gt; 10</li>
+                                <li>Attack cooldown 1.05s -&gt; 0.49s</li>
+                                <li>+16 range</li>
+                            </ul>
+                        </td>
                     </tr>
                 </tbody>
             </table>
@@ -126,12 +195,12 @@ export function SpikeFactoryMain() {
             <table className="upgrade_table">
                 <thead>
                     <tr>
-                        <th className="top_row">Bottom Upgrade Path</th>
-                        <th className="top_row">Long Reach</th>
-                        <th className="top_row">Smart Spikes</th>
-                        <th className="top_row">Long Life Spikes</th>
-                        <th className="top_row">Deadly Spikes</th>
-                        <th className="top_row">Perma-spike</th>
+                        <th className="top_row path_label">Bottom Upgrade Path</th>
+                        <th className="top_row upgrade_button">Long Reach</th>
+                        <th className="top_row upgrade_button">Smart Spikes</th>
+                        <th className="top_row upgrade_button">Long Life Spikes</th>
+                        <th className="top_row upgrade_button">Deadly Spikes</th>
+                        <th className="top_row upgrade_button last_upgrade_button">Perma-spike</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -145,11 +214,46 @@ export function SpikeFactoryMain() {
                     </tr>
                     <tr>
                         <th>Changes</th>
-                        <td>To be added</td>
-                        <td>To be added</td>
-                        <td>To be added</td>
-                        <td>To be added</td>
-                        <td>To be added</td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li>+8 range</li>
+                                <li>Spike pile lifespan doubled</li>
+                            </ul>
+                        </td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li>+Attack speed quadrupled for first 3s of each round</li>
+                                <li><i>+4 new targeting options (see below):</i></li>
+                                <li><i>+Close Targeting (dispense spikes onto in-range track spot closest to Spike Factory)</i></li>
+                                <li><i>+Smart Targeting (dispense spikes onto in-range track spots closest to exit. If there are multiple
+                                     paths, prioritize placing spikes on track w/ Bloons closest to exit)</i></li>
+                                <li><i>+Set Target Targeting (user specifies where to dispense all spike piles)</i></li>
+                                <li><i>+Automatic Targeting (dispense spikes onto track point furthest from track exit. If Bloons are in
+                                     range, dispense spikes directly on top of them)</i></li>
+                            </ul>
+                        </td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li><i>Spike piles can carry over one round</i></li>
+                                <li>+40% spike pile lifespan</li>
+                            </ul>
+                        </td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li>Damage 1 -&gt; 3</li>
+                                <li><i>Spike piles can carry over two rounds</i></li>
+                            </ul>
+                        </td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li>Attack cooldown 1.75s -&gt; 6.0625s</li>
+                                <li>Damage 3 -&gt; 10</li>
+                                <li>Pierce 5 -&gt; 50</li>
+                                <li>Spike piles now last up to 5 minutes</li>
+                                <li><i>Spike piles can carry over 3 rounds</i></li>
+                                <li>Attack speed now quadruples for 10s instead of 3s at start of each round</li>
+                            </ul>
+                        </td>
                     </tr>
                 </tbody>
             </table>

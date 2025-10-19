@@ -64,12 +64,12 @@ export function SubMain() {
             <table className="upgrade_table">
                 <thead>
                     <tr>
-                        <th className="top_row">Top Upgrade Path</th>
-                        <th className="top_row">Longer Range</th>
-                        <th className="top_row">Advanced Intel</th>
-                        <th className="top_row">Submerge and Support</th>
-                        <th className="top_row">Bloontonium Reactor</th>
-                        <th className="top_row">Energizer</th>
+                        <th className="top_row path_label">Top Upgrade Path</th>
+                        <th className="top_row upgrade_button">Longer Range</th>
+                        <th className="top_row upgrade_button">Advanced Intel</th>
+                        <th className="top_row upgrade_button">Submerge and Support</th>
+                        <th className="top_row upgrade_button">Bloontonium Reactor</th>
+                        <th className="top_row upgrade_button last_upgrade_button">Energizer</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -83,11 +83,43 @@ export function SubMain() {
                     </tr>
                     <tr>
                         <th>Changes</th>
-                        <td>To be added</td>
-                        <td>To be added</td>
-                        <td>To be added</td>
-                        <td>To be added</td>
-                        <td>To be added</td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li>+10 range</li>
+                            </ul>
+                        </td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li><i>+Can now target Bloons in range of other towers (unless map obstacles block view)</i></li>
+                                <li><i>+Camo detection (if tower it "sees" through can see Camo)</i></li>
+                            </ul>
+                        </td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li><i>+Submerge targeting option: Sub stops all dart-based attacks and instead removes Camo from up to
+                                     100 in-range Bloons every 1.5s</i></li>
+                            </ul>
+                        </td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li>Submerge pulse cooldown 1.5s -&gt; 0.28s</li>
+                                <li>Submerge pulses now deal 1 damage each (can pop Frozen but not Lead)</li>
+                                <li>Submerge pulse damage pierce 50 (decamo pierce remains 100)</li>
+                                <li><i>+Water towers in range have 15% shorter ability cooldowns</i></li>
+                                <li>Dart damage 1 -&gt; 2</li>
+                            </ul>
+                        </td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li><i>+All towers on screen have 20% shorter ability cooldowns</i></li>
+                                <li><i>In-range water tower ability cooldown buff -15% reduction -&gt; -40% reduction</i></li>
+                                <li><i>In-range Heroes gain +50% more XP</i></li>
+                                <li>Submerge pulse damage/decamo pierce increased to 1,000</li>
+                                <li> Submerge damage 1 -&gt; 5</li>
+                                <li>+5 Ceramic damage (submerge pulse)</li>
+                                <li>Dart damage 2 -&gt; 5</li>
+                            </ul>
+                        </td>
                     </tr>
                 </tbody>
             </table>
@@ -95,12 +127,12 @@ export function SubMain() {
             <table className="upgrade_table">
                 <thead>
                     <tr>
-                        <th className="top_row">Middle Upgrade Path</th>
-                        <th className="top_row">Barbed Darts</th>
-                        <th className="top_row">Heat-tipped Darts</th>
-                        <th className="top_row">Ballistic Missile</th>
-                        <th className="top_row">First Strike Capability</th>
-                        <th className="top_row">Pre-emptive Strike</th>
+                        <th className="top_row path_label">Middle Upgrade Path</th>
+                        <th className="top_row upgrade_button">Barbed Darts</th>
+                        <th className="top_row upgrade_button">Heat-tipped Darts</th>
+                        <th className="top_row upgrade_button">Ballistic Missile</th>
+                        <th className="top_row upgrade_button">First Strike Capability</th>
+                        <th className="top_row upgrade_button last_upgrade_button">Pre-emptive Strike</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -114,11 +146,45 @@ export function SubMain() {
                     </tr>
                     <tr>
                         <th>Changes</th>
-                        <td>To be added</td>
-                        <td>To be added</td>
-                        <td>To be added</td>
-                        <td>To be added</td>
-                        <td>To be added</td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li>Pierce 2 -&gt; 5</li>
+                            </ul>
+                        </td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li>+Can pop Lead</li>
+                            </ul>
+                        </td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li>+Ballistic Missile secondary attack: 3 damage, +3 Ceramic damage, +5 MOAB damage, 40 pierce,
+                                     1s attack cooldown</li>
+                                <li>Missiles ignore map obstacles</li>
+                                <li>+8 range</li>
+                                <li>Missiles cannot pop Black Bloons</li>
+                            </ul>
+                        </td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li><span className="ability">Ability: deal 10,000 damage to strongest Bloon on screen & 350 explosion
+                                     damage to up to 80 nearby Bloons</span></li>
+                                <li><span className="ability">Ability cooldown: 60s</span></li>
+                            </ul>
+                        </td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li><i>+Tertiary pre-emptive missile attack: deals 750 damage to each new MOAB that spawns</i></li>
+                                <li><span className="ability">Ability damage 10,000 -&gt; 20,000</span></li>
+                                <li><span className="ability">Ability explosion damage 350 -&gt; 1,000</span></li>
+                                <li><span className="ability">Ability cooldown 60s -&gt; 45s</span></li>
+                                <li>Ballistic missile damage 3 -&gt; 10</li>
+                                <li>Ballistic missile Ceramic bonus damage 3 -&gt; 20</li>
+                                <li>Ballistic missile MOAB bonus damage 5 -&gt; 15</li>
+                                <li>Ballistic missile attack cooldown 1s -&gt; 0.5s</li>
+                                <li>Increased Ballistic missile explosion radius</li>
+                            </ul>
+                        </td>
                     </tr>
                 </tbody>
             </table>
@@ -126,12 +192,12 @@ export function SubMain() {
             <table className="upgrade_table">
                 <thead>
                     <tr>
-                        <th className="top_row">Bottom Upgrade Path</th>
-                        <th className="top_row">Twin Guns</th>
-                        <th className="top_row">Airburst Darts</th>
-                        <th className="top_row">Triple Guns</th>
-                        <th className="top_row">Armor Piercing Darts</th>
-                        <th className="top_row">Sub Commander</th>
+                        <th className="top_row path_label">Bottom Upgrade Path</th>
+                        <th className="top_row upgrade_button">Twin Guns</th>
+                        <th className="top_row upgrade_button">Airburst Darts</th>
+                        <th className="top_row upgrade_button">Triple Guns</th>
+                        <th className="top_row upgrade_button">Armor Piercing Darts</th>
+                        <th className="top_row upgrade_button last_upgrade_button">Sub Commander</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -145,11 +211,39 @@ export function SubMain() {
                     </tr>
                     <tr>
                         <th>Changes</th>
-                        <td>To be added</td>
-                        <td>To be added</td>
-                        <td>To be added</td>
-                        <td>To be added</td>
-                        <td>To be added</td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li>Attack cooldown 0.75s -&gt; 0.375s</li>
+                            </ul>
+                        </td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li>Pierce 2 -&gt; 1</li>
+                                <li><i>+Darts now split into 3 airburst darts (1 damage, 2 pierce)</i></li>
+                            </ul>
+                        </td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li>Attack cooldown 0.375s -&gt; 0.2512s</li>
+                            </ul>
+                        </td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li>Damage 1 -&gt; 2</li>
+                                <li>+2 MOAB damage (main dart)</li>
+                                <li>+1 MOAB damage (airburst dart)</li>
+                                <li>+1 Fortified damage (main/airburst dart)</li>
+                                <li>Airburst dart pierce 2 -&gt; 5</li>
+                            </ul>
+                        </td>
+                        <td className="change_cell">
+                            <ul className="change_list">
+                                <li>Attack cooldown 0.2512s -&gt; 0.1256s</li>
+                                <li>Airburst dart count 3 -&gt; 5</li>
+                                <li><i>+Sub Commander buff: all Monkey Subs in range (including itself) get 2x damage, 2x bonus damage
+                                     (if any), & +4 pierce</i></li>
+                            </ul>
+                        </td>
                     </tr>
                 </tbody>
             </table>
