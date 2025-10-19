@@ -72,12 +72,12 @@ export function IceMain() {
             <table className="upgrade_table">
                 <thead>
                     <tr>
-                        <th className="top_row">Top Upgrade Path</th>
-                        <th className="top_row">Permafrost</th>
-                        <th className="top_row">Cold Snap</th>
-                        <th className="top_row">Ice Shards</th>
-                        <th className="top_row">Embrittlement</th>
-                        <th className="top_row">Super Brittle</th>
+                        <th className="top_row path_label">Top Upgrade Path</th>
+                        <th className="top_row upgrade_button">Permafrost</th>
+                        <th className="top_row upgrade_button">Cold Snap</th>
+                        <th className="top_row upgrade_button">Ice Shards</th>
+                        <th className="top_row upgrade_button">Embrittlement</th>
+                        <th className="top_row upgrade_button last_upgrade_button">Super Brittle</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -91,11 +91,43 @@ export function IceMain() {
                     </tr>
                     <tr>
                         <th>Changes</th>
-                        <td>To be added</td>
-                        <td>To be added</td>
-                        <td>To be added</td>
-                        <td>To be added</td>
-                        <td>To be added</td>
+                        <td class="change_cell">
+                            <ul class="change_list">
+                                <li><i>Bloons popped by Ice Monkey move at 50% speed (until they lose 2 more layers)</i></li>
+                            </ul>
+                        </td>
+                        <td class="change_cell">
+                            <ul class="change_list">
+                                <li>+Can pop Camo/Lead</li>
+                            </ul>
+                        </td>
+                        <td class="change_cell">
+                            <ul class="change_list">
+                                <li><i>When frozen Bloons pop, 3 ice shards fly out in 360° area (2 damage, 3 pierce per shard)</i></li>
+                                <li>+5 range</li>
+                                <li><i>Attacks remove Camo/Regrow</i></li>
+                            </ul>
+                        </td>
+                        <td class="change_cell">
+                            <ul class="change_list">
+                                <li><i>Hit Bloons become brittle: hit Bloons temporariliy lose Lead/Frozen properties and take +1
+                                     additional damage for 2s</i></li>
+                                <li><i>Ice shards now remove Camo/Regrow</i></li>
+                                <li>Layers frozen 2 -&gt; 3</li>
+                            </ul>
+                        </td>
+                        <td class="change_cell">
+                            <ul class="change_list">
+                                <li><i>Brittle Bloons now take +4 additional damage</i></li>
+                                <li><i>Bloons become brittle for 3s instead of 2s</i></li>
+                                <li><i>Frozen Bloons now emit 6 ice shards, each dealing 10 damage instead of 2</i></li>
+                                <li>+Can now apply permafrost to MOABs (-25% speed reduction)</li>
+                                <li>Damage 1 -&gt; 5</li>
+                                <li>+5 Ceramic damage</li>
+                                <li>Attack cooldown 2.4s -&gt; 1.2s</li>
+                                <li>+Can pop ALL Bloon types</li>
+                            </ul>
+                        </td>
                     </tr>
                 </tbody>
             </table>
@@ -103,12 +135,12 @@ export function IceMain() {
             <table className="upgrade_table">
                 <thead>
                     <tr>
-                        <th className="top_row">Middle Upgrade Path</th>
-                        <th className="top_row">Enhanced Freeze</th>
-                        <th className="top_row">Deep Freeze</th>
-                        <th className="top_row">Arctic Wind</th>
-                        <th className="top_row">Snowstorm</th>
-                        <th className="top_row">Absolute Zero</th>
+                        <th className="top_row path_label">Middle Upgrade Path</th>
+                        <th className="top_row upgrade_button">Enhanced Freeze</th>
+                        <th className="top_row upgrade_button">Deep Freeze</th>
+                        <th className="top_row upgrade_button">Arctic Wind</th>
+                        <th className="top_row upgrade_button">Snowstorm</th>
+                        <th className="top_row upgrade_button last_upgrade_button">Absolute Zero</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -122,11 +154,50 @@ export function IceMain() {
                     </tr>
                     <tr>
                         <th>Changes</th>
-                        <td>To be added</td>
-                        <td>To be added</td>
-                        <td>To be added</td>
-                        <td>To be added</td>
-                        <td>To be added</td>
+                        <td class="change_cell">
+                            <ul class="change_list">
+                                <li>Freeze duration 1.5s -&gt; 1.75s</li>
+                                <li>Attack cooldown 2.4s -&gt; 1.8s</li>
+                            </ul>
+                        </td>
+                        <td class="change_cell">
+                            <ul class="change_list">
+                                <li>Freeze duration 1.75s -&gt; 2.2s</li>
+                                <li>Layers frozen 2 -&gt; 3</li>
+                                <li>Pierce 40 -&gt; 45</li>
+                            </ul>
+                        </td>
+                        <td class="change_cell">
+                            <ul class="change_list">
+                                <li>Ceramic freeze duration penalty removed</li>
+                                <li><i>Cold Aura: land-based Monkeys in Ice Monkey's radius can be placed on water, and in-range Bloons
+                                     slowed by 40% </i></li>
+                            </ul>
+                        </td>
+                        <td class="change_cell">
+                            <ul class="change_list">
+                                <li>+10 range</li>
+                                <li><span class="ability">Ability: deal 1 damage to & freeze all Bloons on Screen (except Lead)</span></li>
+                                <li><span class="ability">Ability freeze duration: 6s (3s for White/Zebra/Camo)</span></li>
+                                <li><span class="ability">Ability cooldown: 30s</span></li>
+                            </ul>
+                        </td>
+                        <td class="change_cell">
+                            <ul class="change_list">
+                                <li>+10 range</li>
+                                <li>Layers frozen 3 -&gt; 8</li>
+                                <li>Pierce 45 -&gt; 300</li>
+                                <li><i>+Global freeze attack (triggers after every main attack): damages/freezes all non-MOAB Bloons on
+                                     screen for 0.6s—1 damage, +3 Ceramic damage, 999 pierce</i></li>
+                                <li>Main attack now damages MOABs</li>
+                                <li><i>Arctic Wind now slows Bloons by 60% and slows MOABs by 30%</i></li>
+                                <li><span class="ability">Ability now freezes/pops Lead</span></li>
+                                <li><span class="ability">Ability cooldown 30s -&gt; 25s</span></li>
+                                <li><span class="ability">Ability freeze duration 6s -&gt; 10s</span></li>
+                                <li><span class="ability">+4 Frozen damage (ability)</span></li>
+                                <li><span class="ability">Ability now boosts attack speed of all Ice Monkeys by 50% for 10s</span></li>
+                            </ul>
+                        </td>
                     </tr>
                 </tbody>
             </table>
@@ -134,12 +205,12 @@ export function IceMain() {
             <table className="upgrade_table">
                 <thead>
                     <tr>
-                        <th className="top_row">Bottom Upgrade Path</th>
-                        <th className="top_row">Larger Radius</th>
-                        <th className="top_row">Re-Freeze</th>
-                        <th className="top_row">Cryo Cannon</th>
-                        <th className="top_row">Icicles</th>
-                        <th className="top_row">Icicle Impale</th>
+                        <th className="top_row path_label">Bottom Upgrade Path</th>
+                        <th className="top_row upgrade_button">Larger Radius</th>
+                        <th className="top_row upgrade_button">Re-Freeze</th>
+                        <th className="top_row upgrade_button">Cryo Cannon</th>
+                        <th className="top_row upgrade_button">Icicles</th>
+                        <th className="top_row upgrade_button last_upgrade_button">Icicle Impale</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -153,11 +224,40 @@ export function IceMain() {
                     </tr>
                     <tr>
                         <th>Changes</th>
-                        <td>To be added</td>
-                        <td>To be added</td>
-                        <td>To be added</td>
-                        <td>To be added</td>
-                        <td>To be added</td>
+                        <td class="change_cell">
+                            <ul class="change_list">
+                                <li>+7 range</li>
+                            </ul>
+                        </td>
+                        <td class="change_cell">
+                            <ul class="change_list">
+                                <li>+Can now pop/refreeze Frozen Bloons</li>
+                            </ul>
+                        </td>
+                        <td class="change_cell">
+                            <ul class="change_list">
+                                <li>+19 range</li>
+                                <li>Removed Ceramic freeze duration penalty</li>
+                                <li>Radial attack replaced wtih cannon attack: 1.2s attack cooldown & 20-unit blast radius</li>
+                                <li>Gain First/Last/Strong/Close targeting options</li>
+                            </ul>
+                        </td>
+                        <td class="change_cell">
+                            <ul class="change_list">
+                                <li>Attack cooldown 1.2s -&gt; 0.75s</li>
+                                <li>Damage 1 -&gt; 2</li>
+                                <li>+Can damage MOABs (but not freeze them)</li>
+                                <li>+8 MOAB damage</li>
+                                <li><i>Hit Bloons grow icicles, dealing 3 damage to up to 3 Bloons while frozen</i></li>
+                            </ul>
+                        </td>
+                        <td class="change_cell">
+                            <ul class="change_list">
+                                <li>+Can now freeze MOABs</li>
+                                <li>MOAB bonus damage 8 -&gt; 48</li>
+                                <li>+Can pop White</li>
+                            </ul>
+                        </td>
                     </tr>
                 </tbody>
             </table>
