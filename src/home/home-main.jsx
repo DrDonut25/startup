@@ -24,6 +24,10 @@ export function HomeMain({ userName, authState, onAuthChange }) {
             )}
         </div>
 
+        {authState === AuthState.Unauthenticated && (
+            <div id="tower_selection"></div>
+        )}
+
         {authState === AuthState.Authenticated && (
             <div id="tower_selection">
                 <h2 id="tower_heading">Select a Tower:</h2>

@@ -21,8 +21,8 @@ export function Unauthenticated(props) {
         <>
             <form>
                 <div>
-                    <span>Email </span>
-                    <input type ="text" onChange={(e) => setUserName(e.target.value)} placeholder="name@emailname.com"/>
+                    <span>Username </span>
+                    <input type ="text" onChange={(e) => setUserName(e.target.value)} placeholder="myUsername"/>
                 </div>
                 <div>
                     <span>Password </span>

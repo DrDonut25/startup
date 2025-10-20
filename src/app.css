@@ -27,18 +27,32 @@ main {
 
 #login {
     flex: 1;
+    text-align: center;
     flex-direction: column;
     background-color:slategray;
     align-content: center;
 }
 
+form div {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.username {
+  color: gold;
+  font-size: 36pt;
+}
+
 .secondary_button {
+  margin-left: 0.5em;
+  border-color: lightgray;
   background-color: lightgray;
   color: rgb(65, 65, 65);
 }
 
 .secondary_button:hover {
   background-color: rgb(171, 171, 171);
+  border-color: rgb(171, 171, 171);
   color: azure;
 }
 

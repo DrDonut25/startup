@@ -8,7 +8,10 @@ export function Authenticated(props) {
 
     return (
         <div>
-            <button className="btn btn-secondary secondary_button" onClick={() => logout()}>Logout</button>
+            <div className="username">{props.userName}</div>
+            <div>
+                <button className="btn btn-secondary secondary_button" onClick={() => logout()}>Logout</button>
+            </div>
         </div>
     );
 }
