@@ -32,8 +32,18 @@ main {
     align-content: center;
 }
 
-#signup {
+.secondary_button {
   background-color: lightgray;
+  color: rgb(65, 65, 65);
+}
+
+.secondary_button:hover {
+  background-color: rgb(171, 171, 171);
+  color: azure;
+}
+
+.secondary_button:disabled {
+  background-color: rgb(151, 151, 151);
 }
 
 #tower_heading {

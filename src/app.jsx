@@ -7,6 +7,7 @@ import { BrowserRouter, NavLink, Route, Routes } from 'react-router-dom';
 import { HomeHeader } from './home/home-header';
 import { HomeMain } from './home/home-main';
 import { HomeFooter } from './home/home-footer';
+import { AuthState } from './home/authState';
 
 import { AboutHeader } from './about/about-header';
 import { AboutMain } from './about/about-main';
@@ -113,6 +114,10 @@ import { WizardMain } from './wizard/wizard-main';
 import { WizardFooter } from './wizard/wizard-footer';
 
 export default function App() {
+  const [userName, setUserName] = React.useState(localStorage.getItem('userName') || '');
+  const currentAuthState = userName ? AuthState.Authenticated : AuthState.Unauthenticated;
+  const [authState, setAuthState] = React.useState(currentAuthState);
+  
   return (
     <BrowserRouter>
       <div className="body">
@@ -148,7 +153,17 @@ export default function App() {
         </Routes>
 
         <Routes>
-          <Route path='/' element={<HomeMain />} exact />
+          <Route path='/' element={
+            <HomeMain
+              userName={userName}
+              authState={authState}
+              onAuthChange={(userName, authState) => {
+                setAuthState(authState);
+                setUserName(userName);
+              }}
+            />
+          } exact 
+          />
           <Route path='/about' element={<AboutMain />} />
           <Route path='/ace' element={<AceMain />} />
           <Route path='/alchemist' element={<AlchemistMain />} />
