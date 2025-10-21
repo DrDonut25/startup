@@ -3,6 +3,14 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 export function AboutMain() {
+  const [quote, setQuote] = React.useState("Loading quote...");
+  const [author, setAuthor] = React.useState("Loading author...");
+
+  React.useEffect(() => {
+    setQuote("Words are cheap. Show me the code.");
+    setAuthor("Linus Torvalds");
+  }, []);
+  
   return (
     <main id="about" className="container-fluid text-center">
         <div id="picture" className="picture-box">
@@ -17,7 +25,7 @@ export function AboutMain() {
             each tower and their upgrades, particularly the ones the game hides from you. Good luck!
         </p>
 
-        <div id="quote">"Words are cheap. Show me the code." - Linus Torvalds</div>
+        <div id="quote">{quote} - {author}</div>
 
         <br/>
 
