@@ -7,18 +7,58 @@ export function AceMain() {
     const [middleHeaders, setMiddleHeaders] = React.useState(Array(5).fill(false));
     const [bottomHeaders, setBottomHeaders] = React.useState(Array(5).fill(false));
     
+    /*toggleUpgrade() selects a tower upgrade, simulating purchase of upgrade in BTD6. Only two of the three paths can have selected
+    upgrades at any given time, and only one upgrade path can select tier 3 or higher. Once a tier 3 upgrade is "purchased", block out
+    all tier 3+ upgrades on the other two paths. Once one or more upgrades has been selected from two of the path tables, block out the
+    third table. Block out=lock to false/off state.*/
     function toggleUpgrade(path, index) {
         if (path === 'top') {
             const newTopHeaders = topHeaders.slice();
             newTopHeaders[index] = !newTopHeaders[index];
+            
+            //If toggled upgrade now true, set all previous headers to true; set all subsequent headers to false when upgrade now false
+            if (newTopHeaders[index]) {
+                for (let i = index - 1; i >= 0; i--) {
+                    newTopHeaders[i] = true;
+                }
+            } else {
+                for (let i = index + 1; i < 5; i++) {
+                    newTopHeaders[i] = false;
+                }
+            }
+            
             setTopHeaders(newTopHeaders);
         } else if (path === 'middle') {
             const newMiddleHeaders = middleHeaders.slice();
             newMiddleHeaders[index] = !newMiddleHeaders[index];
+            
+            //If toggled upgrade now true, set all previous headers to true; set all subsequent headers to false when upgrade now false
+            if (newMiddleHeaders[index]) {
+                for (let i = index - 1; i >= 0; i--) {
+                    newMiddleHeaders[i] = true;
+                }
+            } else {
+                for (let i = index + 1; i < 5; i++) {
+                    newMiddleHeaders[i] = false;
+                }
+            }
+            
             setMiddleHeaders(newMiddleHeaders);
         } else if (path === 'bottom') {
             const newBottomHeaders = bottomHeaders.slice();
             newBottomHeaders[index] = !newBottomHeaders[index];
+            
+            //If toggled upgrade now true, set all previous headers to true; set all subsequent headers to false when upgrade now false
+            if (newBottomHeaders[index]) {
+                for (let i = index - 1; i >= 0; i--) {
+                    newBottomHeaders[i] = true;
+                }
+            } else {
+                for (let i = index + 1; i < 5; i++) {
+                    newBottomHeaders[i] = false;
+                }
+            }
+            
             setBottomHeaders(newBottomHeaders);
         }
     }
@@ -26,13 +66,24 @@ export function AceMain() {
     React.useEffect(() => {
             topHeaders.forEach((isSelected, index) => {
                 const topButton = document.getElementById(`top${index}`);
+                const topChangeList = document.getElementById(`top_change_${index}`);
+                
                 if (isSelected) {
+                    //Switch out header class to display selection status
                     topButton.classList.remove('upgrade_button_off');
                     topButton.classList.add('upgrade_button_on');
+                    
+                    //Make changes for this upgrade visible
+                    topChangeList.style.visibility = "visible";
                 } else {
+                    //Switch out header class to display selection status
                     topButton.classList.add('upgrade_button_off');
                     topButton.classList.remove('upgrade_button_on');
+                    
+                    //Hide changes for this upgrade
+                    topChangeList.style.visibility = "hidden";
                 }
+                
                 //Apply same changes to last upgrade button
                 if (index == 4) {
                     if (isSelected) {
@@ -46,13 +97,24 @@ export function AceMain() {
             });
             middleHeaders.forEach((isSelected, index) => {
                 const middleButton = document.getElementById(`middle${index}`);
+                const middleChangeList = document.getElementById(`middle_change_${index}`);
+                
                 if (isSelected) {
+                    //Switch out header class to display selection status
                     middleButton.classList.remove('upgrade_button_off');
                     middleButton.classList.add('upgrade_button_on');
+                    
+                    //Make changes for this upgrade visible
+                    middleChangeList.style.visibility = "visible";
                 } else {
+                    //Switch out header class to display selection status
                     middleButton.classList.add('upgrade_button_off');
                     middleButton.classList.remove('upgrade_button_on');
+
+                    //Hide changes for this upgrade
+                    middleChangeList.style.visibility = "hidden";
                 }
+                
                 //Apply same changes to last upgrade button
                 if (index == 4) {
                     if (isSelected) {
@@ -66,13 +128,24 @@ export function AceMain() {
             });
             bottomHeaders.forEach((isSelected, index) => {
                 const bottomButton = document.getElementById(`bottom${index}`);
+                const bottomChangeList = document.getElementById(`bottom_change_${index}`);
+                
                 if (isSelected) {
+                    //Switch out header class to display selection status
                     bottomButton.classList.remove('upgrade_button_off');
                     bottomButton.classList.add('upgrade_button_on');
+
+                    //Make changes for this upgrade visible
+                    bottomChangeList.style.visibility = "visible";
                 } else {
+                    //Switch out header class to display selection status
                     bottomButton.classList.add('upgrade_button_off');
                     bottomButton.classList.remove('upgrade_button_on');
+
+                    //Hide changes for this upgrade
+                    bottomChangeList.style.visibility = "hidden";
                 }
+                
                 //Apply same changes to last upgrade button
                 if (index == 4) {
                     if (isSelected) {
@@ -167,24 +240,24 @@ export function AceMain() {
                     <tr>
                         <th>Changes</th>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_0" className="change_list">
                                 <li>Attack cooldown 1.68s -&gt; 1.26s</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_1" className="change_list">
                                 <li>Darts/volley 8 -&gt; 12</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_2" className="change_list">
                                 <li>+20% flight speed</li>
                                 <li><i>MOAB missile secondary attack: Fires 2 missiles/attack that home in on
                                      MOABs—18 damage, 4 pierce, attack cooldown 3s (cannot pop Black)</i></li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_3" className="change_list">
                                 <li>Dart volley attack cooldown 1.26s -&gt; 0.63s</li>
                                 <li>Darts/volley 12 -&gt; 16</li>
                                 <li><i>MOAB missile attack cooldown 3s -&gt; 1.5s</i></li>
@@ -192,7 +265,7 @@ export function AceMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_4" className="change_list">
                                 <li>Dart volley attack cooldown 0.63s -&gt; 0.315s</li>
                                 <li>Dart damage 1 -&gt; 3</li>
                                 <li>+2 Ceramic damage (dart)</li>
@@ -233,26 +306,26 @@ export function AceMain() {
                     <tr>
                         <th>Changes</th>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_0" className="change_list">
                                 <li><i>+Exploding pineapple attack: drops 1 pineapple at Monkey Ace's location every 1.6s,
                                      exploding after 2s—1 damage, 20 pierce</i></li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_1" className="change_list">
                                 <li>+Camo detection</li>
                                 <li>+2x Camo damage (all attacks except Fighter Plane missiles)</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_2" className="change_list">
                                 <li>Exploding pineapples replaced w/ bombing run attack:
                                      drop 4 bombs in rapid succession whenever Monkey Ace is over track—3 damage,
                                       20 pierce, 1.6s min attack cooldown, 2s bomb fuse duration (cannot pop Black)</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_3" className="change_list">
                                 <li>Bomb damage 3 -&gt; 15</li>
                                 <li>Bomb pierce 20 -&gt; 40</li>
                                 <li><span className="ability">Ability: deal 700 damage to up to 2,000 Bloons closest to the landing pad</span></li>
@@ -260,7 +333,7 @@ export function AceMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_4" className="change_list">
                                 <li>Bomb damage 15 -&gt; 20</li>
                                 <li>+10 Ceramic damage (bombing run)</li>
                                 <li><span className="ability">Ability damage 700 -&gt; 3,000</span></li>
@@ -295,23 +368,23 @@ export function AceMain() {
                     <tr>
                         <th>Changes</th>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_0" className="change_list">
                                 <li>Pierce 5 -&gt; 8</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_1" className="change_list">
                                 <li><i>+Centered Path targeting option: Monkey Ace flies in circle around user-selected point
                                      (defaults to center of screen)</i></li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_2" className="change_list">
                                 <li><i>+Darts move faster and now home in on targets</i></li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_3" className="change_list">
                                 <li><i>+Secondary attack: alternates firing homing darts/bombs directly at Bloons w/ First
                                      Targeting—0.06s attack cooldown</i></li>
                                 <li><i>Spectre dart attacks (not radial Neva-Miss darts): 8 damage, 4 pierce (cannot pop Lead)</i></li>
@@ -321,7 +394,7 @@ export function AceMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_4" className="change_list">
                                 <li><i>Spectre attack cooldown 0.06s -&gt; 0.04s</i></li>
                                 <li><i>+Spectre attack now fires 3 projectiles/attack instead of 1:
                                      1 projectile has First Targeting, 1 has Last Targeting, 1 has Close Targeting
