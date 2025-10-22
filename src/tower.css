@@ -52,14 +52,25 @@
     border-radius: 10px 0 0 0;
 }
 
-.upgrade_button, .last_upgrade_button {
+.upgrade_button_off, .last_upgrade_button_off {
+    cursor: pointer;
+    background-color: rgb(152, 168, 184);
+    text-decoration: underline;
+    transition: background-color 0.25s ease-in-out;
+}
+
+.upgrade_button_off:hover, .last_upgrade_button_off:hover {
+    background-color: lightgreen;
+}
+
+.upgrade_button_on, .last_upgrade_button_on {
     cursor: pointer;
     background-color: lightgreen;
     text-decoration: underline;
     transition: background-color 0.25s ease-in-out;
 }
 
-.upgrade_button:hover, .last_upgrade_button:hover {
+.upgrade_button_on:hover, .last_upgrade_button_on:hover {
     background-color: rgb(114, 208, 114);
 }
 

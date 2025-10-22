@@ -3,6 +3,89 @@ import React from 'react';
 import '../tower.css';
 
 export function AceMain() {
+    const [topHeaders, setTopHeaders] = React.useState(Array(5).fill(false));
+    const [middleHeaders, setMiddleHeaders] = React.useState(Array(5).fill(false));
+    const [bottomHeaders, setBottomHeaders] = React.useState(Array(5).fill(false));
+    
+    function toggleUpgrade(path, index) {
+        if (path === 'top') {
+            const newTopHeaders = topHeaders.slice();
+            newTopHeaders[index] = !newTopHeaders[index];
+            setTopHeaders(newTopHeaders);
+        } else if (path === 'middle') {
+            const newMiddleHeaders = middleHeaders.slice();
+            newMiddleHeaders[index] = !newMiddleHeaders[index];
+            setMiddleHeaders(newMiddleHeaders);
+        } else if (path === 'bottom') {
+            const newBottomHeaders = bottomHeaders.slice();
+            newBottomHeaders[index] = !newBottomHeaders[index];
+            setBottomHeaders(newBottomHeaders);
+        }
+    }
+
+    React.useEffect(() => {
+            topHeaders.forEach((isSelected, index) => {
+                const topButton = document.getElementById(`top${index}`);
+                if (isSelected) {
+                    topButton.classList.remove('upgrade_button_off');
+                    topButton.classList.add('upgrade_button_on');
+                } else {
+                    topButton.classList.add('upgrade_button_off');
+                    topButton.classList.remove('upgrade_button_on');
+                }
+                //Apply same changes to last upgrade button
+                if (index == 4) {
+                    if (isSelected) {
+                        topButton.classList.remove('last_upgrade_button_off');
+                        topButton.classList.add('last_upgrade_button_on');
+                    } else {
+                        topButton.classList.add('last_upgrade_button_off');
+                        topButton.classList.remove('last_upgrade_button_on');
+                    }
+                }
+            });
+            middleHeaders.forEach((isSelected, index) => {
+                const middleButton = document.getElementById(`middle${index}`);
+                if (isSelected) {
+                    middleButton.classList.remove('upgrade_button_off');
+                    middleButton.classList.add('upgrade_button_on');
+                } else {
+                    middleButton.classList.add('upgrade_button_off');
+                    middleButton.classList.remove('upgrade_button_on');
+                }
+                //Apply same changes to last upgrade button
+                if (index == 4) {
+                    if (isSelected) {
+                        middleButton.classList.remove('last_upgrade_button_off');
+                        middleButton.classList.add('last_upgrade_button_on');
+                    } else {
+                        middleButton.classList.add('last_upgrade_button_off');
+                        middleButton.classList.remove('last_upgrade_button_on');
+                    }
+                }
+            });
+            bottomHeaders.forEach((isSelected, index) => {
+                const bottomButton = document.getElementById(`bottom${index}`);
+                if (isSelected) {
+                    bottomButton.classList.remove('upgrade_button_off');
+                    bottomButton.classList.add('upgrade_button_on');
+                } else {
+                    bottomButton.classList.add('upgrade_button_off');
+                    bottomButton.classList.remove('upgrade_button_on');
+                }
+                //Apply same changes to last upgrade button
+                if (index == 4) {
+                    if (isSelected) {
+                        bottomButton.classList.remove('last_upgrade_button_off');
+                        bottomButton.classList.add('last_upgrade_button_on');
+                    } else {
+                        bottomButton.classList.add('last_upgrade_button_off');
+                        bottomButton.classList.remove('last_upgrade_button_on');
+                    }
+                }
+            });
+        },[topHeaders, middleHeaders, bottomHeaders]);
+
   return (
     <main>
         <table className="base_stats">
@@ -65,11 +148,11 @@ export function AceMain() {
                 <thead>
                     <tr>
                         <th className="top_row path_label">Top Upgrade Path</th>
-                        <th className="top_row upgrade_button">Rapid Fire</th>
-                        <th className="top_row upgrade_button">Lots More Darts</th>
-                        <th className="top_row upgrade_button">Fighter Plane</th>
-                        <th className="top_row upgrade_button">Operation: Dart Storm</th>
-                        <th className="top_row upgrade_button last_upgrade_button">Sky Shredder</th>
+                        <th id="top0" className="top_row upgrade_button_off" onClick={() => toggleUpgrade('top', 0)}>Rapid Fire</th>
+                        <th id="top1" className="top_row upgrade_button_off" onClick={() => toggleUpgrade('top', 1)}>Lots More Darts</th>
+                        <th id="top2" className="top_row upgrade_button_off" onClick={() => toggleUpgrade('top', 2)}>Fighter Plane</th>
+                        <th id="top3" className="top_row upgrade_button_off" onClick={() => toggleUpgrade('top', 3)}>Operation: Dart Storm</th>
+                        <th id="top4" className="top_row upgrade_button_off last_upgrade_button_off" onClick={() => toggleUpgrade('top', 4)}>Sky Shredder</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -131,11 +214,11 @@ export function AceMain() {
                 <thead>
                     <tr>
                         <th className="top_row path_label">Middle Upgrade Path</th>
-                        <th className="top_row upgrade_button">Exploding Pineapple</th>
-                        <th className="top_row upgrade_button">Spy Plane</th>
-                        <th className="top_row upgrade_button">Bomber Ace</th>
-                        <th className="top_row upgrade_button">Ground Zero</th>
-                        <th className="top_row upgrade_button last_upgrade_button">Tsar Bomba</th>
+                        <th id="middle0" className="top_row upgrade_button_off" onClick={() => toggleUpgrade('middle', 0)}>Exploding Pineapple</th>
+                        <th id="middle1" className="top_row upgrade_button_off" onClick={() => toggleUpgrade('middle', 1)}>Spy Plane</th>
+                        <th id="middle2" className="top_row upgrade_button_off" onClick={() => toggleUpgrade('middle', 2)}>Bomber Ace</th>
+                        <th id="middle3" className="top_row upgrade_button_off" onClick={() => toggleUpgrade('middle', 3)}>Ground Zero</th>
+                        <th id="middle4" className="top_row upgrade_button_off last_upgrade_button_off" onClick={() => toggleUpgrade('middle', 4)}>Tsar Bomba</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -193,11 +276,11 @@ export function AceMain() {
                 <thead>
                     <tr>
                         <th className="top_row path_label">Bottom Upgrade Path</th>
-                        <th className="top_row upgrade_button">Sharper Darts</th>
-                        <th className="top_row upgrade_button">Centered Path</th>
-                        <th className="top_row upgrade_button">Neva-Miss Targeting</th>
-                        <th className="top_row upgrade_button">Spectre</th>
-                        <th className="top_row last_upgrade_button">Flying Fortress</th>
+                        <th id="bottom0" className="top_row upgrade_button_off" onClick={() => toggleUpgrade('bottom', 0)}>Sharper Darts</th>
+                        <th id="bottom1" className="top_row upgrade_button_off" onClick={() => toggleUpgrade('bottom', 1)}>Centered Path</th>
+                        <th id="bottom2" className="top_row upgrade_button_off" onClick={() => toggleUpgrade('bottom', 2)}>Neva-Miss Targeting</th>
+                        <th id="bottom3" className="top_row upgrade_button_off" onClick={() => toggleUpgrade('bottom', 3)}>Spectre</th>
+                        <th id="bottom4" className="top_row last_upgrade_button_off" onClick={() => toggleUpgrade('bottom', 4)}>Flying Fortress</th>
                     </tr>
                 </thead>
                 <tbody>
