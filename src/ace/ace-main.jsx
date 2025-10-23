@@ -6,6 +6,18 @@ export function AceMain() {
     const [topHeaders, setTopHeaders] = React.useState(Array(5).fill(false));
     const [middleHeaders, setMiddleHeaders] = React.useState(Array(5).fill(false));
     const [bottomHeaders, setBottomHeaders] = React.useState(Array(5).fill(false));
+
+    /*UpgradeLock variables below are booleans tracking whether or not crosspath restrictions are in effect.
+    First set of booleans represent whether or not a path is restricted to Tier 1-2 upgrades only.
+    Second set of booleans represent whether or not a path is blocked off entirely.
+    See toggleUpgrade documentation for crosspath rules.*/
+    const [topTierLock, setTopTierLock] = React.useState(false);
+    const [midTierLock, setMidTierLock] = React.useState(false);
+    const [bottomTierLock, setBottomTierLock] = React.useState(false);
+
+    const [topTotalLock, setTopTotalLock] = React.useState(false);
+    const [midTotalLock, setMidTotalLock] = React.useState(false);
+    const [bottomTotalLock, setBottomTotalLock] = React.useState(false);
     
     /*toggleUpgrade() selects a tower upgrade, simulating purchase of upgrade in BTD6. Only two of the three paths can have selected
     upgrades at any given time, and only one upgrade path can select tier 3 or higher. Once a tier 3 upgrade is "purchased", block out
@@ -13,53 +25,121 @@ export function AceMain() {
     third table. Block out=lock to false/off state.*/
     function toggleUpgrade(path, index) {
         if (path === 'top') {
-            const newTopHeaders = topHeaders.slice();
-            newTopHeaders[index] = !newTopHeaders[index];
-            
-            //If toggled upgrade now true, set all previous headers to true; set all subsequent headers to false when upgrade now false
-            if (newTopHeaders[index]) {
-                for (let i = index - 1; i >= 0; i--) {
-                    newTopHeaders[i] = true;
+            //Check upgrade locks
+            if (!isLocked(path, index)) {
+                const newTopHeaders = topHeaders.slice();
+                newTopHeaders[index] = !newTopHeaders[index];
+                
+                //If toggled upgrade now true, set all previous headers to true; set all subsequent headers to false when upgrade now false
+                if (newTopHeaders[index]) {
+                    for (let i = index - 1; i >= 0; i--) {
+                        newTopHeaders[i] = true;
+                    }
+                } else {
+                    for (let i = index + 1; i < 5; i++) {
+                        newTopHeaders[i] = false;
+                    }
                 }
-            } else {
-                for (let i = index + 1; i < 5; i++) {
-                    newTopHeaders[i] = false;
+                
+                setTopHeaders(newTopHeaders);
+
+                /*Activate relevant crosspath locks
+                If there's a second path that has selected upgrades, lock entirety of third path
+                If this upgrade is Tier 3 or higher, lock other paths to Tier 2 as max*/
+                if (index > 1) {
+                    setMidTierLock(!midTierLock);
+                    setBottomTierLock(!bottomTierLock);
+                }
+                if (hasSelectedUpgrade('middle')) {
+                    setBottomTotalLock(!bottomTotalLock);
+                } else if (hasSelectedUpgrade('bottom')) {
+                    setMidTotalLock(!midTotalLock);
                 }
             }
             
-            setTopHeaders(newTopHeaders);
         } else if (path === 'middle') {
-            const newMiddleHeaders = middleHeaders.slice();
-            newMiddleHeaders[index] = !newMiddleHeaders[index];
-            
-            //If toggled upgrade now true, set all previous headers to true; set all subsequent headers to false when upgrade now false
-            if (newMiddleHeaders[index]) {
-                for (let i = index - 1; i >= 0; i--) {
-                    newMiddleHeaders[i] = true;
+            //check upgrade locks
+            if (!isLocked(path, index)) {
+                const newMiddleHeaders = middleHeaders.slice();
+                newMiddleHeaders[index] = !newMiddleHeaders[index];
+                
+                //If toggled upgrade now true, set all previous headers to true; set all subsequent headers to false when upgrade now false
+                if (newMiddleHeaders[index]) {
+                    for (let i = index - 1; i >= 0; i--) {
+                        newMiddleHeaders[i] = true;
+                    }
+                } else {
+                    for (let i = index + 1; i < 5; i++) {
+                        newMiddleHeaders[i] = false;
+                    }
                 }
-            } else {
-                for (let i = index + 1; i < 5; i++) {
-                    newMiddleHeaders[i] = false;
+                
+                setMiddleHeaders(newMiddleHeaders);
+
+                //Activate relevant crosspath locks
+                if (index > 1) {
+                    setTopTierLock(!topTierLock);
+                    setBottomTierLock(!bottomTierLock);
+                }
+                if (hasSelectedUpgrade('top')) {
+                    setBottomTotalLock(!bottomTotalLock);
+                } else if (hasSelectedUpgrade('bottom')) {
+                    setTopTotalLock(!topTotalLock);
                 }
             }
-            
-            setMiddleHeaders(newMiddleHeaders);
         } else if (path === 'bottom') {
-            const newBottomHeaders = bottomHeaders.slice();
-            newBottomHeaders[index] = !newBottomHeaders[index];
-            
-            //If toggled upgrade now true, set all previous headers to true; set all subsequent headers to false when upgrade now false
-            if (newBottomHeaders[index]) {
-                for (let i = index - 1; i >= 0; i--) {
-                    newBottomHeaders[i] = true;
+            if (!isLocked(path, index)) {
+                const newBottomHeaders = bottomHeaders.slice();
+                newBottomHeaders[index] = !newBottomHeaders[index];
+                
+                //If toggled upgrade now true, set all previous headers to true; set all subsequent headers to false when upgrade now false
+                if (newBottomHeaders[index]) {
+                    for (let i = index - 1; i >= 0; i--) {
+                        newBottomHeaders[i] = true;
+                    }
+                } else {
+                    for (let i = index + 1; i < 5; i++) {
+                        newBottomHeaders[i] = false;
+                    }
                 }
-            } else {
-                for (let i = index + 1; i < 5; i++) {
-                    newBottomHeaders[i] = false;
+                
+                setBottomHeaders(newBottomHeaders);
+
+                //Activate relevant crosspath locks
+                if (index > 1) {
+                    setTopTierLock(!topTierLock);
+                    setMidTierLock(!midTierLock);
+                }
+                if (hasSelectedUpgrade('middle')) {
+                    setTopTotalLock(!topTotalLock);
+                } else if (hasSelectedUpgrade('top')) {
+                    setMidTotalLock(!midTotalLock);
                 }
             }
-            
-            setBottomHeaders(newBottomHeaders);
+        }
+    }
+
+    /*isLocked determines whether specified path/upgrade tier is locked out by other upgrade selections.
+    Returns true if wholePathIsLocked is true or if index is greater than 1 when tierTwoIsMax is true.
+    See documentation for upgradeLock variables above for further details.*/
+    function isLocked(path, index) {
+        if (path === 'top') {
+            return (topTotalLock || (topTierLock && index > 1))
+        } else if (path === 'middle') {
+            return (midTotalLock || (midTierLock && index > 1))
+        } else {
+            return (bottomTotalLock || (bottomTierLock && index > 1))
+        }
+    }
+
+    //hasSelectedUpgrade determines whether a specified path has any selected upgrades in its array (e.g. if any array values are true)
+    function hasSelectedUpgrade(path) {
+        if (path === 'top') {
+            return topHeaders.includes(true);
+        } else if (path === 'middle') {
+            return middleHeaders.includes(true);
+        } else {
+            return bottomHeaders.includes(true);
         }
     }
 
@@ -157,6 +237,15 @@ export function AceMain() {
                     }
                 }
             });
+
+            console.log('NEW ITERATION');
+            console.log(`topTierLock=${topTierLock}`);
+            console.log(`midTierLock=${midTierLock}`);
+            console.log(`bottomTierLock=${bottomTierLock}`);
+
+            console.log(`topTotalLock=${topTotalLock}`);
+            console.log(`midTotalLock=${midTotalLock}`);
+            console.log(`bottomTotalLock=${bottomTotalLock}`);
         },[topHeaders, middleHeaders, bottomHeaders]);
 
   return (
