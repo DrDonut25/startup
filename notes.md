@@ -34,26 +34,10 @@ This was a tough one for me. Unlike Simon, my startup had differing headers/foot
 
 ## React Part 2: Reactivity
 
-This was a lot of fun to see it all come together. I had to keep remembering to use React state instead of just manipulating the DOM directly.
+This was the HARDEST part of this project by far. After spending tens of hours perusing through all the wikis I could find on BTD6 and recording what I could find on a Google Spreadsheet, then spending even more time copying all that stuff from said spreadsheet over to ALL 25 of my components was a pain to do. I had to do some heavy overhauling of my CSS styling to accomodate the contents of my upgrade change cells, not to mention that I had to restyle my table headers so that they could act as upgrade selection buttons.
 
-Handling the toggling of the checkboxes was particularly interesting.
+And the functionality itself... ouch, this gave me such a headache. Figuring out the best use of hooks was extremely difficult, and programming legal upgrade/crosspath rules took forever to get right. I had to draw a bunch of diagrams on sticky notes to help me visualize how to do it.
 
-```jsx
-<div className="input-group sound-button-container">
-  {calmSoundTypes.map((sound, index) => (
-    <div key={index} className="form-check form-switch">
-      <input
-        className="form-check-input"
-        type="checkbox"
-        value={sound}
-        id={sound}
-        onChange={() => togglePlay(sound)}
-        checked={selectedSounds.includes(sound)}
-      ></input>
-      <label className="form-check-label" htmlFor={sound}>
-        {sound}
-      </label>
-    </div>
-  ))}
-</div>
-```
+Once the functionality was done... well, I had to copy all my functionality code to ALL TWENTY FIVE of my tower components. So, I had to separate all my upgrade functionality into a separate upgrade.jsx file. That required some creative use of closure to minimize the sheer number of copy/pasting I had to do, although even then I still had to do quite a lot.
+
+Unfortunately, with how much time this phase took me, I will have to leave the functionality of this project at just the upgrade functionality. There was further functionality I wanted to add such as pop-up definitions of BTD6 jargon (which is everywhere in this project), more detailed crosspath change definitions (as Tier 1/2 upgrades can actually sometimes provide unique perks to Tier 3+ upgrades from other paths), and a more detailed interactive cheat sheet for the Super Monkey's Sun Temple upgrade, as that upgrade's stats vary heavily upon what towers are in range of the Super Monkey before the Sun Temple upgrade is purchased. I suppose I'll try and work on those things some more on my own time after this class is over.
