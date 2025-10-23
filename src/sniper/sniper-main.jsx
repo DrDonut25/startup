@@ -4,8 +4,24 @@ import '../tower.css';
 import { Upgrade } from '../upgrade.jsx';
 
 export function SniperMain() {
+    const [topHeaders, setTopHeaders] = React.useState(Array(5).fill(false));
+    const [middleHeaders, setMiddleHeaders] = React.useState(Array(5).fill(false));
+    const [bottomHeaders, setBottomHeaders] = React.useState(Array(5).fill(false));
+
+    /*maxTier variables track maximum legal upgrade tiers for when other path tables have selected upgrades. -1 means no upgrades can be
+    selected from this path*/
+    const [maxTopTier, setMaxTopTier] = React.useState(4);
+    const [maxMidTier, setMaxMidTier] = React.useState(4);
+    const [maxBottomTier, setMaxBottomTier] = React.useState(4);
+
+    let myFunctions = {};
+
   return (
     <main>
+        <Upgrade topHeaders={topHeaders} setTopHeaders={setTopHeaders} middleHeaders={middleHeaders} setMiddleHeaders={setMiddleHeaders}
+         bottomHeaders={bottomHeaders} setBottomHeaders={setBottomHeaders} maxTopTier={maxTopTier} setMaxTopTier={setMaxTopTier}
+          maxMidTier={maxMidTier} setMaxMidTier={setMaxMidTier} maxBottomTier={maxBottomTier} setMaxBottomTier={setMaxBottomTier} 
+          myFunctions={myFunctions}></Upgrade>
         <table className="base_stats">
             <thead>
                 <tr>
