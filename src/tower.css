@@ -74,7 +74,7 @@
     background-color: rgb(114, 208, 114);
 }
 
-.last_upgrade_button {
+.last_upgrade_button_off, .last_upgrade_button_on {
     border-radius: 0 10px 0 0;
 }
 
