@@ -150,11 +150,11 @@ export function DartlingMain() {
                 <thead>
                     <tr>
                         <th className="top_row path_label">Middle Upgrade Path</th>
-                        <th className="top_row upgrade_button">Advanced Targeting</th>
-                        <th className="top_row upgrade_button">Faster Barrel Spin</th>
-                        <th className="top_row upgrade_button">Hydra Rocket Pods</th>
-                        <th className="top_row upgrade_button">Rocket Storm</th>
-                        <th className="top_row upgrade_button last_upgrade_button">M.A.D.</th>
+                        <th id="middle0" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 0)}>Advanced Targeting</th>
+                        <th id="middle1" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 1)}>Faster Barrel Spin</th>
+                        <th id="middle2" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 2)}>Hydra Rocket Pods</th>
+                        <th id="middle3" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 3)}>Rocket Storm</th>
+                        <th id="middle4" className="top_row upgrade_button_off last_upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 4)}>M.A.D.</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -169,24 +169,24 @@ export function DartlingMain() {
                     <tr>
                         <th>Changes</th>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_0" className="change_list">
                                 <li>+Camo detection</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_1" className="change_list">
                                 <li>Attack cooldown 0.2s -&gt; 0.132s</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_2" className="change_list">
                                 <li>Now fires missiles that explode up to 3 times: 2 explosion damage, 6 pierce, 8-unit blast radius</li>
                                 <li>(Explosion count can be increased by external pierce buffs)</li>
                                 <li>+Can pop ALL Bloon types</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_3" className="change_list">
                                 <li>Explosion count 3 -&gt; 4</li>
                                 <li>Explosion pierce 6 -&gt; 8</li>
                                 <li><span className="ability">Ability: repeatedly fire waves of 10 missiles in 90° cone every 0.5s for 7.5s:
@@ -195,7 +195,7 @@ export function DartlingMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_4" className="change_list">
                                 <li>Main attacks now fire mega missiles that fire 3x more slowly, but deal much more damage to MOABs
                                      (see below)</li>
                                 <li>Explosion count 4 -&gt; 10</li>

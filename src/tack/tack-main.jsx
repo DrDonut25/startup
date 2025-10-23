@@ -145,11 +145,11 @@ export function TackMain() {
                 <thead>
                     <tr>
                         <th className="top_row path_label">Middle Upgrade Path</th>
-                        <th className="top_row upgrade_button">Long Range Tacks</th>
-                        <th className="top_row upgrade_button">Super Range Tacks</th>
-                        <th className="top_row upgrade_button">Blade Shooter</th>
-                        <th className="top_row upgrade_button">Blade Maelstrom</th>
-                        <th className="top_row upgrade_button last_upgrade_button">Super Maelstrom</th>
+                        <th id="middle0" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 0)}>Long Range Tacks</th>
+                        <th id="middle1" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 1)}>Super Range Tacks</th>
+                        <th id="middle2" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 2)}>Blade Shooter</th>
+                        <th id="middle3" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 3)}>Blade Maelstrom</th>
+                        <th id="middle4" className="top_row upgrade_button_off last_upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 4)}>Super Maelstrom</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -164,27 +164,27 @@ export function TackMain() {
                     <tr>
                         <th>Changes</th>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_0" className="change_list">
                                 <li>+4 range</li>
                                 <li>+Higher projectile lifespan/speed</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_1" className="change_list">
                                 <li>+4 range</li>
                                 <li>+Longer projectile lifespan</li>
                                 <li>Pierce 1 -&gt; 4</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_2" className="change_list">
                                 <li>+15 range</li>
                                 <li>Pierce 4 -&gt; 8</li>
                                 <li>+Can pop Frozen</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_3" className="change_list">
                                 <li>Damage 1 -&gt; 2</li>
                                 <li><span className="ability">Ability: repeatedly/rapidly fire 2 blades in opposite directions for 3s,
                                      spinning clockwise (2 damage, 100 pierce per blade)</span></li>
@@ -192,7 +192,7 @@ export function TackMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_4" className="change_list">
                                 <li>Damage 2 -&gt; 5</li>
                                 <li>+Blades (not ones from ability) can pop Lead</li>
                                 <li>+5 Ceramic damage</li>

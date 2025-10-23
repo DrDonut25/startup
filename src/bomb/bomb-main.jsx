@@ -146,11 +146,11 @@ export function BombMain() {
                 <thead>
                     <tr>
                         <th className="top_row path_label">Middle Upgrade Path</th>
-                        <th className="top_row upgrade_button">Faster Reload</th>
-                        <th className="top_row upgrade_button">Missile Launcher</th>
-                        <th className="top_row upgrade_button">MOAB Mauler</th>
-                        <th className="top_row upgrade_button">MOAB Assassin</th>
-                        <th className="top_row upgrade_button last_upgrade_button">MOAB Eliminator</th>
+                        <th id="middle0" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 0)}>Faster Reload</th>
+                        <th id="middle1" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 1)}>Missile Launcher</th>
+                        <th id="middle2" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 2)}>MOAB Mauler</th>
+                        <th id="middle3" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 3)}>MOAB Assassin</th>
+                        <th id="middle4" className="top_row upgrade_button_off last_upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 4)}>MOAB Eliminator</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -165,25 +165,25 @@ export function BombMain() {
                     <tr>
                         <th>Changes</th>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_0" className="change_list">
                                 <li>Attack cooldown 1.5s -&gt; 1.125s</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_1" className="change_list">
                                 <li>Attack cooldown 1.125s -&gt; 0.825s</li>
                                 <li>+4 range</li>
                                 <li>+50% projectile speed</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_2" className="change_list">
                                 <li>+15 MOAB damage</li>
                                 <li>+5 range</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_3" className="change_list">
                                 <li>+4 Ceramic damage</li>
                                 <li>MOAB bonus damage 15 -&gt; 30</li>
                                 <li>+5 range</li>
@@ -194,7 +194,7 @@ export function BombMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_4" className="change_list">
                                 <li>MOAB bonus damage 30 -&gt; 99</li>
                                 <li><span className="ability">Ability target damage 750 -&gt; 4500</span></li>
                                 <li><span className="ability">Ability cooldown 30s -&gt; 10s</span></li>

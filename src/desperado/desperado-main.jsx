@@ -148,11 +148,11 @@ export function DesperadoMain() {
                 <thead>
                     <tr>
                         <th className="top_row path_label">Middle Upgrade Path</th>
-                        <th className="top_row upgrade_button">Eagle Eye</th>
-                        <th className="top_row upgrade_button">Bullseye</th>
-                        <th className="top_row upgrade_button">Deadeye</th>
-                        <th className="top_row upgrade_button">Bounty Hunter</th>
-                        <th className="top_row upgrade_button last_upgrade_button">Golden Justice</th>
+                        <th id="middle0" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 0)}>Eagle Eye</th>
+                        <th id="middle1" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 1)}>Bullseye</th>
+                        <th id="middle2" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 2)}>Deadeye</th>
+                        <th id="middle3" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 3)}>Bounty Hunter</th>
+                        <th id="middle4" className="top_row upgrade_button_off last_upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 4)}>Golden Justice</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -167,19 +167,19 @@ export function DesperadoMain() {
                     <tr>
                         <th>Changes</th>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_0" className="change_list">
                                 <li>+Camo detection</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_1" className="change_list">
                                 <li><i>+Crit mechanic: chance for attacks to deal 4x damage</i></li>
                                 <li><i>Crit chance: 2.5% (min); 17.5% (max)</i></li>
                                 <li><i>Crit change increased by 0.25% for every unit further the Bloon is from Desperado</i></li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_2" className="change_list">
                                 <li>Pistol damage 1 -&gt; 6</li>
                                 <li>Pistol range 60 units -&gt; 28 units</li>
                                 <li>+Rifle secondary attack: 80 range, 4 pierce, 12 damage, +12 Fortified damage, 1.59s attack cooldown</li>
@@ -190,7 +190,7 @@ export function DesperadoMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_3" className="change_list">
                                 <li>Pistol damage 6 -&gt; 16</li>
                                 <li>+16 Ceramic damage (pistol)</li>
                                 <li>Rifle damage 12 -&gt; 24</li>
@@ -208,7 +208,7 @@ export function DesperadoMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_4" className="change_list">
                                 <li>Pistol damage 16 -&gt; 24</li>
                                 <li>Pistol Ceramic bonus damage 16 -&gt;24</li>
                                 <li><i>+Pistol shots now mark Bloons</i></li>

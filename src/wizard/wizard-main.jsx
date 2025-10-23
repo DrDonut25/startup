@@ -149,11 +149,11 @@ export function WizardMain() {
                 <thead>
                     <tr>
                         <th className="top_row path_label">Middle Upgrade Path</th>
-                        <th className="top_row upgrade_button">Fireball</th>
-                        <th className="top_row upgrade_button">Wall of Fire</th>
-                        <th className="top_row upgrade_button">Dragon's Breath</th>
-                        <th className="top_row upgrade_button">Summon Phoenix</th>
-                        <th className="top_row upgrade_button last_upgrade_button">Wizard Lord Phoenix</th>
+                        <th id="middle0" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 0)}>Fireball</th>
+                        <th id="middle1" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 1)}>Wall of Fire</th>
+                        <th id="middle2" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 2)}>Dragon's Breath</th>
+                        <th id="middle3" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 3)}>Summon Phoenix</th>
+                        <th id="middle4" className="top_row upgrade_button_off last_upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 4)}>Wizard Lord Phoenix</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -168,7 +168,7 @@ export function WizardMain() {
                     <tr>
                         <th>Changes</th>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_0" className="change_list">
                                 <li>+Fireball attack: fireball deals 1 damage to 1 Bloon, and explosion deals additional 1 damage to up
                                      to 15 Bloons</li>
                                 <li>Fireball attack cooldown: 2.2s</li>
@@ -176,13 +176,13 @@ export function WizardMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_1" className="change_list">
                                 <li>+Firewall attack: places wall of fire on track every 6.5s—wall of fire lasts 4.5s</li>
                                 <li>Wall of fire stats: 1 damage every 0.15s, 10 pierce</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_2" className="change_list">
                                 <li>+Dragon's Breath attack: 2 damage, 3 pierce, 0.135s attack cooldown</li>
                                 <li>Dragon's Breath attacks set Bloons on fire, dealing 1 damage every 1.5s for 3s</li>
                                 <li>Now fires 3 fireballs/attack in 60° cone</li>
@@ -193,7 +193,7 @@ export function WizardMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_3" className="change_list">
                                 <li><span className="ability">Ability: summon Phoenix that attacks Bloons anywhere on the map without
                                      regard to map obstacles for 20s</span></li>
                                 <li><span className="ability">Phoenix stats: 5 damage, 8 pierce, 0.1s attack cooldown</span></li>
@@ -202,7 +202,7 @@ export function WizardMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_4" className="change_list">
                                 <li><i>+Phoenix subtower becomes permanent</i></li>
                                 <li><span className="ability">Lava Phoenix Ability: transform Wizard Monkey into lava phoenix that
                                      attacks Bloons with both flame and meteor attacks for 20s</span></li>

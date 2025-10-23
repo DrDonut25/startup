@@ -154,11 +154,11 @@ export function SpikeFactoryMain() {
                 <thead>
                     <tr>
                         <th className="top_row path_label">Middle Upgrade Path</th>
-                        <th className="top_row upgrade_button">Faster Production</th>
-                        <th className="top_row upgrade_button">Even Faster Production</th>
-                        <th className="top_row upgrade_button">MOAB SHREDR</th>
-                        <th className="top_row upgrade_button">Spike Storm</th>
-                        <th className="top_row upgrade_button last_upgrade_button">Carpet of Spikes</th>
+                        <th id="middle0" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 0)}>Faster Production</th>
+                        <th id="middle1" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 1)}>Even Faster Production</th>
+                        <th id="middle2" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 2)}>MOAB SHREDR</th>
+                        <th id="middle3" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 3)}>Spike Storm</th>
+                        <th id="middle4" className="top_row upgrade_button_off last_upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 4)}>Carpet of Spikes</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -173,29 +173,29 @@ export function SpikeFactoryMain() {
                     <tr>
                         <th>Changes</th>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_0" className="change_list">
                                 <li>Attack cooldown 1.75s -&gt; 1.4s</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_1" className="change_list">
                                 <li>Attack cooldown 1.4s -&gt; 1.05s</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_2" className="change_list">
                                 <li>+7 MOAB damage/spike (not per spike pile)</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_3" className="change_list">
                                 <li><span className="ability">Ability: produce/send 1 spike pile torandom position on all available lanes
                                      every 0.04s for 2s—ability spikes last only 9s-11s</span></li>
                                 <li><span className="ability">Ability cooldown: 50s</span></li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_4" className="change_list">
                                 <li><span className="ability">+In addition to activated ability, passive Spike Storm ability activates
                                      every 15s</span></li>
                                 <li><span className="ability">Ability spike duration 9s-11s -&gt; 18s-22s</span></li>

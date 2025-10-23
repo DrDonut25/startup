@@ -128,11 +128,11 @@ export function BananaMain() {
                 <thead>
                     <tr>
                         <th className="top_row path_label">Middle Upgrade Path</th>
-                        <th className="top_row upgrade_button">Long Life Bananas</th>
-                        <th className="top_row upgrade_button">Valuable Bananas</th>
-                        <th className="top_row upgrade_button">Monkey Bank</th>
-                        <th className="top_row upgrade_button">IMF Loan</th>
-                        <th className="top_row upgrade_button last_upgrade_button">Monkey-Nomics</th>
+                        <th id="middle0" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 0)}>Long Life Bananas</th>
+                        <th id="middle1" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 1)}>Valuable Bananas</th>
+                        <th id="middle2" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 2)}>Monkey Bank</th>
+                        <th id="middle3" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 3)}>IMF Loan</th>
+                        <th id="middle4" className="top_row upgrade_button_off last_upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 4)}>Monkey-Nomics</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -147,17 +147,17 @@ export function BananaMain() {
                     <tr>
                         <th>Changes</th>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_0" className="change_list">
                                 <li>Banana lifespan 15s -&gt; 30s</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_1" className="change_list">
                                 <li>+25% banana value</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_2" className="change_list">
                                 <li>Cash now generated in bank instead of through bananas</li>
                                 <li>Income/round: $225, though +15% interest is added to this number at end of each round</li>
                                 <li>Interest rate resets after withdrawing money</li>
@@ -165,7 +165,7 @@ export function BananaMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_3" className="change_list">
                                 <li>Bank capacity $7,000 -&gt; $10,000</li>
                                 <li><span className="ability">Ability: immediately generate $9,000, though $9,000 will also be applied
                                      in debt—50% of all user income will go toward debt counter until it's paid off</span></li>
@@ -174,7 +174,7 @@ export function BananaMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_4" className="change_list">
                                 <li><span className="ability">Ability no longer gives debt</span></li>
                                 <li><span className="ability">Ability cooldown 85s -&gt; 60s (max 2 uses/round)</span></li>
                             </ul>

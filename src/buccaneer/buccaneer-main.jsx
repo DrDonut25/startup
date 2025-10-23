@@ -148,11 +148,11 @@ export function BuccaneerMain() {
                 <thead>
                     <tr>
                         <th className="top_row path_label">Middle Upgrade Path</th>
-                        <th className="top_row upgrade_button">Grape Shot</th>
-                        <th className="top_row upgrade_button">Hot Shot</th>
-                        <th className="top_row upgrade_button">Cannon Ship</th>
-                        <th className="top_row upgrade_button">Monkey Pirates</th>
-                        <th className="top_row upgrade_button last_upgrade_button">Pirate Lord</th>
+                        <th id="middle0" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 0)}>Grape Shot</th>
+                        <th id="middle1" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 1)}>Hot Shot</th>
+                        <th id="middle2" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 2)}>Cannon Ship</th>
+                        <th id="middle3" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 3)}>Monkey Pirates</th>
+                        <th id="middle4" className="top_row upgrade_button_off last_upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 4)}>Pirate Lord</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -167,19 +167,19 @@ export function BuccaneerMain() {
                     <tr>
                         <th>Changes</th>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_0" className="change_list">
                                 <li><i>+Grape shot attack: fires 5 grapes in 90° forward cone—1 damage, 1 pierce, attack cooldown
                                      1.3s per grape</i></li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_1" className="change_list">
                                 <li>+Grapes set Bloons on fire, dealing 2 damage every 1.5s for 3.1s</li>
                                 <li>+Grapes can pop Lead, but not Purple</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_2" className="change_list">
                                 <li><i>Dart attack replaced w/ cannon attack: fires explosive bombs that release 8 shrapnel fragments
                                      in all directions—2 damage, 28 pierce, 1.3s attack cooldown</i></li>
                                 <li><i>Bomb shrapnel stats: 1 damage, 1 pierce per shrapnel fragment</i></li>
@@ -188,7 +188,7 @@ export function BuccaneerMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_3" className="change_list">
                                 <li>+2 cannons: fires 3 bombs per attack instead of 1</li>
                                 <li>Bomb damage 2 -&gt; 3</li>
                                 <li>+5 MOAB damage (bomb)</li>
@@ -200,7 +200,7 @@ export function BuccaneerMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_4" className="change_list">
                                 <li>Grapeshot & cannon attack cooldown 1.3s -&gt; 0.65s</li>
                                 <li>Bomb frag damage 1 -&gt; 6; +3 MOAB damage (bomb frag)</li>
                                 <li>Bomb MOAB bonus damage 5 -&gt; 8</li>

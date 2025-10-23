@@ -176,11 +176,11 @@ export function BeastHandlerMain() {
                 <thead>
                     <tr>
                         <th className="top_row path_label">Middle Upgrade Path</th>
-                        <th className="top_row upgrade_button">Microraptor</th>
-                        <th className="top_row upgrade_button">Adasaurus</th>
-                        <th className="top_row upgrade_button">Velociraptor</th>
-                        <th className="top_row upgrade_button">Tyrannosaurus Rex</th>
-                        <th className="top_row upgrade_button last_upgrade_button">Giganotosaurus</th>
+                        <th id="middle0" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 0)}>Microraptor</th>
+                        <th id="middle1" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 1)}>Adasaurus</th>
+                        <th id="middle2" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 2)}>Velociraptor</th>
+                        <th id="middle3" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 3)}>Tyrannosaurus Rex</th>
+                        <th id="middle4" className="top_row upgrade_button_off last_upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 4)}>Giganotosaurus</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -195,7 +195,7 @@ export function BeastHandlerMain() {
                     <tr>
                         <th>Changes</th>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_0" className="change_list">
                                 <li>Summons Microraptor: 1 damage, 5 splash pierce, 1s attack cooldown, 20-unit range</li>
                                 <li>Microraptor cannot pop Camo/Lead</li>
                                 <li><i>Microraptor can be redeployed to anywhere in range of Beast Handler</i></li>
@@ -204,7 +204,7 @@ export function BeastHandlerMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_1" className="change_list">
                                 <li>Summons Adasaurus: can pop Lead and damage/pierce improved</li>
                                 <li>Adasaurus min stats (3 BP): 3 damage, 8 splash pierce, 1s attack cooldown</li>
                                 <li>Adasaurus max BP stats: 6 damage, 20 splash pierce, 0.6561s attack cooldown</li>
@@ -214,7 +214,7 @@ export function BeastHandlerMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_2" className="change_list">
                                 <li>Summons Velociraptor: +4 range, and bonus damage to Stunned Bloons</li>
                                 <li>Velociraptor min stats (8 BP): 8 damage, +3 Stunned damage, 14 splash damage, 1s attack cooldown</li>
                                 <li>Velociraptor max BP stats: 24 damage, +8 Stunned damage, 35 splash pierce, 0.6561s attack cooldown</li>
@@ -223,7 +223,7 @@ export function BeastHandlerMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_3" className="change_list">
                                 <li>Summons T-Rex: +6 range, <b>gains Stomp Ability—deal damage to & stun up to 400 Bloons in 100-unit
                                      radius for 6s (3s for MOABs/BFBs & 2s for ZOMGs/DDTs)</b></li>
                                 <li><span className="ability">Stomp Ability min stats (16 BP): 40s cooldown, 150 damage, 400 pierce</span></li>
@@ -237,7 +237,7 @@ export function BeastHandlerMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_4" className="change_list">
                                 <li><i><u>Note: you must have 3 other T-Rexes merged to this Beast Handler before you can purchase
                                      this upgrade</u></i></li>
                                 <li>Summons Giganotosaurus: +10 range, can see over all map obstacles—<b>Stomp damages Bloons

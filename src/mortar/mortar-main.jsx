@@ -151,11 +151,11 @@ export function MortarMain() {
                 <thead>
                     <tr>
                         <th className="top_row path_label">Middle Upgrade Path</th>
-                        <th className="top_row upgrade_button">Faster Reload</th>
-                        <th className="top_row upgrade_button">Rapid Reload</th>
-                        <th className="top_row upgrade_button">Heavy Shells</th>
-                        <th className="top_row upgrade_button">Artillery Battery</th>
-                        <th className="top_row upgrade_button last_upgrade_button">Pop and Awe</th>
+                        <th id="middle0" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 0)}>Faster Reload</th>
+                        <th id="middle1" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 1)}>Rapid Reload</th>
+                        <th id="middle2" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 2)}>Heavy Shells</th>
+                        <th id="middle3" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 3)}>Artillery Battery</th>
+                        <th id="middle4" className="top_row upgrade_button_off last_upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 4)}>Pop and Awe</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -170,17 +170,17 @@ export function MortarMain() {
                     <tr>
                         <th>Changes</th>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_0" className="change_list">
                                 <li>Attack cooldown 2s -&gt; 1.5s</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_1" className="change_list">
                                 <li>Attack cooldown 1.5s -&gt; 1.08s</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_2" className="change_list">
                                 <li>Attack cooldown 1.08s -&gt; 0.81s</li>
                                 <li>+1 Lead/DDT/MOAB-class/Fortified damage</li>
                                 <li>+2 damage to stunned Bloons</li>
@@ -189,14 +189,14 @@ export function MortarMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_3" className="change_list">
                                 <li>Attack cooldown 0.81s -&gt; 0.27s</li>
                                 <li><span className="ability">Ability: gain 4x attack speed and 15% blast radius for 8s</span></li>
                                 <li><span className="ability">Ability cooldown: 60s</span></li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_4" className="change_list">
                                 <li>Attack cooldown 0.27s -&gt; 0.0675s</li>
                                 <li>Blast radius 20 -&gt; 23</li>
                                 <li>Stunned Bloon bonus damage 2 -&gt; 8</li>

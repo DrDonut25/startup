@@ -136,11 +136,11 @@ export function NinjaMain() {
                 <thead>
                     <tr>
                         <th className="top_row path_label">Middle Upgrade Path</th>
-                        <th className="top_row upgrade_button">Distraction</th>
-                        <th className="top_row upgrade_button">Counter-Espionage</th>
-                        <th className="top_row upgrade_button">Shinobi Tactics</th>
-                        <th className="top_row upgrade_button">Bloon Sabotage</th>
-                        <th className="top_row upgrade_button last_upgrade_button">Grand Saboteur</th>
+                        <th id="middle0" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 0)}>Distraction</th>
+                        <th id="middle1" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 1)}>Counter-Espionage</th>
+                        <th id="middle2" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 2)}>Shinobi Tactics</th>
+                        <th id="middle3" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 3)}>Bloon Sabotage</th>
+                        <th id="middle4" className="top_row upgrade_button_off last_upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 4)}>Grand Saboteur</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -155,18 +155,18 @@ export function NinjaMain() {
                     <tr>
                         <th>Changes</th>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_0" className="change_list">
                                 <li><i>Shurikens have a 15% chance of sending Bloons backwards by 100-150 units</i></li>
                                 <li>Ceramics distracted by half of distance above, MOABs unaffected</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_1" className="change_list">
                                 <li><i>Bloons popped/damaged by Ninja Monkey lose Camo property</i></li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_2" className="change_list">
                                 <li><i>Shinobi Buff: all in-range Shinobi Tactics ninjas (including this one) receive -8% attack
                                      cooldown reduction, +8% pierce</i></li>
                                 <li><i>Shinobi buff stacks up to 20 times (when buffs maxed out, Shinobi Tactics ninjas receive ~5.3x
@@ -174,14 +174,14 @@ export function NinjaMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_3" className="change_list">
                                 <li><span className="ability">Ability: cut speed of all Bloons on screen in half for 15s</span></li>
                                 <li><span className="ability">Ability does not slow BADs/Boss Bloons</span></li>
                                 <li><span className="ability">Ability cooldown: 60s</span></li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_4" className="change_list">
                                 <li><span className="ability">Sabotage ability duration 15s -&gt; 30s</span></li>
                                 <li><span className="ability">Deals damage to every newly spawned MOAB equal to 25% of said MOAB's health,
                                      including BADs (aka all MOABs spawn with 75% health)</span></li>

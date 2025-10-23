@@ -151,11 +151,11 @@ export function HeliMain() {
                 <thead>
                     <tr>
                         <th className="top_row path_label">Middle Upgrade Path</th>
-                        <th className="top_row upgrade_button">Bigger Jets</th>
-                        <th className="top_row upgrade_button">IFR</th>
-                        <th className="top_row upgrade_button">Downdraft</th>
-                        <th className="top_row upgrade_button">Support Chinook</th>
-                        <th className="top_row upgrade_button last_upgrade_button">Special Poperations</th>
+                        <th id="middle0" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 0)}>Bigger Jets</th>
+                        <th id="middle1" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 1)}>IFR</th>
+                        <th id="middle2" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 2)}>Downdraft</th>
+                        <th id="middle3" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 3)}>Support Chinook</th>
+                        <th id="middle4" className="top_row upgrade_button_off last_upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 4)}>Special Poperations</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -170,24 +170,24 @@ export function HeliMain() {
                     <tr>
                         <th>Changes</th>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_0" className="change_list">
                                 <li>+75% movement speed</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_1" className="change_list">
                                 <li>+Camo detection</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_2" className="change_list">
                                 <li><i>+Downdraft attack: blows back up to 2 Bloons (or 1 Ceramic) every 0.2s</i></li>
                                 <li><i>Blown back Bloons lose glued/frozen properties</i></li>
                                 <li>Downdraft blowback distance: 32-150 units</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_3" className="change_list">
                                 <li>Damage 1 -&gt; 2</li>
                                 <li>2x dart size</li>
                                 <li><i>Downdraft attack cooldown 0.2s -&gt; 0.15s</i></li>
@@ -203,7 +203,7 @@ export function HeliMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_4" className="change_list">
                                 <li><i>Downdraft attack cooldown 0.15s -&gt; 0.075s</i></li>
                                 <li>+25% flight speed</li>
                                 <li><span className="ability">Monkey Marine Ability: deploy a marine monkey that attacks Bloons for 30s:

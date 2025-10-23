@@ -153,11 +153,11 @@ export function IceMain() {
                 <thead>
                     <tr>
                         <th className="top_row path_label">Middle Upgrade Path</th>
-                        <th className="top_row upgrade_button">Enhanced Freeze</th>
-                        <th className="top_row upgrade_button">Deep Freeze</th>
-                        <th className="top_row upgrade_button">Arctic Wind</th>
-                        <th className="top_row upgrade_button">Snowstorm</th>
-                        <th className="top_row upgrade_button last_upgrade_button">Absolute Zero</th>
+                        <th id="middle0" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 0)}>Enhanced Freeze</th>
+                        <th id="middle1" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 1)}>Deep Freeze</th>
+                        <th id="middle2" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 2)}>Arctic Wind</th>
+                        <th id="middle3" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 3)}>Snowstorm</th>
+                        <th id="middle4" className="top_row upgrade_button_off last_upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 4)}>Absolute Zero</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -172,27 +172,27 @@ export function IceMain() {
                     <tr>
                         <th>Changes</th>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_0" className="change_list">
                                 <li>Freeze duration 1.5s -&gt; 1.75s</li>
                                 <li>Attack cooldown 2.4s -&gt; 1.8s</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_1" className="change_list">
                                 <li>Freeze duration 1.75s -&gt; 2.2s</li>
                                 <li>Layers frozen 2 -&gt; 3</li>
                                 <li>Pierce 40 -&gt; 45</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_2" className="change_list">
                                 <li>Ceramic freeze duration penalty removed</li>
                                 <li><i>Cold Aura: land-based Monkeys in Ice Monkey's radius can be placed on water, and in-range Bloons
                                      slowed by 40% </i></li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_3" className="change_list">
                                 <li>+10 range</li>
                                 <li><span className="ability">Ability: deal 1 damage to & freeze all Bloons on Screen (except Lead)</span></li>
                                 <li><span className="ability">Ability freeze duration: 6s (3s for White/Zebra/Camo)</span></li>
@@ -200,7 +200,7 @@ export function IceMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_4" className="change_list">
                                 <li>+10 range</li>
                                 <li>Layers frozen 3 -&gt; 8</li>
                                 <li>Pierce 45 -&gt; 300</li>

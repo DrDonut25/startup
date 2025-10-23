@@ -122,11 +122,11 @@ export function VillageMain() {
                 <thead>
                     <tr>
                         <th className="top_row path_label">Middle Upgrade Path</th>
-                        <th className="top_row upgrade_button">Regrow Blocker</th>
-                        <th className="top_row upgrade_button">Radar Scanner</th>
-                        <th className="top_row upgrade_button">Monkey Intelligence Bureau</th>
-                        <th className="top_row upgrade_button">Call to Arms</th>
-                        <th className="top_row upgrade_button last_upgrade_button">Homeland Defense</th>
+                        <th id="middle0" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 0)}>Regrow Blocker</th>
+                        <th id="middle1" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 1)}>Radar Scanner</th>
+                        <th id="middle2" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 2)}>Monkey Intelligence Bureau</th>
+                        <th id="middle3" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 3)}>Call to Arms</th>
+                        <th id="middle4" className="top_row upgrade_button_off last_upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 4)}>Homeland Defense</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -141,29 +141,29 @@ export function VillageMain() {
                     <tr>
                         <th>Changes</th>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_0" className="change_list">
                                 <li><i>+Regrow Bloons cannot regrow any layers while in range</i></li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_1" className="change_list">
                                 <li><i>+Radar Scanner buff: in-range towers receive Camo detection</i></li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_2" className="change_list">
                                 <li><i>+MIB buff: in-range towers can now pop all Bloon types</i></li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_3" className="change_list">
                                 <li><span className="ability">Ability: all towers on screen receive +50% attack speed and +50% pierce
                                      for 15s</span></li>
                                 <li><span className="ability">Ability cooldown: 45s</span></li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_4" className="change_list">
                                 <li><span className="ability">Ability now grants +100% attack speed/pierce for 20s</span></li>
                             </ul>
                         </td>

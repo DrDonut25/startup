@@ -158,11 +158,11 @@ export function MermonkeyMain() {
                 <thead>
                     <tr>
                         <th className="top_row path_label">Middle Upgrade Path</th>
-                        <th className="top_row upgrade_button">Sharper Prongs</th>
-                        <th className="top_row upgrade_button">Tidal Chill</th>
-                        <th className="top_row upgrade_button">Riptide Champion</th>
-                        <th className="top_row upgrade_button">Arctic Knight</th>
-                        <th className="top_row upgrade_button last_upgrade_button">Popseidon</th>
+                        <th id="middle0" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 0)}>Sharper Prongs</th>
+                        <th id="middle1" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 1)}>Tidal Chill</th>
+                        <th id="middle2" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 2)}>Riptide Champion</th>
+                        <th id="middle3" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 3)}>Arctic Knight</th>
+                        <th id="middle4" className="top_row upgrade_button_off last_upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 4)}>Popseidon</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -177,19 +177,19 @@ export function MermonkeyMain() {
                     <tr>
                         <th>Changes</th>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_0" className="change_list">
                                 <li>Trident pierce 2 -&gt; 3</li>
                                 <li>Splash pierce 3 -&gt; 6</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_1" className="change_list">
                                 <li><i>+Trident splashes freeze Bloons for 0.5s (soaks through 4 layers)</i></li>
                                 <li>+50% splash radius</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_2" className="change_list">
                                 <li><i>Tridents no longer splash and instead grow in size/damage the further they travel—once tridents
                                      expire, they split into 2 small wave projectiles</i></li>
                                 <li>Tridents' speed cut in half, but they last twice as long</li>
@@ -203,7 +203,7 @@ export function MermonkeyMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_3" className="change_list">
                                 <li><span className="ability">Ice Jet ability: Mermonkey rapidly fires ice balls for 3s at Bloons
                                      anywhere on screen, even behind map obstacles (user can also select specific point for Ice Jet
                                       to aim at)</span></li>
@@ -217,7 +217,7 @@ export function MermonkeyMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_4" className="change_list">
                                 <li><i>+Lateral trident shot (independent from regular trident): fires two tridents in 45° cone with
                                      same stats as main trident (see below)</i></li>
                                 <li><span className="ability">+Ice Jet ability now deals 70 damage to & freezes all Bloons on screen for

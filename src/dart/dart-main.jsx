@@ -149,11 +149,11 @@ export function DartMain() {
                 <thead>
                     <tr>
                         <th className="top_row path_label">Middle Upgrade Path</th>
-                        <th className="top_row upgrade_button">Quick Shots</th>
-                        <th className="top_row upgrade_button">Very Quick Shots</th>
-                        <th className="top_row upgrade_button">Triple Shot</th>
-                        <th className="top_row upgrade_button">Super Monkey Fan Club</th>
-                        <th className="top_row upgrade_button last_upgrade_button">Plasma Monkey Fan Club</th>
+                        <th id="middle0" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 0)}>Quick Shots</th>
+                        <th id="middle1" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 1)}>Very Quick Shots</th>
+                        <th id="middle2" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 2)}>Triple Shot</th>
+                        <th id="middle3" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 3)}>Super Monkey Fan Club</th>
+                        <th id="middle4" className="top_row upgrade_button_off last_upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 4)}>Plasma Monkey Fan Club</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -168,23 +168,23 @@ export function DartMain() {
                     <tr>
                         <th>Changes</th>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_0" className="change_list">
                                 <li>+15% attack speed</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_1" className="change_list">
                                 <li>+18% attack speed</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_2" className="change_list">
                                 <li>+25% attack speed</li>
                                 <li>Now throws 3 darts/attack in 30° cone</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_3" className="change_list">
                                 <li>+100% attack speed</li>
                                 <li><span className="ability">Ability: transform 10 nearby Dart Monkeys (including this one) into Super
                                      Monkeys for 15s</span></li>
@@ -196,7 +196,7 @@ export function DartMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_4" className="change_list">
                                 <li><span className="ability">Ability: transform 20 nearby Dart Monkeys into Plasma Monkeys for 15s</span></li>
                                 <li><span className="ability">Transformed Dart Monkey Stats: 5 pierce, 0.03 attack cooldown, 2 damage</span></li>
                                 <li><span className="ability">Transformed Dart Monkeys inherit crosspath stats

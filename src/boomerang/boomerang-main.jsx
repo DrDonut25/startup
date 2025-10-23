@@ -145,11 +145,11 @@ export function BoomerangMain() {
                 <thead>
                     <tr>
                         <th className="top_row path_label">Middle Upgrade Path</th>
-                        <th className="top_row upgrade_button">Faster Throwing</th>
-                        <th className="top_row upgrade_button">Faster Rangs</th>
-                        <th className="top_row upgrade_button">Bionic Boomerang</th>
-                        <th className="top_row upgrade_button">Turbo Charge</th>
-                        <th className="top_row upgrade_button last_upgrade_button">Perma Charge</th>
+                        <th id="middle0" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 0)}>Faster Throwing</th>
+                        <th id="middle1" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 1)}>Faster Rangs</th>
+                        <th id="middle2" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 2)}>Bionic Boomerang</th>
+                        <th id="middle3" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 3)}>Turbo Charge</th>
+                        <th id="middle4" className="top_row upgrade_button_off last_upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 4)}>Perma Charge</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -164,31 +164,31 @@ export function BoomerangMain() {
                     <tr>
                         <th>Changes</th>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_0" className="change_list">
                                 <li>Attack cooldown 1.2s -&gt; 0.9s</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_1" className="change_list">
                                 <li>Attack cooldown 0.9s -&gt; 0.6s</li>
                                 <li>Increased boomerang speed</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_2" className="change_list">
                                 <li>Attack cooldown 0.6s -&gt; 0.238s</li>
                                 <li>+2 MOAB damage</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_3" className="change_list">
                                 <li><span className="ability">Ability: gain 7x attack speed and +1 damage for 10s</span></li>
                                 <li><span className="ability">Ability cooldown: 45s</span></li>
                                 <li><span className="ability">Ability grants Camo detection (with Monkey Knowledge)</span></li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_4" className="change_list">
                                 <li>7x greater attack speed</li>
                                 <li>Damage 1 -&gt; 4</li>
                                 <li><span className="ability">Ability: gain +8 damage for 10s</span></li>

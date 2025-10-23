@@ -154,11 +154,11 @@ export function EngineerMain() {
                 <thead>
                     <tr>
                         <th className="top_row path_label">Middle Upgrade Path</th>
-                        <th className="top_row upgrade_button">Larger Service Area</th>
-                        <th className="top_row upgrade_button">Deconstruction</th>
-                        <th className="top_row upgrade_button">Cleansing Foam</th>
-                        <th className="top_row upgrade_button">Overclock</th>
-                        <th className="top_row upgrade_button last_upgrade_button">Ultraboost</th>
+                        <th id="middle0" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 0)}>Larger Service Area</th>
+                        <th id="middle1" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 1)}>Deconstruction</th>
+                        <th id="middle2" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 2)}>Cleansing Foam</th>
+                        <th id="middle3" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 3)}>Overclock</th>
+                        <th id="middle4" className="top_row upgrade_button_off last_upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 4)}>Ultraboost</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -173,24 +173,24 @@ export function EngineerMain() {
                     <tr>
                         <th>Changes</th>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_0" className="change_list">
                                 <li>+50% range</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_1" className="change_list">
                                 <li>+1 MOAB/Fortified damage</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_2" className="change_list">
                                 <li><i>+Foam attack: deploys foam pools on user-selected point on Track—Bloons that pass through it lose
                                      Regrow/Camo properties, and outer layer of Leads are popped</i></li>
                                 <li><i>Foam stats: 10 pierce, 2s attack cooldown, 8.5s lifespan</i></li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_3" className="change_list">
                                 <li><span className="ability">Overclock ability: give user-selected tower +66.67% attack speed</span></li>
                                 <li><span className="ability">Overclock duration dependent on tower's upgrades: Tier 5/Tier 4/Tier 3 or lower
                                      towers receive overclock buff for 30s/45s/60s</span></li>
@@ -201,7 +201,7 @@ export function EngineerMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_4" className="change_list">
                                 <li><span className="ability">+Overclock ability now gives permanent -4% attack cooldown mini-boost to
                                      affected towers: permanent mini-boosts stack up to 10 times</span></li>
                                 <li><span className="ability">Overclock duration is now 60s for all towers (regardless of upgrade tier)</span></li>

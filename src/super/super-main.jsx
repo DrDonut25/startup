@@ -151,11 +151,11 @@ export function SuperMain() {
                 <thead>
                     <tr>
                         <th className="top_row path_label">Middle Upgrade Path</th>
-                        <th className="top_row upgrade_button">Super Range</th>
-                        <th className="top_row upgrade_button">Epic Range</th>
-                        <th className="top_row upgrade_button">Robo Monkey</th>
-                        <th className="top_row upgrade_button">Tech Terror</th>
-                        <th className="top_row upgrade_button last_upgrade_button">The Anti-Bloon</th>
+                        <th id="middle0" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 0)}>Super Range</th>
+                        <th id="middle1" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 1)}>Epic Range</th>
+                        <th id="middle2" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 2)}>Robo Monkey</th>
+                        <th id="middle3" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 3)}>Tech Terror</th>
+                        <th id="middle4" className="top_row upgrade_button_off last_upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 4)}>The Anti-Bloon</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -170,27 +170,27 @@ export function SuperMain() {
                     <tr>
                         <th>Changes</th>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_0" className="change_list">
                                 <li>+10 range</li>
                                 <li>Pierce 1 -&gt; 2</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_1" className="change_list">
                                 <li>+12 range</li>
                                 <li>Pierce 2 -&gt; 4</li>
                                 <li>+75% projectile speed</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_2" className="change_list">
                                 <li><i>Now fires independently from two arms/guns at once (can change targeting for either one)</i></li>
                                 <li><i>Deals a critical hit after every 15-20 shots—critical hits deal +9 damage</i></li>
                                 <li>Pierce 4 -&gt; 5</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_3" className="change_list">
                                 <li><span className="ability">Ability: deal 2,600 damage to up to 2,000 Bloons within 70-unit radius
                                      (can pop all Bloon types including Camo)</span></li>
                                 <li><span className="ability">Every 3rd ability use deals 3,900 damage</span></li>
@@ -200,7 +200,7 @@ export function SuperMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_4" className="change_list">
                                 <li><span className="ability">Ability damage 2,600 -&gt; 10,400</span></li>
                                 <li><span className="ability">Ability radius 70 units -&gt; 120 units</span></li>
                                 <li><span className="ability">Every 3rd ability use now deals 15,600 damage</span></li>

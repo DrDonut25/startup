@@ -158,11 +158,11 @@ export function DruidMain() {
                 <thead>
                     <tr>
                         <th className="top_row path_label">Middle Upgrade Path</th>
-                        <th className="top_row upgrade_button">Thorn Swarm</th>
-                        <th className="top_row upgrade_button">Heart of Oak</th>
-                        <th className="top_row upgrade_button">Druid of the Jungle</th>
-                        <th className="top_row upgrade_button">Jungle's Bounty</th>
-                        <th className="top_row upgrade_button last_upgrade_button">Spirit of the Forest</th>
+                        <th id="middle0" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 0)}>Thorn Swarm</th>
+                        <th id="middle1" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 1)}>Heart of Oak</th>
+                        <th id="middle2" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 2)}>Druid of the Jungle</th>
+                        <th id="middle3" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 3)}>Jungle's Bounty</th>
+                        <th id="middle4" className="top_row upgrade_button_off last_upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 4)}>Spirit of the Forest</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -177,19 +177,19 @@ export function DruidMain() {
                     <tr>
                         <th>Changes</th>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_0" className="change_list">
                                 <li>Thorns per shot 5 -&gt; 8</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_1" className="change_list">
                                 <li><i>+All attacks remove Regrow property from Bloons</i></li>
                                 <li><i>+All attacks gain +1% pierce (up to +100%) for every life gained after this upgrade is purchased
                                      (does not apply to Ball Lightning)</i></li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_2" className="change_list">
                                 <li><i>+Vine grab attack: vine destroys a single non-MOAB Bloon anywhere on screen—destruction time
                                      depends on how many layers Bloon has—destroyed Bloons leave behind temporary thorn pile that pop
                                       Bloons passing over it</i></li>
@@ -201,7 +201,7 @@ export function DruidMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_3" className="change_list">
                                 <li><span className="ability">Ability: generate $320 + ($130 * number of in-range Banana Farms) and 1 life</span></li>
                                 <li><span className="ability">Ability cooldown: 60s (max 3 uses per round)</span></li>
                                 <li>+10 range</li>
@@ -212,7 +212,7 @@ export function DruidMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_4" className="change_list">
                                 <li><span className="ability">Ability base cash generation $320 -&gt; $1,280 (Banana Farm bonus unchanged);
                                      life generation 1 -&gt; 25</span></li>
                                 <li><i>+Now generates $1,000 at end of each round</i></li>

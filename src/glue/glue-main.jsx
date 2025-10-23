@@ -157,11 +157,11 @@ export function GlueMain() {
                 <thead>
                     <tr>
                         <th className="top_row path_label">Middle Upgrade Path</th>
-                        <th className="top_row upgrade_button">Bigger Globs</th>
-                        <th className="top_row upgrade_button">Glue Splatter</th>
-                        <th className="top_row upgrade_button">Glue Hose</th>
-                        <th className="top_row upgrade_button">Glue Strike</th>
-                        <th className="top_row upgrade_button last_upgrade_button">Glue Storm</th>
+                        <th id="middle0" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 0)}>Bigger Globs</th>
+                        <th id="middle1" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 1)}>Glue Splatter</th>
+                        <th id="middle2" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 2)}>Glue Hose</th>
+                        <th id="middle3" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 3)}>Glue Strike</th>
+                        <th id="middle4" className="top_row upgrade_button_off last_upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 4)}>Glue Storm</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -176,30 +176,30 @@ export function GlueMain() {
                     <tr>
                         <th>Changes</th>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_0" className="change_list">
                                 <li>Pierce 1 -&gt; 2</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_1" className="change_list">
                                 <li>+Splatter glue can hit 4 additional Bloons per shot</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_2" className="change_list">
                                 <li>Attack cooldown  1s -&gt; 0.34s</li>
                                 <li>+12 range</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_3" className="change_list">
                                 <li><span className="ability">Ability: glue all Bloons (including MOAB/Camo) on screen for 11s</span></li>
                                 <li><span className="ability">Ability cooldown: 30s</span></li>
                                 <li><span className="ability">+Bloons glued by ability take +2 damage & temporarily lose Lead/Frozen properties</span></li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_4" className="change_list">
                                 <li><span className="ability">Ability now glues all Bloons on screen every second for 10s (glue duration
                                      is still 11s)</span></li>
                                 <li><span className="ability">Ability cooldown 30s -&gt; 40s</span></li>

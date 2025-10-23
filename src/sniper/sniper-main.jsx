@@ -140,11 +140,11 @@ export function SniperMain() {
                 <thead>
                     <tr>
                         <th className="top_row path_label">Middle Upgrade Path</th>
-                        <th className="top_row upgrade_button">Night Vision Goggles</th>
-                        <th className="top_row upgrade_button">Shrapnel Shot</th>
-                        <th className="top_row upgrade_button">Bouncing Bullet</th>
-                        <th className="top_row upgrade_button">Supply Drop</th>
-                        <th className="top_row upgrade_button last_upgrade_button">Elite Sniper</th>
+                        <th id="middle0" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 0)}>Night Vision Goggles</th>
+                        <th id="middle1" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 1)}>Shrapnel Shot</th>
+                        <th id="middle2" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 2)}>Bouncing Bullet</th>
+                        <th id="middle3" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 3)}>Supply Drop</th>
+                        <th id="middle4" className="top_row upgrade_button_off last_upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 4)}>Elite Sniper</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -159,25 +159,25 @@ export function SniperMain() {
                     <tr>
                         <th>Changes</th>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_0" className="change_list">
                                 <li>+Camo detection</li>
                                 <li>+2 Camo damage</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_1" className="change_list">
                                 <li><i>+Bullets now release 5 pieces of shrapnel in 45° cone behind hit target</i></li>
                                 <li><i>Shrapnel stats: 1 damage, +2 Camo damage, 2 pierce</i></li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_2" className="change_list">
                                 <li>Pierce 1 -&gt; 3</li>
                                 <li><i>+Bullets now bounce Glaive Ricochet-style to up to 2 additional Bloons</i></li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_3" className="change_list">
                                 <li><span className="ability">Ability: Summon $1,100 cash crate (also activates all other Supply Drop
                                      abilities)</span></li>
                                 <li><span className="ability">Ability cooldown: 90s (max 3 uses per round)</span></li>
@@ -187,7 +187,7 @@ export function SniperMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_4" className="change_list">
                                 <li>Attack cooldown 1.59s -&gt; 0.636s</li>
                                 <li><i>+Grants +33% attack speed buff to all other Sniper Monkeys</i></li>
                                 <li><i>+Grants Elite Targeting option to all Sniper Monkeys</i></li>

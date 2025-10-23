@@ -145,11 +145,11 @@ export function SubMain() {
                 <thead>
                     <tr>
                         <th className="top_row path_label">Middle Upgrade Path</th>
-                        <th className="top_row upgrade_button">Barbed Darts</th>
-                        <th className="top_row upgrade_button">Heat-tipped Darts</th>
-                        <th className="top_row upgrade_button">Ballistic Missile</th>
-                        <th className="top_row upgrade_button">First Strike Capability</th>
-                        <th className="top_row upgrade_button last_upgrade_button">Pre-emptive Strike</th>
+                        <th id="middle0" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 0)}>Barbed Darts</th>
+                        <th id="middle1" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 1)}>Heat-tipped Darts</th>
+                        <th id="middle2" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 2)}>Ballistic Missile</th>
+                        <th id="middle3" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 3)}>First Strike Capability</th>
+                        <th id="middle4" className="top_row upgrade_button_off last_upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('middle', 4)}>Pre-emptive Strike</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -164,17 +164,17 @@ export function SubMain() {
                     <tr>
                         <th>Changes</th>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_0" className="change_list">
                                 <li>Pierce 2 -&gt; 5</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_1" className="change_list">
                                 <li>+Can pop Lead</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_2" className="change_list">
                                 <li>+Ballistic Missile secondary attack: 3 damage, +3 Ceramic damage, +5 MOAB damage, 40 pierce,
                                      1s attack cooldown</li>
                                 <li>Missiles ignore map obstacles</li>
@@ -183,14 +183,14 @@ export function SubMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_3" className="change_list">
                                 <li><span className="ability">Ability: deal 10,000 damage to strongest Bloon on screen & 350 explosion
                                      damage to up to 80 nearby Bloons</span></li>
                                 <li><span className="ability">Ability cooldown: 60s</span></li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="middle_change_4" className="change_list">
                                 <li><i>+Tertiary pre-emptive missile attack: deals 750 damage to each new MOAB that spawns</i></li>
                                 <li><span className="ability">Ability damage 10,000 -&gt; 20,000</span></li>
                                 <li><span className="ability">Ability explosion damage 350 -&gt; 1,000</span></li>
