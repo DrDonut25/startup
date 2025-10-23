@@ -175,11 +175,11 @@ export function VillageMain() {
                 <thead>
                     <tr>
                         <th className="top_row path_label">Bottom Upgrade Path</th>
-                        <th className="top_row upgrade_button">Monkey Business</th>
-                        <th className="top_row upgrade_button">Monkey Commerce</th>
-                        <th className="top_row upgrade_button">Monkey Town</th>
-                        <th className="top_row upgrade_button">Monkey City</th>
-                        <th className="top_row upgrade_button last_upgrade_button">Monkeyopolis</th>
+                        <th id="bottom0" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 0)}>Monkey Business</th>
+                        <th id="bottom1" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 1)}>Monkey Commerce</th>
+                        <th id="bottom2" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 2)}>Monkey Town</th>
+                        <th id="bottom3" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 3)}>Monkey City</th>
+                        <th id="bottom4" className="top_row last_upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 4)}>Monkeyopolis</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -194,23 +194,23 @@ export function VillageMain() {
                     <tr>
                         <th>Changes</th>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_0" className="change_list">
                                 <li><i>+Monkey Business buff: in-range towers receive 10% discount on all Tier-3-or-lower upgrades</i></li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_1" className="change_list">
                                 <li><i>+Monkey Commerce buff: in-range towers receive 5% discount on all Tier-3-or-lower upgrades</i></li>
                                 <li><i>This buff stacks up to 3 times (and once with Monkey Business buff)</i></li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_2" className="change_list">
                                 <li><i>+Monkey Town buff: in-range towers receive +50% cash per pop</i></li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_3" className="change_list">
                                 <li><i>+Monkey City buff: in-range towers that generate income (e.g. Banana Farms, Jungle's Bounty)
                                      generate 20% more income </i></li>
                                 <li><i>+Player receives 1 free Dart Monkey each round</i></li>
@@ -218,7 +218,7 @@ export function VillageMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_4" className="change_list">
                                 <li>Absorbs all in-range Tier-4-or-lower Banana Farms, then begins producing 10 banana crates each
                                      round—crate value dependent on total cost of absorbed Banana Farms</li>
                                 <li>Minimum cash generated/round (e.g. if 1 unupgraded Banana Farm is absorbed): $1,200</li>

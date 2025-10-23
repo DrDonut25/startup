@@ -224,11 +224,11 @@ export function HeliMain() {
                 <thead>
                     <tr>
                         <th className="top_row path_label">Bottom Upgrade Path</th>
-                        <th className="top_row upgrade_button">Faster Darts</th>
-                        <th className="top_row upgrade_button">Faster Firing</th>
-                        <th className="top_row upgrade_button">MOAB Shove</th>
-                        <th className="top_row upgrade_button">Comanche Defense</th>
-                        <th className="top_row upgrade_button last_upgrade_button">Comanche Commander</th>
+                        <th id="bottom0" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 0)}>Faster Darts</th>
+                        <th id="bottom1" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 1)}>Faster Firing</th>
+                        <th id="bottom2" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 2)}>MOAB Shove</th>
+                        <th id="bottom3" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 3)}>Comanche Defense</th>
+                        <th id="bottom4" className="top_row last_upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 4)}>Comanche Commander</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -243,18 +243,18 @@ export function HeliMain() {
                     <tr>
                         <th>Changes</th>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_0" className="change_list">
                                 <li>+60% dart speed</li>
                                 <li>+30% Heli range</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_1" className="change_list">
                                 <li>Attack cooldown 0.57s -&gt; 0.456s</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_2" className="change_list">
                                 <li><i>+MOAB Shove attack: pushes back or slows 1 MOAB at a time: blue MOABs pushed back,
                                      BFBs/DDTs/ZOMGs slowed</i></li>
                                 <li><i>+Missile attack: fires homing missiles with infinite range: 2 damage, +2 Ceramic/MOAB damage,
@@ -262,7 +262,7 @@ export function HeliMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_3" className="change_list">
                                 <li><i>Summons 1/2/3 mini Comanches for 15s when furthest Bloons gets 25%/50%/75% of the way through
                                      the track, respectively</i></li>
                                 <li><i>Mini Comanche dart attack stats: 3 darts/shot—1 damage, 4 pierce, 0.228s attack cooldown per dart
@@ -275,7 +275,7 @@ export function HeliMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_4" className="change_list">
                                 <li><i>Mini Comanches are summoned permanently</i></li>
                                 <li><i>Mini Comanche dart damage 1 -&gt; 3</i></li>
                                 <li><i>Mini Comanche missile damage 2 -&gt; 15, Ceramic bonus damage 2 -&gt; 10</i></li>

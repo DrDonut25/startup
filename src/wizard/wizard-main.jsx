@@ -228,11 +228,11 @@ export function WizardMain() {
                 <thead>
                     <tr>
                         <th className="top_row path_label">Bottom Upgrade Path</th>
-                        <th className="top_row upgrade_button">Intense Magic</th>
-                        <th className="top_row upgrade_button">Monkey Sense</th>
-                        <th className="top_row upgrade_button">Shimmer</th>
-                        <th className="top_row upgrade_button">Necromancer: Unpopped Army</th>
-                        <th className="top_row upgrade_button last_upgrade_button">Prince of Darkness</th>
+                        <th id="bottom0" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 0)}>Intense Magic</th>
+                        <th id="bottom1" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 1)}>Monkey Sense</th>
+                        <th id="bottom2" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 2)}>Shimmer</th>
+                        <th id="bottom3" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 3)}>Necromancer: Unpopped Army</th>
+                        <th id="bottom4" className="top_row last_upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 4)}>Prince of Darkness</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -247,25 +247,25 @@ export function WizardMain() {
                     <tr>
                         <th>Changes</th>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_0" className="change_list">
                                 <li>Pierce 3 -&gt; 8</li>
                                 <li>Doubled projectile speed</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_1" className="change_list">
                                 <li>+10 range</li>
                                 <li>+Camo detection</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_2" className="change_list">
                                 <li><i>+Shimmer attack: removes Camo from up to 500 Bloons in 75-unit radius every 2s</i></li>
                                 <li>+10 range</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_3" className="change_list">
                                 <li><i>+Graveyard mechanic: for every 1 Bloon layer popped within 70 units of Wizard (a little farther
                                      than its display range), add 1 point to the Graveyard counter (7-10 points/layer after Round 80).
                                       Graveyard maxed at 500 points</i></li>
@@ -281,7 +281,7 @@ export function WizardMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_4" className="change_list">
                                 <li><i>Graveyard capacity 500 points -&gt; 3,000 points</i></li>
                                 <li>Wizard monkey attacks instead gain +1 damage for every 300 stored Graveyard points instead of 200</li>
                                 <li><i>+Can now summon undead MOABs and BFBs: can summon MOABs when Graveyard point counter is between

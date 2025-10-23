@@ -238,11 +238,11 @@ export function MermonkeyMain() {
                 <thead>
                     <tr>
                         <th className="top_row path_label">Bottom Upgrade Path</th>
-                        <th className="top_row upgrade_button">Echosense Precision</th>
-                        <th className="top_row upgrade_button">Echosense Network</th>
-                        <th className="top_row upgrade_button">Alluring Melody</th>
-                        <th className="top_row upgrade_button">Symphonic Resonance</th>
-                        <th className="top_row upgrade_button last_upgrade_button">The Final Harmonic</th>
+                        <th id="bottom0" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 0)}>Echosense Precision</th>
+                        <th id="bottom1" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 1)}>Echosense Network</th>
+                        <th id="bottom2" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 2)}>Alluring Melody</th>
+                        <th id="bottom3" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 3)}>Symphonic Resonance</th>
+                        <th id="bottom4" className="top_row last_upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 4)}>The Final Harmonic</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -257,19 +257,19 @@ export function MermonkeyMain() {
                     <tr>
                         <th>Changes</th>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_0" className="change_list">
                                 <li>+Tridents now home in on Bloons</li>
                                 <li>+Camo detection</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_1" className="change_list">
                                 <li><i>+Echosense buff: all Mermonkeys on screen (including this one) receive +6% range</i></li>
                                 <li><i>Echosense buff stacks up to 10 times</i></li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_2" className="change_list">
                                 <li><i>+Trance attack: Mermonkey pulls nearby non-MOAB Bloons into musical circle around itself, halting
                                      Bloon track-movement progress, detonating all damage-over-time effects, and stripping Camo</i></li>
                                 <li><i>Trance stats: 6s lifespan, 12s attack cooldown; pulls in 4 more Bloons every 0.3s</i></li>
@@ -279,7 +279,7 @@ export function MermonkeyMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_3" className="change_list">
                                 <li><i>+Trances can now pull in MOABs and DDTs (3 pierce consumed per MOAB and 4 pierce consumed per DDT)</i></li>
                                 <li><i>Trance pierce 4 -&gt; 8 (now pulls in 8 Bloons every 0.3s)</i></li>
                                 <li><i>Ceramic trance pierce penalty removed</i></li>
@@ -289,7 +289,7 @@ export function MermonkeyMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_4" className="change_list">
                                 <li><i>+Trances can now pull in BFBs and ZOMGs (4 pierce consumed for both)</i></li>
                                 <li><i>+Trances can now deal damage-over-time detonation to BADs and Boss Bloons (though they cannot
                                      be pulled into the musical trance circle)</i></li>

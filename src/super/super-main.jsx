@@ -219,11 +219,11 @@ export function SuperMain() {
                 <thead>
                     <tr>
                         <th className="top_row path_label">Bottom Upgrade Path</th>
-                        <th className="top_row upgrade_button">Knockback</th>
-                        <th className="top_row upgrade_button">Ultravision</th>
-                        <th className="top_row upgrade_button">Dark Knight</th>
-                        <th className="top_row upgrade_button">Dark Champion</th>
-                        <th className="top_row upgrade_button last_upgrade_button">Legend of the Night</th>
+                        <th id="bottom0" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 0)}>Knockback</th>
+                        <th id="bottom1" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 1)}>Ultravision</th>
+                        <th id="bottom2" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 2)}>Dark Knight</th>
+                        <th id="bottom3" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 3)}>Dark Champion</th>
+                        <th id="bottom4" className="top_row last_upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 4)}>Legend of the Night</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -238,21 +238,21 @@ export function SuperMain() {
                     <tr>
                         <th>Changes</th>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_0" className="change_list">
                                 <li><i>+Projectiles apply knockback effect for 0.5s</i></li>
                                 <li><i>While under knockback effect, MOABs move at 70% speed and Ceramics/Leads move at 40% speed</i></li>
                                 <li><i>All other Bloons move backwards at 25% speed while under knockback effect</i></li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_1" className="change_list">
                                 <li>+Camo detection</li>
                                 <li>+3 range</li>
                                 <li>+1 Camo damage</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_2" className="change_list">
                                 <li>+2 MOAB damage</li>
                                 <li>Pierce 1 -&gt; 4</li>
                                 <li>Doubled projectile size</li>
@@ -262,7 +262,7 @@ export function SuperMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_3" className="change_list">
                                 <li>Attack cooldown 0.045s -&gt; 0.0225s (alternates fire between both hands)</li>
                                 <li>Damage 1 -&gt; 2</li>
                                 <li>MOAB bonus damage 2 -&gt; 3</li>
@@ -278,7 +278,7 @@ export function SuperMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_4" className="change_list">
                                 <li>Damage 2 -&gt; 10</li>
                                 <li>MOAB bonus damage 3 -&gt; 25</li>
                                 <li>Camo bonus damage 2 -&gt; 4</li>

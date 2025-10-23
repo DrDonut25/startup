@@ -212,11 +212,11 @@ export function DartMain() {
                 <thead>
                     <tr>
                         <th className="top_row path_label">Bottom Upgrade Path</th>
-                        <th className="top_row upgrade_button">Long Range Darts</th>
-                        <th className="top_row upgrade_button">Enhanced Eyesight</th>
-                        <th className="top_row upgrade_button">Crossbow</th>
-                        <th className="top_row upgrade_button">Sharpshooter</th>
-                        <th className="top_row upgrade_button last_upgrade_button">Crossbow Master</th>
+                        <th id="bottom0" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 0)}>Long Range Darts</th>
+                        <th id="bottom1" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 1)}>Enhanced Eyesight</th>
+                        <th id="bottom2" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 2)}>Crossbow</th>
+                        <th id="bottom3" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 3)}>Sharpshooter</th>
+                        <th id="bottom4" className="top_row last_upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 4)}>Crossbow Master</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -231,13 +231,13 @@ export function DartMain() {
                     <tr>
                         <th>Changes</th>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_0" className="change_list">
                                 <li>+8 range</li>
                                 <li>Enhanced projectile lifespan</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_1" className="change_list">
                                 <li>+8 range</li>
                                 <li>Further enhanced projectile lifespan</li>
                                 <li>+Faster projectile speed</li>
@@ -245,7 +245,7 @@ export function DartMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_2" className="change_list">
                                 <li>+12 range</li>
                                 <li>Damage 1 -&gt; 3</li>
                                 <li>Pierce 2 -&gt; 4</li>
@@ -253,7 +253,7 @@ export function DartMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_3" className="change_list">
                                 <li>Damage 3 -&gt; 6</li>
                                 <li>+100% attack speed</li>
                                 <li>+Faster projectile speed</li>
@@ -261,7 +261,7 @@ export function DartMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_4" className="change_list">
                                 <li>Damage 6 -&gt; 8</li>
                                 <li>+100% attack speed</li>
                                 <li>Pierce 4 -&gt; 8</li>

@@ -209,11 +209,11 @@ export function TackMain() {
                 <thead>
                     <tr>
                         <th className="top_row path_label">Bottom Upgrade Path</th>
-                        <th className="top_row upgrade_button">More Tacks</th>
-                        <th className="top_row upgrade_button">Even More Tacks</th>
-                        <th className="top_row upgrade_button">Tack Sprayer</th>
-                        <th className="top_row upgrade_button">Overdrive</th>
-                        <th className="top_row upgrade_button last_upgrade_button">The Tack Zone</th>
+                        <th id="bottom0" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 0)}>More Tacks</th>
+                        <th id="bottom1" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 1)}>Even More Tacks</th>
+                        <th id="bottom2" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 2)}>Tack Sprayer</th>
+                        <th id="bottom3" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 3)}>Overdrive</th>
+                        <th id="bottom4" className="top_row last_upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 4)}>The Tack Zone</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -228,28 +228,28 @@ export function TackMain() {
                     <tr>
                         <th>Changes</th>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_0" className="change_list">
                                 <li>Number of tacks 8 -&gt; 10</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_1" className="change_list">
                                 <li>Number of tacks 10 -&gt; 12</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_2" className="change_list">
                                 <li>Number of tacks 12 -&gt; 16</li>
                                 <li>Pierce 1 -&gt; 2</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_3" className="change_list">
                                 <li>Attack cooldown 1.12s -&gt; 0.3733s</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_4" className="change_list">
                                 <li>Number of tacks 16 -&gt; 32</li>
                                 <li>Attack cooldown 0.3733s -&gt; 0.224s</li>
                                 <li>+7 range</li>

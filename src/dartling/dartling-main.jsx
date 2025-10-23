@@ -214,11 +214,11 @@ export function DartlingMain() {
                 <thead>
                     <tr>
                         <th className="top_row path_label">Bottom Upgrade Path</th>
-                        <th className="top_row upgrade_button">Faster Swivel</th>
-                        <th className="top_row upgrade_button">Powerful Darts</th>
-                        <th className="top_row upgrade_button">Buckshot</th>
-                        <th className="top_row upgrade_button">Bloon Area Denial System</th>
-                        <th className="top_row upgrade_button last_upgrade_button">Bloon Exclusion Zone</th>
+                        <th id="bottom0" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 0)}>Faster Swivel</th>
+                        <th id="bottom1" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 1)}>Powerful Darts</th>
+                        <th id="bottom2" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 2)}>Buckshot</th>
+                        <th id="bottom3" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 3)}>Bloon Area Denial System</th>
+                        <th id="bottom4" className="top_row last_upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 4)}>Bloon Exclusion Zone</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -233,25 +233,25 @@ export function DartlingMain() {
                     <tr>
                         <th>Changes</th>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_0" className="change_list">
                                 <li>Swivel speed 180°/s -&gt; 440°/s</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_1" className="change_list">
                                 <li>Pierce 1 -&gt; 3</li>
                                 <li>+~34% dart speed</li>
                                 <li>+Can pop Frozen</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_2" className="change_list">
                                 <li>Now fires 6 buckshots/attack—buckshots are faster and knock back non-MOAB Bloons</li>
                                 <li>Buckshot stats: 4 damage, 4 pierce, 46° spread, 1.5s attack cooldown</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_3" className="change_list">
                                 <li>Attack cooldown 1.5s -&gt; 0.375s</li>
                                 <li><i>+Target Independent targeting option: when selected, 4 barrels will target First/Last/Close/Strong
                                      Bloons all at once (1 target priority per barrel)</i></li>
@@ -259,7 +259,7 @@ export function DartlingMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_4" className="change_list">
                                 <li>Attack cooldown 0.375s -&gt; 0.25s</li>
                                 <li>Pierce 4 -&gt; 6</li>
                                 <li>Damage 4 -&gt; 8</li>

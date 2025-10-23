@@ -206,11 +206,11 @@ export function SniperMain() {
                 <thead>
                     <tr>
                         <th className="top_row path_label">Bottom Upgrade Path</th>
-                        <th className="top_row upgrade_button">Fast Firing</th>
-                        <th className="top_row upgrade_button">Even Faster Firing</th>
-                        <th className="top_row upgrade_button">Semi-Automatic</th>
-                        <th className="top_row upgrade_button">Full Auto Rifle</th>
-                        <th className="top_row upgrade_button last_upgrade_button">Elite Defender</th>
+                        <th id="bottom0" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 0)}>Fast Firing</th>
+                        <th id="bottom1" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 1)}>Even Faster Firing</th>
+                        <th id="bottom2" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 2)}>Semi-Automatic</th>
+                        <th id="bottom3" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 3)}>Full Auto Rifle</th>
+                        <th id="bottom4" className="top_row last_upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 4)}>Elite Defender</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -225,28 +225,28 @@ export function SniperMain() {
                     <tr>
                         <th>Changes</th>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_0" className="change_list">
                                 <li>Attack cooldown 1.59s -&gt; 1.113s</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_1" className="change_list">
                                 <li>Attack cooldown 1.113s -&gt; 0.7791s</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_2" className="change_list">
                                 <li>Attack cooldown 0.7791s -&gt; 0.2597s</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_3" className="change_list">
                                 <li>Attack cooldown 0.2597s -&gt; 0.1298s</li>
                                 <li>+2 MOAB damage</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_4" className="change_list">
                                 <li>Attack cooldown 0.1298s -&gt; 0.0649s</li>
                                 <li>Bullet MOAB bonus damage 2 -&gt; 4</li>
                                 <li>Attacks faster the further along Bloon is along track</li>

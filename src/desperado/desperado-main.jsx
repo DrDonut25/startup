@@ -231,11 +231,11 @@ export function DesperadoMain() {
                 <thead>
                     <tr>
                         <th className="top_row path_label">Bottom Upgrade Path</th>
-                        <th className="top_row upgrade_button">Wanderer</th>
-                        <th className="top_row upgrade_button">Nomad</th>
-                        <th className="top_row upgrade_button">Enforcer</th>
-                        <th className="top_row upgrade_button">Avenger</th>
-                        <th className="top_row upgrade_button last_upgrade_button">The Desert Phantom</th>
+                        <th id="bottom0" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 0)}>Wanderer</th>
+                        <th id="bottom1" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 1)}>Nomad</th>
+                        <th id="bottom2" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 2)}>Enforcer</th>
+                        <th id="bottom3" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 3)}>Avenger</th>
+                        <th id="bottom4" className="top_row last_upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 4)}>The Desert Phantom</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -250,20 +250,20 @@ export function DesperadoMain() {
                     <tr>
                         <th>Changes</th>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_0" className="change_list">
                                 <li>+45% attack speed (but -15% attack speed for every tower in radius. Also applies separately to
                                      secondary weapon ranges)</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_1" className="change_list">
                                 <li>+2% attack speed/Bloon in range (+50% max. Also applies separately to secondary weapons)</li>
                                 <li><i>When lives are lost, +16 range & +40% attack speed for 15s</i></li>
                                 <li><i>If lives lost caused by leaked Bloon, generate 2x leaked Bloon's total cash value</i></li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_2" className="change_list">
                                 <li>Pistol damage 1 -&gt; 6</li>
                                 <li>+Shotgun secondary attack: 28 range, 3 pierce, 3 damage/projectile (3 projectiles/shot), fires
                                      twice per "attack" (like pistol), 1.97s attack cooldown</li>
@@ -272,7 +272,7 @@ export function DesperadoMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_3" className="change_list">
                                 <li>Pistol damage 6 -&gt; 18</li>
                                 <li>+18 Ceramic damage (pistol)</li>
                                 <li>+Shotgun now knocks back Lead/Ceramic Bloons; can also knockback MOABs (albeit at reduced intensity)</li>
@@ -282,7 +282,7 @@ export function DesperadoMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_4" className="change_list">
                                 <li>Pistol damage 18 -&gt; 50</li>
                                 <li>Pistol Ceramic bonus damage 18 -&gt; 50</li>
                                 <li>Pistol attack cooldown 1.2s -&gt; 0.6s</li>

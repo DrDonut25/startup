@@ -208,11 +208,11 @@ export function BombMain() {
                 <thead>
                     <tr>
                         <th className="top_row path_label">Bottom Upgrade Path</th>
-                        <th className="top_row upgrade_button">Extra Range</th>
-                        <th className="top_row upgrade_button">Frag Bombs</th>
-                        <th className="top_row upgrade_button">Cluster Bombs</th>
-                        <th className="top_row upgrade_button">Recursive Cluster</th>
-                        <th className="top_row upgrade_button last_upgrade_button">Bomb Blitz</th>
+                        <th id="bottom0" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 0)}>Extra Range</th>
+                        <th id="bottom1" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 1)}>Frag Bombs</th>
+                        <th id="bottom2" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 2)}>Cluster Bombs</th>
+                        <th id="bottom3" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 3)}>Recursive Cluster</th>
+                        <th id="bottom4" className="top_row last_upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 4)}>Bomb Blitz</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -227,25 +227,25 @@ export function BombMain() {
                     <tr>
                         <th>Changes</th>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_0" className="change_list">
                                 <li>+12 range</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_1" className="change_list">
                                 <li>+2 range</li>
                                 <li><i>+Explosions emit 8 bomb fragments in 360° range (1 damage/pierce each)</i></li>
                                 <li><i>Bomb fragments cannot damage original bomb target</i></li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_2" className="change_list">
                                 <li><i>Bomb fragments replaced with cluster bombs (1 damage, 8 explosion pierce each)</i></li>
                                 <li><i>Cluster (secondary) bombs can hit primary bomb target</i></li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_3" className="change_list">
                                 <li>Bomb & cluster bomb damage 1 -&gt; 2</li>
                                 <li>Primary bomb pierce 22 -&gt; 18</li>
                                 <li><i>Recursive cluster mechanic: every other attack, cluster bombs split off into 8 additional
@@ -254,7 +254,7 @@ export function BombMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_4" className="change_list">
                                 <li>All bomb damage 2 -&gt; 5</li>
                                 <li>Attack cooldown 1.5s -&gt; 0.9s</li>
                                 <li><i>Recursive cluster bombs appear every attack rather than every other attack</i></li>

@@ -223,11 +223,11 @@ export function IceMain() {
                 <thead>
                     <tr>
                         <th className="top_row path_label">Bottom Upgrade Path</th>
-                        <th className="top_row upgrade_button">Larger Radius</th>
-                        <th className="top_row upgrade_button">Re-Freeze</th>
-                        <th className="top_row upgrade_button">Cryo Cannon</th>
-                        <th className="top_row upgrade_button">Icicles</th>
-                        <th className="top_row upgrade_button last_upgrade_button">Icicle Impale</th>
+                        <th id="bottom0" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 0)}>Larger Radius</th>
+                        <th id="bottom1" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 1)}>Re-Freeze</th>
+                        <th id="bottom2" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 2)}>Cryo Cannon</th>
+                        <th id="bottom3" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 3)}>Icicles</th>
+                        <th id="bottom4" className="top_row last_upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 4)}>Icicle Impale</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -242,17 +242,17 @@ export function IceMain() {
                     <tr>
                         <th>Changes</th>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_0" className="change_list">
                                 <li>+7 range</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_1" className="change_list">
                                 <li>+Can now pop/refreeze Frozen Bloons</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_2" className="change_list">
                                 <li>+19 range</li>
                                 <li>Removed Ceramic freeze duration penalty</li>
                                 <li>Radial attack replaced wtih cannon attack: 1.2s attack cooldown & 20-unit blast radius</li>
@@ -260,7 +260,7 @@ export function IceMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_3" className="change_list">
                                 <li>Attack cooldown 1.2s -&gt; 0.75s</li>
                                 <li>Damage 1 -&gt; 2</li>
                                 <li>+Can damage MOABs (but not freeze them)</li>
@@ -269,7 +269,7 @@ export function IceMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_4" className="change_list">
                                 <li>+Can now freeze MOABs</li>
                                 <li>MOAB bonus damage 8 -&gt; 48</li>
                                 <li>+Can pop White</li>

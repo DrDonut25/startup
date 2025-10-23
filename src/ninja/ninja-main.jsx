@@ -197,11 +197,11 @@ export function NinjaMain() {
                 <thead>
                     <tr>
                         <th className="top_row path_label">Bottom Upgrade Path</th>
-                        <th className="top_row upgrade_button">Seeking Shuriken</th>
-                        <th className="top_row upgrade_button">Caltrops</th>
-                        <th className="top_row upgrade_button">Flash Bomb</th>
-                        <th className="top_row upgrade_button">Sticky Bomb</th>
-                        <th className="top_row upgrade_button last_upgrade_button">Master Bomber</th>
+                        <th id="bottom0" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 0)}>Seeking Shuriken</th>
+                        <th id="bottom1" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 1)}>Caltrops</th>
+                        <th id="bottom2" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 2)}>Flash Bomb</th>
+                        <th id="bottom3" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 3)}>Sticky Bomb</th>
+                        <th id="bottom4" className="top_row last_upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 4)}>Master Bomber</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -216,19 +216,19 @@ export function NinjaMain() {
                     <tr>
                         <th>Changes</th>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_0" className="change_list">
                                 <li>Shurikens now home in on targets</li>
                                 <li>+7 range</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_1" className="change_list">
                                 <li><i>+Caltrop attack: places caltrops onto random points on track every 3.9s—1 damage, 6 pierce,
                                      35s lifespan</i></li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_2" className="change_list">
                                 <li><i>Every 4th shuriken replaced with Flash Bomb attack: 40-unit-radius explosion, 3 damage,
                                      30 pierce</i></li>
                                 <li><i>Flash bombs stun non-MOAB Bloons for 1.3s</i></li>
@@ -238,7 +238,7 @@ export function NinjaMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_3" className="change_list">
                                 <li><i>+Sticky Bomb attack: stick bomb to MOAB-class Bloon, exploding 3s later—450 damage to main target,
                                      100 explosion damage to surrounding Bloons, 10 explosion pierce</i></li>
                                 <li><i>Sticky Bomb attack cooldown: 4.5s</i></li>
@@ -247,7 +247,7 @@ export function NinjaMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_4" className="change_list">
                                 <li><i>Sticky Bomb attack cooldown 4.5s -&gt; 2.25s</i></li>
                                 <li><i>Sticky Bomb attack now has infinite range</i></li>
                                 <li><i>Sticky Bomb main target damage 450 -&gt; 3,000</i></li>

@@ -204,11 +204,11 @@ export function BoomerangMain() {
                 <thead>
                     <tr>
                         <th className="top_row path_label">Bottom Upgrade Path</th>
-                        <th className="top_row upgrade_button">Long Range Rangs</th>
-                        <th className="top_row upgrade_button">Red Hot Rangs</th>
-                        <th className="top_row upgrade_button">Kylie Boomerang</th>
-                        <th className="top_row upgrade_button">MOAB Press</th>
-                        <th className="top_row upgrade_button last_upgrade_button">MOAB Domination</th>
+                        <th id="bottom0" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 0)}>Long Range Rangs</th>
+                        <th id="bottom1" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 1)}>Red Hot Rangs</th>
+                        <th id="bottom2" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 2)}>Kylie Boomerang</th>
+                        <th id="bottom3" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 3)}>MOAB Press</th>
+                        <th id="bottom4" className="top_row last_upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 4)}>MOAB Domination</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -223,25 +223,25 @@ export function BoomerangMain() {
                     <tr>
                         <th>Changes</th>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_0" className="change_list">
                                 <li>+33% range</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_1" className="change_list">
                                 <li>Damage 1 -&gt; 2</li>
                                 <li>+Can pop Lead</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_2" className="change_list">
                                 <li>Pierce 4 -&gt; 18</li>
                                 <li><i>Boomerangs now fly in straight path rather than curved</i></li>
                                 <li>Can rehit Bloons w/ same boomerang ever 0.3s</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_3" className="change_list">
                                 <li><i>+Heavy Kylie boomerangs that target MOABs only (thrown separately from Kylie boomerangs)</i></li>
                                 <li><i>Heavy Kylie damage: 5</i></li>
                                 <li><i>Heavy Kylie pierce: 200</i></li>
@@ -251,7 +251,7 @@ export function BoomerangMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_4" className="change_list">
                                 <li>Kylie damage 2 -&gt; 12</li>
                                 <li>Kylie pierce 18 -&gt; 54</li>
                                 <li>Kylie attack speed doubled</li>

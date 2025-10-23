@@ -260,11 +260,11 @@ export function BeastHandlerMain() {
                 <thead>
                     <tr>
                         <th className="top_row path_label">Bottom Upgrade Path</th>
-                        <th className="top_row upgrade_button">Gyrfalcon</th>
-                        <th className="top_row upgrade_button">Horned Owl</th>
-                        <th className="top_row upgrade_button">Golden Eagle</th>
-                        <th className="top_row upgrade_button">Giant Condor</th>
-                        <th className="top_row upgrade_button last_upgrade_button">Pouākai</th>
+                        <th id="bottom0" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 0)}>Gyrfalcon</th>
+                        <th id="bottom1" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 1)}>Horned Owl</th>
+                        <th id="bottom2" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 2)}>Golden Eagle</th>
+                        <th id="bottom3" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 3)}>Giant Condor</th>
+                        <th id="bottom4" className="top_row last_upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 4)}>Pouākai</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -279,7 +279,7 @@ export function BeastHandlerMain() {
                     <tr>
                         <th>Changes</th>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_0" className="change_list">
                                 <li><i>Note: this upgrade path can only be purchased when track is in range of Beast Handler</i></li>
                                 <li>Summons Gyrfalcon: <u>attacks Bloons anywhere in range of Beast Handler: damaging Bloons if
                                      uptrack</u> of user-selected location. If Bloons move downtrack of said location,
@@ -291,7 +291,7 @@ export function BeastHandlerMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_1" className="change_list">
                                 <li>Summons Horned Owl: gains Camo detection and can grab/damage Ceramics</li>
                                 <li>Horned Owl min stats (3 BP): 1 damage, 6 grab pierce, 1s attack cooldown</li>
                                 <li>Horned Owl max BP stats: +50% flight speed, 2 damage, 18 grab pierce, 0.6s attack cooldown</li>
@@ -302,7 +302,7 @@ export function BeastHandlerMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_2" className="change_list">
                                 <li>Summons Golden Eagle: enhanced damage, pierce, grab radius</li>
                                 <li><i>At max beast power, Golden Eagle can grab blue MOABs</i></li>
                                 <li>Golden Eagle min stats (8 BP): 1 damage, 30 grab pierce, 1s attack cooldown</li>
@@ -312,7 +312,7 @@ export function BeastHandlerMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_3" className="change_list">
                                 <li>Summons Giant Condor: can grab multiple MOABs and can grab BFBs, also dealing +10 MOAB damage</li>
                                 <li><i>At max beast power, Giant Condor can damage (but not grab) BADs/Boss Bloons</i></li>
                                 <li>Giant Condor min stats (16 BP): 2 damage, +10 MOAB damage, 30 grab pierce, 1s attack cooldown</li>
@@ -324,7 +324,7 @@ export function BeastHandlerMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_4" className="change_list">
                                 <li><i><u>Note: you must have 3 other Condors merged to this Beast Handler before you can purchase
                                      this upgrade</u></i></li>
                                 <li>Summons Pouākai: can pop all Bloon types, +80 MOAB damage, can damage (but not grab)

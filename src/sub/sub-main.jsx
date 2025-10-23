@@ -210,11 +210,11 @@ export function SubMain() {
                 <thead>
                     <tr>
                         <th className="top_row path_label">Bottom Upgrade Path</th>
-                        <th className="top_row upgrade_button">Twin Guns</th>
-                        <th className="top_row upgrade_button">Airburst Darts</th>
-                        <th className="top_row upgrade_button">Triple Guns</th>
-                        <th className="top_row upgrade_button">Armor Piercing Darts</th>
-                        <th className="top_row upgrade_button last_upgrade_button">Sub Commander</th>
+                        <th id="bottom0" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 0)}>Twin Guns</th>
+                        <th id="bottom1" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 1)}>Airburst Darts</th>
+                        <th id="bottom2" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 2)}>Triple Guns</th>
+                        <th id="bottom3" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 3)}>Armor Piercing Darts</th>
+                        <th id="bottom4" className="top_row last_upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 4)}>Sub Commander</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -229,23 +229,23 @@ export function SubMain() {
                     <tr>
                         <th>Changes</th>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_0" className="change_list">
                                 <li>Attack cooldown 0.75s -&gt; 0.375s</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_1" className="change_list">
                                 <li>Pierce 2 -&gt; 1</li>
                                 <li><i>+Darts now split into 3 airburst darts (1 damage, 2 pierce)</i></li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_2" className="change_list">
                                 <li>Attack cooldown 0.375s -&gt; 0.2512s</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_3" className="change_list">
                                 <li>Damage 1 -&gt; 2</li>
                                 <li>+2 MOAB damage (main dart)</li>
                                 <li>+1 MOAB damage (airburst dart)</li>
@@ -254,7 +254,7 @@ export function SubMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_4" className="change_list">
                                 <li>Attack cooldown 0.2512s -&gt; 0.1256s</li>
                                 <li>Airburst dart count 3 -&gt; 5</li>
                                 <li><i>+Sub Commander buff: all Monkey Subs in range (including itself) get 2x damage, 2x bonus damage

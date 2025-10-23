@@ -213,11 +213,11 @@ export function GlueMain() {
                 <thead>
                     <tr>
                         <th className="top_row path_label">Bottom Upgrade Path</th>
-                        <th className="top_row upgrade_button">Stickier Glue</th>
-                        <th className="top_row upgrade_button">Stronger Glue</th>
-                        <th className="top_row upgrade_button">MOAB Glue</th>
-                        <th className="top_row upgrade_button">Relentless Glue</th>
-                        <th className="top_row upgrade_button last_upgrade_button">Super Glue</th>
+                        <th id="bottom0" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 0)}>Stickier Glue</th>
+                        <th id="bottom1" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 1)}>Stronger Glue</th>
+                        <th id="bottom2" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 2)}>MOAB Glue</th>
+                        <th id="bottom3" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 3)}>Relentless Glue</th>
+                        <th id="bottom4" className="top_row last_upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 4)}>Super Glue</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -232,30 +232,30 @@ export function GlueMain() {
                     <tr>
                         <th>Changes</th>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_0" className="change_list">
                                 <li>Glue duration 11s -&gt; 24s</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_1" className="change_list">
                                 <li>Glue slow intensity -50% -&gt; -75% Bloon speed</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_2" className="change_list">
                                 <li>+Can now glue/slow MOABs for 9s</li>
                                 <li>MOAB glue slow intensity: -37.5% MOAB speed</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_3" className="change_list">
                                 <li><i>+Glue Stun mechanic: Glued Bloons release splatter that stun up to 6 nearby Bloons when popped</i></li>
                                 <li><i>Stun duration: 1s (non-MOAB-class), 0.25s (Blue MOABs/DDTs) </i></li>
                                 <li>Glue on MOAB duration 9s -&gt; 12s</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_4" className="change_list">
                                 <li>Glue slow intensity -75% -&gt; -100% Bloon speed (aka Glued Bloons and MOABs are completely immobilized)</li>
                                 <li>Glue projectiles now deal 30 damage to MOABs and 1 damage to non-MOABs on contact</li>
                                 <li>Glue glob pierce 1 -&gt; 6</li>

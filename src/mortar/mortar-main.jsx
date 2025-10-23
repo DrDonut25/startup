@@ -214,11 +214,11 @@ export function MortarMain() {
                 <thead>
                     <tr>
                         <th className="top_row path_label">Bottom Upgrade Path</th>
-                        <th className="top_row upgrade_button">Increased Accuracy</th>
-                        <th className="top_row upgrade_button">Burny Stuff</th>
-                        <th className="top_row upgrade_button">Signal Flare</th>
-                        <th className="top_row upgrade_button">Shattering Shells</th>
-                        <th className="top_row upgrade_button last_upgrade_button">Blooncineration</th>
+                        <th id="bottom0" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 0)}>Increased Accuracy</th>
+                        <th id="bottom1" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 1)}>Burny Stuff</th>
+                        <th id="bottom2" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 2)}>Signal Flare</th>
+                        <th id="bottom3" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 3)}>Shattering Shells</th>
+                        <th id="bottom4" className="top_row last_upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 4)}>Blooncineration</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -232,30 +232,30 @@ export function MortarMain() {
                     </tr>
                     <tr>
                         <th>Changes</th>
-                        <td className="change_cell">
+                        <td id="bottom_change_0" className="change_cell">
                             <ul className="change_list">
                                 <li>Explosions have ~50% reduced spread</li>
                             </ul>
                         </td>
-                        <td className="change_cell">
+                        <td id="bottom_change_1" className="change_cell">
                             <ul className="change_list">
                                 <li><i>+Attacks set Bloons on fire: 1 every 1.25s for 3.85s (cannot pop Purple)</i></li>
                             </ul>
                         </td>
-                        <td className="change_cell">
+                        <td id="bottom_change_2" className="change_cell">
                             <ul className="change_list">
                                 <li>+Camo detection</li>
                                 <li><i>+Secondary explosions remove Camo from up to 50 Bloons within 52-unit radius (including DDTs)</i></li>
                             </ul>
                         </td>
-                        <td className="change_cell">
+                        <td id="bottom_change_3" className="change_cell">
                             <ul className="change_list">
                                 <li>+Main blasts now remove Regrow/Fortified property from all Bloons up to BFBs</li>
                                 <li><i>Burny stuff now deals 5 damage every 1.25s for 3.85s</i></li>
                                 <li><i>+20 Burny Stuff damage/1.25s to MOABs</i></li>
                             </ul>
                         </td>
-                        <td className="change_cell">
+                        <td id="bottom_change_4" className="change_cell">
                             <ul className="change_list">
                                 <li>+Main blasts now remove Fortified property from DDTs</li>
                                 <li><i>Burny Stuff now deals 5 damage every 0.75s for 3.85s</i></li>

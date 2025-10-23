@@ -236,11 +236,11 @@ export function DruidMain() {
                 <thead>
                     <tr>
                         <th className="top_row path_label">Bottom Upgrade Path</th>
-                        <th className="top_row upgrade_button">Druidic Reach</th>
-                        <th className="top_row upgrade_button">Heart of Vengeance</th>
-                        <th className="top_row upgrade_button">Druid of Wrath</th>
-                        <th className="top_row upgrade_button">Poplust</th>
-                        <th className="top_row upgrade_button last_upgrade_button">Avatar of Wrath</th>
+                        <th id="bottom0" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 0)}>Druidic Reach</th>
+                        <th id="bottom1" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 1)}>Heart of Vengeance</th>
+                        <th id="bottom2" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 2)}>Druid of Wrath</th>
+                        <th id="bottom3" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 3)}>Poplust</th>
+                        <th id="bottom4" className="top_row last_upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 4)}>Avatar of Wrath</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -255,13 +255,13 @@ export function DruidMain() {
                     <tr>
                         <th>Changes</th>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_0" className="change_list">
                                 <li>+10 range</li>
                                 <li>+33% lifespan of all attacks</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_1" className="change_list">
                                 <li>+10% attack speed</li>
                                 <li>+1% attack speed for every life lost after this upgrade is purchased (maxes at +50%)</li>
                                 <li>(Lives gained after upgrade is purchased do not reduce attack speed, but regaining lives that were
@@ -269,20 +269,20 @@ export function DruidMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_2" className="change_list">
                                 <li><i>+Wrath mechanic: so long as Druid is attacking Bloons (resets after Druid is idle for &gt;2s), gain
                                      +5% attack speed for every 10 damage dealt. Maxes out at +100% attack speed</i></li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_3" className="change_list">
                                 <li><i>+Poplust buff: all other in-range Druids (not including this one) receive +15%
                                      attack speed/pierce</i></li>
                                 <li><i>Poplust buff stacks up to 5 times</i></li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_4" className="change_list">
                                 <li><i>For every 3,000 leak-damage-worth of Bloons on screen (aka the number beneath leaked Bloons when
                                      you get a Game Over screen), this Druid gains +1 damage on all attacks (up to +30 damage max)</i></li>
                                 <li>+5 range</li>

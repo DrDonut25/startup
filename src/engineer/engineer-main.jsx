@@ -219,11 +219,11 @@ export function EngineerMain() {
                 <thead>
                     <tr>
                         <th className="top_row path_label">Bottom Upgrade Path</th>
-                        <th className="top_row upgrade_button">Oversize Nails</th>
-                        <th className="top_row upgrade_button">Pin</th>
-                        <th className="top_row upgrade_button">Double Gun</th>
-                        <th className="top_row upgrade_button">Bloon Trap</th>
-                        <th className="top_row upgrade_button last_upgrade_button">XXXL Trap</th>
+                        <th id="bottom0" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 0)}>Oversize Nails</th>
+                        <th id="bottom1" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 1)}>Pin</th>
+                        <th id="bottom2" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 2)}>Double Gun</th>
+                        <th id="bottom3" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 3)}>Bloon Trap</th>
+                        <th id="bottom4" className="top_row last_upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 4)}>XXXL Trap</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -238,23 +238,23 @@ export function EngineerMain() {
                     <tr>
                         <th>Changes</th>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_0" className="change_list">
                                 <li>Pierce 3 -&gt; 8</li>
                                 <li>+Can pop Frozen (sentries included)</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_1" className="change_list">
                                 <li><i>+Nails now stun non-Lead/Ceramic/MOAB Bloons for 1s</i></li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_2" className="change_list">
                                 <li>Attack cooldown 0.7s -&gt; 0.35s</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_3" className="change_list">
                                 <li><i>+Bloon trap attack: places mechanical trap on track that instantly pops up to 500 *RBE-worth of
                                      Bloons (but cannot trap MOABs/Camo)</i></li>
                                 <li><i>Bloons popped/trapped by Bloon Trap produce +100% more cash—cash generated when trap fills
@@ -263,7 +263,7 @@ export function EngineerMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_4" className="change_list">
                                 <li><i>Trap capacity 500 RBE -&gt; 10,000 RBE</i></li>
                                 <li><i>+Trap can now trap/insta-pop MOAB-class Bloons</i></li>
                                 <li><i>Trap cash bonus +100% -&gt; +200%</i></li>

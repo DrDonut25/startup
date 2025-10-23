@@ -187,11 +187,11 @@ export function BananaMain() {
                 <thead>
                     <tr>
                         <th className="top_row path_label">Bottom Upgrade Path</th>
-                        <th className="top_row upgrade_button">EZ Collect</th>
-                        <th className="top_row upgrade_button">Banana Salvage</th>
-                        <th className="top_row upgrade_button">Marketplace</th>
-                        <th className="top_row upgrade_button">Central Market</th>
-                        <th className="top_row upgrade_button last_upgrade_button">Monkey Wall Street</th>
+                        <th id="bottom0" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 0)}>EZ Collect</th>
+                        <th id="bottom1" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 1)}>Banana Salvage</th>
+                        <th id="bottom2" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 2)}>Marketplace</th>
+                        <th id="bottom3" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 3)}>Central Market</th>
+                        <th id="bottom4" className="top_row last_upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 4)}>Monkey Wall Street</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -206,26 +206,26 @@ export function BananaMain() {
                     <tr>
                         <th>Changes</th>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_0" className="change_list">
                                 <li><i>Player can collect bananas from 50% further away</i></li>
                                 <li><i>Spoiled bananas auto-collect for half their original value</i></li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_1" className="change_list">
                                 <li><i>Spoiled bananas auto collect for 85% of their original value</i></li>
                                 <li>Sellback rate of this Banana Farm increased by 10%</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_2" className="change_list">
                                 <li><i>No longer spawns bananas, instead adding income automatically to user total</i></li>
                                 <li>Generates 16 bunches of $20 per round</li>
                                 <li>Income/round $80 -&gt; $320</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_3" className="change_list">
                                 <li>Bunch value $20 -&gt; $70</li>
                                 <li><i>Merchantman buff: all xx3 Buccaneers and higher receive +10% income</i></li>
                                 <li><i>Merchantman buff stacks up to 10 times</i></li>
@@ -233,7 +233,7 @@ export function BananaMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_4" className="change_list">
                                 <li>+Generates $4,000 at end of each round (in addition to bunch generation from previous upgrades)</li>
                                 <li>+Generates 15 lives/round</li>
                                 <li>+35 range</li>

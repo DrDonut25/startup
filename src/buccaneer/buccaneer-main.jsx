@@ -220,11 +220,11 @@ export function BuccaneerMain() {
                 <thead>
                     <tr>
                         <th className="top_row path_label">Bottom Upgrade Path</th>
-                        <th className="top_row upgrade_button">Long Range</th>
-                        <th className="top_row upgrade_button">Crow's Nest</th>
-                        <th className="top_row upgrade_button">Merchantman</th>
-                        <th className="top_row upgrade_button">Favored Trades</th>
-                        <th className="top_row upgrade_button last_upgrade_button">Trade Empire</th>
+                        <th id="bottom0" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 0)}>Long Range</th>
+                        <th id="bottom1" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 1)}>Crow's Nest</th>
+                        <th id="bottom2" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 2)}>Merchantman</th>
+                        <th id="bottom3" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 3)}>Favored Trades</th>
+                        <th id="bottom4" className="top_row last_upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('bottom', 4)}>Trade Empire</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -239,24 +239,24 @@ export function BuccaneerMain() {
                     <tr>
                         <th>Changes</th>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_0" className="change_list">
                                 <li>+11 range</li>
                                 <li>Pierce 4 -&gt; 6</li>
                                 <li>+25% projectile speed</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_1" className="change_list">
                                 <li>+Camo detection</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_2" className="change_list">
                                 <li>+Generates $200 at end of each round</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_3" className="change_list">
                                 <li>Cash generated/round $200 -&gt; $500</li>
                                 <li>Attack cooldown 1s -&gt; 0.5s</li>
                                 <li><i>+Increased sellback buff: increases sell value of in-range towers by 4% (stacks 3
@@ -264,7 +264,7 @@ export function BuccaneerMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="bottom_change_4" className="change_list">
                                 <li>Cash generated/round $500 -&gt; $800</li>
                                 <li>Damage 1 -&gt; 2</li>
                                 <li><i>Up to 20 Merchantmen on screen receive +1 damage, +1 Ceramic damage, +1 MOAB damage to all
