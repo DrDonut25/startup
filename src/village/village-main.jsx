@@ -62,11 +62,11 @@ export function VillageMain() {
                 <thead>
                     <tr>
                         <th className="top_row path_label">Top Upgrade Path</th>
-                        <th className="top_row upgrade_button">Bigger Radius</th>
-                        <th className="top_row upgrade_button">Jungle Drums</th>
-                        <th className="top_row upgrade_button">Primary Mentoring</th>
-                        <th className="top_row upgrade_button">Primary Academy</th>
-                        <th className="top_row upgrade_button last_upgrade_button">Primary Expertise</th>
+                        <th id="top0" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 0)}>Bigger Radius</th>
+                        <th id="top1" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 1)}>Jungle Drums</th>
+                        <th id="top2" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 2)}>Primary Mentoring</th>
+                        <th id="top3" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 3)}>Primary Academy</th>
+                        <th id="top4" className="top_row upgrade_button_off last_upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 4)}>Primary Expertise</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -81,30 +81,30 @@ export function VillageMain() {
                     <tr>
                         <th>Changes</th>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_0" className="change_list">
                                 <li>+8 range</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_1" className="change_list">
                                 <li><i>+Jungle Drums buff: in-range towers receive -15% attack cooldown</i></li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_2" className="change_list">
                                 <li><i>+Primary Training buff: in-range Primary Monkeys receive +10% range, +1 pierce, and +25%
                                      projectile speed </i></li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_3" className="change_list">
                                 <li><i>+Primary Mentoring buff: in-range Primary Monkeys receive +5 range, -15% ability cooldowns, and
                                      receive all Tier 1 upgrades for free</i></li>
                                 <li>+7 range</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_4" className="change_list">
                                 <li><i>Primary Monkey pierce buff +1 -&gt; +3</i></li>
                                 <li><i>Primary Monkey ability cooldown buff -15% -&gt; 25%</i></li>
                                 <li><i>+In-range Primary Monkeys now also receive all Tier 2 upgrades for free</i></li>

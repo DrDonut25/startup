@@ -82,11 +82,11 @@ export function DesperadoMain() {
                 <thead>
                     <tr>
                         <th className="top_row path_label">Top Upgrade Path</th>
-                        <th className="top_row upgrade_button">Quickdraw</th>
-                        <th className="top_row upgrade_button">Standoff</th>
-                        <th className="top_row upgrade_button">Big Iron</th>
-                        <th className="top_row upgrade_button">Twin Sixes</th>
-                        <th className="top_row upgrade_button last_upgrade_button">The Blazing Sun</th>
+                        <th id="top0" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 0)}>Quickdraw</th>
+                        <th id="top1" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 1)}>Standoff</th>
+                        <th id="top2" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 2)}>Big Iron</th>
+                        <th id="top3" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 3)}>Twin Sixes</th>
+                        <th id="top4" className="top_row upgrade_button_off last_upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 4)}>The Blazing Sun</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -101,19 +101,19 @@ export function DesperadoMain() {
                     <tr>
                         <th>Changes</th>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_0" className="change_list">
                                 <li>+1% attack speed per unit distance a Bloon is from Desperado (up to +50% attack speed)</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_1" className="change_list">
                                 <li>+60% attack speed if only 1 Bloon in range; -15% attack speed/Bloon in range
                                      (0% reduction minimum)</li>
                                 <li>In other words, Desperado attacks faster if fewer than 5 Bloons in range</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_2" className="change_list">
                                 <li>Shots fired/attack 2 -&gt; 6</li>
                                 <li>Damage 1 -&gt; 2</li>
                                 <li>Standoff bonus attack speed +60% (max) -&gt; 120% (max)</li>
@@ -122,13 +122,13 @@ export function DesperadoMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_3" className="change_list">
                                 <li>Shots fired/attack 6 -&gt; 12</li>
                                 <li>Damage/shot 2 -&gt; 6</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_4" className="change_list">
                                 <li>Attack cooldown (between bursts) 1.2s -&gt; 0.3s</li>
                                 <li>Damage/shot 6 -&gt; 20</li>
                                 <li>+40 Ceramic damage/shot</li>

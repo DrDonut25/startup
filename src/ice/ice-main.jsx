@@ -90,11 +90,11 @@ export function IceMain() {
                 <thead>
                     <tr>
                         <th className="top_row path_label">Top Upgrade Path</th>
-                        <th className="top_row upgrade_button">Permafrost</th>
-                        <th className="top_row upgrade_button">Cold Snap</th>
-                        <th className="top_row upgrade_button">Ice Shards</th>
-                        <th className="top_row upgrade_button">Embrittlement</th>
-                        <th className="top_row upgrade_button last_upgrade_button">Super Brittle</th>
+                        <th id="top0" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 0)}>Permafrost</th>
+                        <th id="top1" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 1)}>Cold Snap</th>
+                        <th id="top2" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 2)}>Ice Shards</th>
+                        <th id="top3" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 3)}>Embrittlement</th>
+                        <th id="top4" className="top_row upgrade_button_off last_upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 4)}>Super Brittle</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -109,24 +109,24 @@ export function IceMain() {
                     <tr>
                         <th>Changes</th>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_0" className="change_list">
                                 <li><i>Bloons popped by Ice Monkey move at 50% speed (until they lose 2 more layers)</i></li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_1" className="change_list">
                                 <li>+Can pop Camo/Lead</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_2" className="change_list">
                                 <li><i>When frozen Bloons pop, 3 ice shards fly out in 360° area (2 damage, 3 pierce per shard)</i></li>
                                 <li>+5 range</li>
                                 <li><i>Attacks remove Camo/Regrow</i></li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_3" className="change_list">
                                 <li><i>Hit Bloons become brittle: hit Bloons temporariliy lose Lead/Frozen properties and take +1
                                      additional damage for 2s</i></li>
                                 <li><i>Ice shards now remove Camo/Regrow</i></li>
@@ -134,7 +134,7 @@ export function IceMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_4" className="change_list">
                                 <li><i>Brittle Bloons now take +4 additional damage</i></li>
                                 <li><i>Bloons become brittle for 3s instead of 2s</i></li>
                                 <li><i>Frozen Bloons now emit 6 ice shards, each dealing 10 damage instead of 2</i></li>

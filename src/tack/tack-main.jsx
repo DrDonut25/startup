@@ -82,11 +82,11 @@ export function TackMain() {
                 <thead>
                     <tr>
                         <th className="top_row path_label">Top Upgrade Path</th>
-                        <th className="top_row upgrade_button">Faster Shooting</th>
-                        <th className="top_row upgrade_button">Even Faster Shooting</th>
-                        <th className="top_row upgrade_button">Hot Shots</th>
-                        <th className="top_row upgrade_button">Ring of Fire</th>
-                        <th className="top_row upgrade_button last_upgrade_button">Inferno Ring</th>
+                        <th id="top0" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 0)}>Faster Shooting</th>
+                        <th id="top1" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 1)}>Even Faster Shooting</th>
+                        <th id="top2" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 2)}>Hot Shots</th>
+                        <th id="top3" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 3)}>Ring of Fire</th>
+                        <th id="top4" className="top_row upgrade_button_off last_upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 4)}>Inferno Ring</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -101,23 +101,23 @@ export function TackMain() {
                     <tr>
                         <th>Changes</th>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_0" className="change_list">
                                 <li>Attack cooldown 1.12s -&gt; 0.84s</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_1" className="change_list">
                                 <li>Attack cooldown 0.84s -&gt; 0.63s</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_2" className="change_list">
                                 <li>Damage 1 -&gt; 2</li>
                                 <li>+Can pop Lead</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_3" className="change_list">
                                 <li>Attack cooldown 0.63s -&gt; 0.315s</li>
                                 <li>Damage 2 -&gt; 5</li>
                                 <li>Pierce 1 -&gt; 30</li>
@@ -127,7 +127,7 @@ export function TackMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_4" className="change_list">
                                 <li>Attack cooldown 0.315s -&gt; 0.1s</li>
                                 <li>Damage 5 -&gt; 8</li>
                                 <li>+4 MOAB damage</li>

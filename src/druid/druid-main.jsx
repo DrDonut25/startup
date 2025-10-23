@@ -82,11 +82,11 @@ export function DruidMain() {
                 <thead>
                     <tr>
                         <th className="top_row path_label">Top Upgrade Path</th>
-                        <th className="top_row upgrade_button">Hard Thorns</th>
-                        <th className="top_row upgrade_button">Heart of Thunder</th>
-                        <th className="top_row upgrade_button">Druid of the Storm</th>
-                        <th className="top_row upgrade_button">Ball Lightning</th>
-                        <th className="top_row upgrade_button last_upgrade_button">Monarch of Storms</th>
+                        <th id="top0" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 0)}>Hard Thorns</th>
+                        <th id="top1" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 1)}>Heart of Thunder</th>
+                        <th id="top2" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 2)}>Druid of the Storm</th>
+                        <th id="top3" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 3)}>Ball Lightning</th>
+                        <th id="top4" className="top_row upgrade_button_off last_upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 4)}>Monarch of Storms</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -101,13 +101,13 @@ export function DruidMain() {
                     <tr>
                         <th>Changes</th>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_0" className="change_list">
                                 <li>Pierce 1 -&gt; 2</li>
                                 <li>+Can pop all Bloon types except Camo</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_1" className="change_list">
                                 <li><i>+Heart of Thunder attack: fires lightning, splitting recursively into 2 forks of lightning that
                                      can hit even more Bloons—2 damage, 31 total pierce across all forks, 2.3s attack cooldown</i></li>
                                 <li><i>Lightning jumps instantaneously from Bloon to Bloon, even behind map obstacles</i></li>
@@ -115,7 +115,7 @@ export function DruidMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_2" className="change_list">
                                 <li><i>+Tornado attack: fires seeking mini-tornadoes at Bloons, dealing 0 damage but blowing them
                                      100-200 units backwards</i></li>
                                 <li><i>Tornado stats: 0 damage, 24 pierce (though Ceramics eat up 2 pierce instead of 1), 2.5s
@@ -125,7 +125,7 @@ export function DruidMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_3" className="change_list">
                                 <li><i>+Lightning ball attack: fires slow-moving balls of lightning every 6s that create frequent arcs
                                      of lightning, while ball itself freezes non-White/Lead Bloons on contact for 4.5s (soaks through
                                       4 layers)</i></li>
@@ -138,7 +138,7 @@ export function DruidMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_4" className="change_list">
                                 <li><i>+Superstorm attack: fires slow-moving electric tornado every 4s that deals 120 damage and blows
                                      back MOAB-class Bloons by minimum of 100 units (50 if ZOMG); superstorm projectile also fires ball
                                       lightning every second in random direction</i></li>

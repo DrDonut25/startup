@@ -82,11 +82,11 @@ export function SpikeFactoryMain() {
                 <thead>
                     <tr>
                         <th className="top_row path_label">Top Upgrade Path</th>
-                        <th className="top_row upgrade_button">Bigger Stacks</th>
-                        <th className="top_row upgrade_button">White Hot Spikes</th>
-                        <th className="top_row upgrade_button">Spiked Balls</th>
-                        <th className="top_row upgrade_button">Spiked Mines</th>
-                        <th className="top_row upgrade_button last_upgrade_button">Super Mines</th>
+                        <th id="top0" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 0)}>Bigger Stacks</th>
+                        <th id="top1" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 1)}>White Hot Spikes</th>
+                        <th id="top2" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 2)}>Spiked Balls</th>
+                        <th id="top3" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 3)}>Spiked Mines</th>
+                        <th id="top4" className="top_row upgrade_button_off last_upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 4)}>Super Mines</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -101,17 +101,17 @@ export function SpikeFactoryMain() {
                     <tr>
                         <th>Changes</th>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_0" className="change_list">
                                 <li>Pierce 5 -&gt; 10</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_1" className="change_list">
                                 <li>+Can pop Lead</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_2" className="change_list">
                                 <li>Damage 1 -&gt; 2</li>
                                 <li>+3 Ceramic damage</li>
                                 <li>+1 Fortified damage</li>
@@ -119,7 +119,7 @@ export function SpikeFactoryMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_3" className="change_list">
                                 <li><i>Spike balls replaced with spike mines: when mines lose all their spikes, they explode, setting
                                      Bloons on fire</i></li>
                                 <li><i>Explosion stats: 10 damage, +2 Ceramic damage, +3 Fortified damage, 30 pierce
@@ -130,7 +130,7 @@ export function SpikeFactoryMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_4" className="change_list">
                                 <li>Attack cooldown 1.75s -&gt; 3.5s</li>
                                 <li><i>+Every time a spike is depleted, non-burning mini explosion is created</i></li>
                                 <li><i>Mini-explosion stats: 20 damage, +15 Ceramic damage, +5 Fortified damage, 30 pierce</i></li>

@@ -82,11 +82,11 @@ export function SubMain() {
                 <thead>
                     <tr>
                         <th className="top_row path_label">Top Upgrade Path</th>
-                        <th className="top_row upgrade_button">Longer Range</th>
-                        <th className="top_row upgrade_button">Advanced Intel</th>
-                        <th className="top_row upgrade_button">Submerge and Support</th>
-                        <th className="top_row upgrade_button">Bloontonium Reactor</th>
-                        <th className="top_row upgrade_button last_upgrade_button">Energizer</th>
+                        <th id="top0" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 0)}>Longer Range</th>
+                        <th id="top1" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 1)}>Advanced Intel</th>
+                        <th id="top2" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 2)}>Submerge and Support</th>
+                        <th id="top3" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 3)}>Bloontonium Reactor</th>
+                        <th id="top4" className="top_row upgrade_button_off last_upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 4)}>Energizer</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -101,24 +101,24 @@ export function SubMain() {
                     <tr>
                         <th>Changes</th>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_0" className="change_list">
                                 <li>+10 range</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_1" className="change_list">
                                 <li><i>+Can now target Bloons in range of other towers (unless map obstacles block view)</i></li>
                                 <li><i>+Camo detection (if tower it "sees" through can see Camo)</i></li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_2" className="change_list">
                                 <li><i>+Submerge targeting option: Sub stops all dart-based attacks and instead removes Camo from up to
                                      100 in-range Bloons every 1.5s</i></li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_3" className="change_list">
                                 <li>Submerge pulse cooldown 1.5s -&gt; 0.28s</li>
                                 <li>Submerge pulses now deal 1 damage each (can pop Frozen but not Lead)</li>
                                 <li>Submerge pulse damage pierce 50 (decamo pierce remains 100)</li>
@@ -127,7 +127,7 @@ export function SubMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_4" className="change_list">
                                 <li><i>+All towers on screen have 20% shorter ability cooldowns</i></li>
                                 <li><i>In-range water tower ability cooldown buff -15% reduction -&gt; -40% reduction</i></li>
                                 <li><i>In-range Heroes gain +50% more XP</i></li>

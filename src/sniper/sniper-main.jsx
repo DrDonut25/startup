@@ -82,11 +82,11 @@ export function SniperMain() {
                 <thead>
                     <tr>
                         <th className="top_row path_label">Top Upgrade Path</th>
-                        <th className="top_row upgrade_button">Full Metal Jacket</th>
-                        <th className="top_row upgrade_button">Large Calibre</th>
-                        <th className="top_row upgrade_button">Deadly Precision</th>
-                        <th className="top_row upgrade_button">Main MOAB</th>
-                        <th className="top_row upgrade_button last_upgrade_button">Cripple MOAB</th>
+                        <th id="top0" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 0)}>Full Metal Jacket</th>
+                        <th id="top1" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 1)}>Large Calibre</th>
+                        <th id="top2" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 2)}>Deadly Precision</th>
+                        <th id="top3" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 3)}>Main MOAB</th>
+                        <th id="top4" className="top_row upgrade_button_off last_upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 4)}>Cripple MOAB</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -101,31 +101,31 @@ export function SniperMain() {
                     <tr>
                         <th>Changes</th>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_0" className="change_list">
                                 <li>Damage 2 -&gt; 4</li>
                                 <li>+Can pop Lead</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_1" className="change_list">
                                 <li>Damage 4 -&gt; 7</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_2" className="change_list">
                                 <li>Damage 7 -&gt; 20</li>
                                 <li>+15 Ceramic damage</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_3" className="change_list">
                                 <li>Damage 20 -&gt; 30</li>
                                 <li><i>+Shots now briefly stun MOABs (stun duration varies for each MOAB type)</i></li>
                                 <li><i>MOAB/BFB/ZOMG/DDT stun duration is 3s/1.5s/0.75s/0.75s (respectively)</i></li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_4" className="change_list">
                                 <li>Damage 30 -&gt; 140</li>
                                 <li><i>+Bullets now explode (28 damage to up to 10 Bloons per bullet)</i></li>
                                 <li><i>MOAB/BFB/ZOMG/DDT stun duration increased from 3s/1.5s/0.75s/0.75s to 7s/6s/3s/4s (respectively)</i></li>

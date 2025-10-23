@@ -82,11 +82,11 @@ export function SuperMain() {
                 <thead>
                     <tr>
                         <th className="top_row path_label">Top Upgrade Path</th>
-                        <th className="top_row upgrade_button">Laser Blasts</th>
-                        <th className="top_row upgrade_button">Plasma Blasts</th>
-                        <th className="top_row upgrade_button">Sun Avatar</th>
-                        <th className="top_row upgrade_button">Sun Temple</th>
-                        <th className="top_row upgrade_button last_upgrade_button">True Sun God</th>
+                        <th id="top0" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 0)}>Laser Blasts</th>
+                        <th id="top1" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 1)}>Plasma Blasts</th>
+                        <th id="top2" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 2)}>Sun Avatar</th>
+                        <th id="top3" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 3)}>Sun Temple</th>
+                        <th id="top4" className="top_row upgrade_button_off last_upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 4)}>True Sun God</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -101,28 +101,28 @@ export function SuperMain() {
                     <tr>
                         <th>Changes</th>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_0" className="change_list">
                                 <li>Pierce 1 -&gt; 2</li>
                                 <li>+Can pop Frozen, but not Purple</li>
                                 <li>Slightly increased projectile size</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_1" className="change_list">
                                 <li>Attack cooldown 0.045s -&gt; 0.03s</li>
                                 <li>Slightly increased projectile size</li>
                                 <li>+Can pop Lead</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_2" className="change_list">
                                 <li>Now fires 3 sun projectiles/attack in 30° cone</li>
                                 <li>Pierce 2 -&gt; 6</li>
                                 <li>Doubled projectile speed</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_3" className="change_list">
                                 <li><i>DEV NOTE: I ran out of time before I could implement functionality for the sacrifice mechanic
                                      for this upgrade. It is a very complex gameplay mechanic, one that I could not simulate in time
                                      for this class assignment.</i></li>
@@ -135,7 +135,7 @@ export function SuperMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_4" className="change_list">
                                 <li>Accepts another set of sacrifices, giving same sacrifice benefits in addition to Sun Temple
                                      sacrifices</li>
                                 <li><i>True Sun God will also accept sacrifices from all 4 tower categories instead of 3</i></li>

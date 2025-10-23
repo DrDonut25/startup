@@ -86,11 +86,11 @@ export function BeastHandlerMain() {
                 <thead>
                     <tr>
                         <th className="top_row path_label">Top Upgrade Path</th>
-                        <th className="top_row upgrade_button">Piranha</th>
-                        <th className="top_row upgrade_button">Barracuda</th>
-                        <th className="top_row upgrade_button">Great White Shark</th>
-                        <th className="top_row upgrade_button">Orca</th>
-                        <th className="top_row upgrade_button last_upgrade_button">Megalodon</th>
+                        <th id="top0" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 0)}>Piranha</th>
+                        <th id="top1" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 1)}>Barracuda</th>
+                        <th id="top2" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 2)}>Great White Shark</th>
+                        <th id="top3" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 3)}>Orca</th>
+                        <th id="top4" className="top_row upgrade_button_off last_upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 4)}>Megalodon</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -105,7 +105,7 @@ export function BeastHandlerMain() {
                     <tr>
                         <th>Changes</th>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_0" className="change_list">
                                 <li><i>Note: this upgrade/path can only be purchased when water is in range of Beast Handler</i></li>
                                 <li>Summons Piranha: 1 damage, 1 pierce, 0.6s attack cooldown, 25-unit range</li>
                                 <li>+Piranha can pop Frozen (but not Camo/Lead)</li>
@@ -115,7 +115,7 @@ export function BeastHandlerMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_1" className="change_list">
                                 <li>Summons Barracuda: has splash attack and can knock back Bloons—range increased by 5</li>
                                 <li>Barracuda min stats (3 BP): 2 damage, 4 splash pierce, 0.6s attack cooldown</li>
                                 <li>Barracuda max BP stats: 4 damage, 12 splash pierce, 0.3937s attack cooldown</li>
@@ -125,7 +125,7 @@ export function BeastHandlerMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_2" className="change_list">
                                 <li>Summons Great White Shark: +10 range, latches onto a target Bloon, <u>thrashes</u> around with it
                                  in its jaws—thrashes deal repeated damage to target Bloon while also creating <u>damaging splashes
                                  that knock back</u> surrounding Bloons</li>
@@ -142,7 +142,7 @@ export function BeastHandlerMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_3" className="change_list">
                                 <li>Summons Orca: thrashes create larger splashes, increased knockback duration, +10 range,
                                      and can drag/insta-pop blue MOABs/BFBs</li>
                                 <li><u>At max BP, Orca can drag ZOMGs (and DDTs, if visible)</u></li>
@@ -155,7 +155,7 @@ export function BeastHandlerMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_4" className="change_list">
                                 <li><i><u>Note: you must have 3 other Orcas merged to this Beast Handler before you can purchase
                                      this upgrade</u></i></li>
                                 <li>Summons Megalodon: +10 range, thrash splash radius doubled, improved knockback against MOAB-class

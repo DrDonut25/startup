@@ -94,11 +94,11 @@ export function GlueMain() {
                 <thead>
                     <tr>
                         <th className="top_row path_label">Top Upgrade Path</th>
-                        <th className="top_row upgrade_button">Glue Soak</th>
-                        <th className="top_row upgrade_button">Corrosive Glue</th>
-                        <th className="top_row upgrade_button">Bloon Dissolver</th>
-                        <th className="top_row upgrade_button">Bloon Liquefier</th>
-                        <th className="top_row upgrade_button last_upgrade_button">Bloon Solver</th>
+                        <th id="top0" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 0)}>Glue Soak</th>
+                        <th id="top1" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 1)}>Corrosive Glue</th>
+                        <th id="top2" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 2)}>Bloon Dissolver</th>
+                        <th id="top3" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 3)}>Bloon Liquefier</th>
+                        <th id="top4" className="top_row upgrade_button_off last_upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 4)}>Bloon Solver</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -113,18 +113,18 @@ export function GlueMain() {
                     <tr>
                         <th>Changes</th>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_0" className="change_list">
                                 <li>Layers glued/glob 3 -&gt; Infinite</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_1" className="change_list">
                                 <li><i>+Damage over time effect: Glued Bloons take 1 damage every 2 seconds</i></li>
                                 <li>+Glue can damage MOABs (but cannot slow them)</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_2" className="change_list">
                                 <li>Damage over time increased to 2 damage/s</li>
                                 <li>+2 Ceramic damage/s</li>
                                 <li>Pierce 1 -&gt; 2</li>
@@ -132,14 +132,14 @@ export function GlueMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_3" className="change_list">
                                 <li>Damage over time increased to 10 damage/s</li>
                                 <li><i>Acid puddle mechanic: when Bloon glued by this tower pops, it drops puddle of acid that lingers
                                      on track for 7.7s. Each puddle deals 4 damage to up to 3 Bloons</i></li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_4" className="change_list">
                                 <li>Ceramic bonus 2 damage/s -&gt; 80 damage/s</li>
                                 <li>+40 MOAB damage/s</li>
                                 <li>Acid puddle damage 4 -&gt; 15</li>

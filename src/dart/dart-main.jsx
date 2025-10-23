@@ -82,11 +82,11 @@ export function DartMain() {
                 <thead>
                     <tr>
                         <th className="top_row path_label">Top Upgrade Path</th>
-                        <th className="top_row upgrade_button">Sharp Shots</th>
-                        <th className="top_row upgrade_button">Razor Sharp Shots</th>
-                        <th className="top_row upgrade_button">Spike-o-pult</th>
-                        <th className="top_row upgrade_button">Juggernaut</th>
-                        <th className="top_row upgrade_button last_upgrade_button">Ultra-Juggernaut</th>
+                        <th id="top0" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 0)}>Sharp Shots</th>
+                        <th id="top1" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 1)}>Razor Sharp Shots</th>
+                        <th id="top2" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 2)}>Spike-o-pult</th>
+                        <th id="top3" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 3)}>Juggernaut</th>
+                        <th id="top4" className="top_row upgrade_button_off last_upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 4)}>Ultra-Juggernaut</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -101,17 +101,17 @@ export function DartMain() {
                     <tr>
                         <th>Changes</th>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_0" className="change_list">
                                 <li>Pierce 2 -&gt; 3</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_1" className="change_list">
                                 <li>Pierce 3 -&gt; 5</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_2" className="change_list">
                                 <li>+4.8 range</li>
                                 <li>-17.4% attack speed</li>
                                 <li>Damage 1 -&gt; 2</li>
@@ -121,7 +121,7 @@ export function DartMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_3" className="change_list">
                                 <li>+15% attack speed</li>
                                 <li>Doubled projectile speed</li>
                                 <li>Pierce 18 -&gt; 60</li>
@@ -132,7 +132,7 @@ export function DartMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_4" className="change_list">
                                 <li>Damage 2 -&gt; 5</li>
                                 <li>Fortified bonus damage 2 -&gt; 5</li>
                                 <li>Ceramic bonus damage 3 -&gt; 8</li>

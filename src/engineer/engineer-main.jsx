@@ -82,11 +82,11 @@ export function EngineerMain() {
                 <thead>
                     <tr>
                         <th className="top_row path_label">Top Upgrade Path</th>
-                        <th className="top_row upgrade_button">Sentry Gun</th>
-                        <th className="top_row upgrade_button">Faster Engineering</th>
-                        <th className="top_row upgrade_button">Sprockets</th>
-                        <th className="top_row upgrade_button">Sentry Expert</th>
-                        <th className="top_row upgrade_button last_upgrade_button">Sentry Champion</th>
+                        <th id="top0" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 0)}>Sentry Gun</th>
+                        <th id="top1" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 1)}>Faster Engineering</th>
+                        <th id="top2" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 2)}>Sprockets</th>
+                        <th id="top3" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 3)}>Sentry Expert</th>
+                        <th id="top4" className="top_row upgrade_button_off last_upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 4)}>Sentry Champion</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -101,24 +101,24 @@ export function EngineerMain() {
                     <tr>
                         <th>Changes</th>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_0" className="change_list">
                                 <li><i>+Now deploys sentry turrets every 10s—turrets last 25s before expiring</i></li>
                                 <li><i>Sentry stats: 1 damage, 2 pierce, 0.95s attack cooldown, 45-unit range</i></li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_1" className="change_list">
                                 <li><i>Now deploys sentry turrets every 5s instead of 10s</i></li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_2" className="change_list">
                                 <li>Attack cooldown 0.7s -&gt; 0.35s</li>
                                 <li><i>Sentry attack cooldown 0.95s -&gt; 0.475s</i></li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_3" className="change_list">
                                 <li><i>Depending on what Bloon types are on screen, Engineer now deploys 1 of 4 types of new sentry guns
                                      (replaces standard green sentries from previous upgrades)</i></li>
                                 <li><i>+Red Crushing Sentry (deployed when Purple/Ceramic present): fires spike balls that bounce off
@@ -138,7 +138,7 @@ export function EngineerMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_4" className="change_list">
                                 <li><i>No longer deploys any sentries from previous upgrades, instead deploying champion sentry guns</i></li>
                                 <li><i>Champion sentries shoot plasma balls and explode after they expire</i></li>
                                 <li><i>Champion sentry attack stats: 3 damage, 5 pierce, 0.06s attack cooldown, 50-unit range</i></li>

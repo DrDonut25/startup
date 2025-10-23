@@ -82,11 +82,11 @@ export function NinjaMain() {
                 <thead>
                     <tr>
                         <th className="top_row path_label">Top Upgrade Path</th>
-                        <th className="top_row upgrade_button">Ninja Discipline</th>
-                        <th className="top_row upgrade_button">Sharp Shurikens</th>
-                        <th className="top_row upgrade_button">Double Shot</th>
-                        <th className="top_row upgrade_button">Bloonjitsu</th>
-                        <th className="top_row upgrade_button last_upgrade_button">Grandmaster Ninja</th>
+                        <th id="top0" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 0)}>Ninja Discipline</th>
+                        <th id="top1" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 1)}>Sharp Shurikens</th>
+                        <th id="top2" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 2)}>Double Shot</th>
+                        <th id="top3" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 3)}>Bloonjitsu</th>
+                        <th id="top4" className="top_row upgrade_button_off last_upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 4)}>Grandmaster Ninja</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -101,27 +101,27 @@ export function NinjaMain() {
                     <tr>
                         <th>Changes</th>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_0" className="change_list">
                                 <li>Attack cooldown 0.62s -&gt; 0.434s</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_1" className="change_list">
                                 <li>Pierce 2 -&gt; 4</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_2" className="change_list">
                                 <li>Now throws 2 shurikens per attack in 18° cone</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_3" className="change_list">
                                 <li>Now throws 5 shurikens per attack in 45° cone</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_4" className="change_list">
                                 <li>Now throws 8 shurikens per attack in 72° cone</li>
                                 <li>Damage 1 -&gt; 2</li>
                                 <li>Attack cooldown 0.434s -&gt; 0.217s</li>

@@ -82,11 +82,11 @@ export function DartlingMain() {
                 <thead>
                     <tr>
                         <th className="top_row path_label">Top Upgrade Path</th>
-                        <th className="top_row upgrade_button">Focused Firing</th>
-                        <th className="top_row upgrade_button">Laser Shock</th>
-                        <th className="top_row upgrade_button">Laser Cannon</th>
-                        <th className="top_row upgrade_button">Plasma Accelerator</th>
-                        <th className="top_row upgrade_button last_upgrade_button">Ray of Doom</th>
+                        <th id="top0" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 0)}>Focused Firing</th>
+                        <th id="top1" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 1)}>Laser Shock</th>
+                        <th id="top2" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 2)}>Laser Cannon</th>
+                        <th id="top3" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 3)}>Plasma Accelerator</th>
+                        <th id="top4" className="top_row upgrade_button_off last_upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 4)}>Ray of Doom</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -101,19 +101,19 @@ export function DartlingMain() {
                     <tr>
                         <th>Changes</th>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_0" className="change_list">
                                 <li>Projectile spread 23° -&gt; 9.2°</li>
                                 <li>Increased projectile lifespan</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_1" className="change_list">
                                 <li><i>+Hit Bloons become shocked for 1s: takes +1 from all other 2xx Dartling Gunners—shocked Bloons
                                      take 1 damage/s for 1s</i></li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_2" className="change_list">
                                 <li>Damage 1 -&gt; 2</li>
                                 <li>Pierce 1 -&gt; 6</li>
                                 <li>+~43% projectile speed</li>
@@ -123,7 +123,7 @@ export function DartlingMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_3" className="change_list">
                                 <li>Lasers replaced w/ continuous plasma beam that extends to selected target point: beam deals
                                      frequent damage, but tip of beam even more powerful </li>
                                 <li>Beam stats: 1 damage, 50 pierce, 0.2s attack cooldown</li>
@@ -132,7 +132,7 @@ export function DartlingMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_4" className="change_list">
                                 <li>Laser beam is larger and extends infinitely rather than to selected target point</li>
                                 <li>Damage 1 -&gt; 30</li>
                                 <li>Pierce 50 -&gt; 999</li>

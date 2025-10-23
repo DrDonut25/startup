@@ -70,11 +70,11 @@ export function BananaMain() {
                 <thead>
                     <tr>
                         <th className="top_row path_label">Top Upgrade Path</th>
-                        <th className="top_row upgrade_button">Increased Production</th>
-                        <th className="top_row upgrade_button">Greater Production</th>
-                        <th className="top_row upgrade_button">Banana Plantation</th>
-                        <th className="top_row upgrade_button">Banana Research Facility</th>
-                        <th className="top_row upgrade_button last_upgrade_button">Banana Central</th>
+                        <th id="top0" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 0)}>Increased Production</th>
+                        <th id="top1" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 1)}>Greater Production</th>
+                        <th id="top2" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 2)}>Banana Plantation</th>
+                        <th id="top3" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 3)}>Banana Research Facility</th>
+                        <th id="top4" className="top_row upgrade_button_off last_upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 4)}>Banana Central</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -89,32 +89,32 @@ export function BananaMain() {
                     <tr>
                         <th>Changes</th>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_0" className="change_list">
                                 <li>Banana count/round 4 -&gt; 6</li>
                                 <li>Income/round $80 -&gt; 120</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_1" className="change_list">
                                 <li>Banana count/round 6 -&gt; 8</li>
                                 <li>Income/round $120 -&gt; $160</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_2" className="change_list">
                                 <li>Banana count/round 8 -&gt; 16</li>
                                 <li>Income/round $160 -&gt; $320</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_3" className="change_list">
                                 <li><i>Produces 5 banana crates/round instead of bananas</i></li>
                                 <li>Banana crate value: $300</li>
                                 <li>Income/round $320 -&gt; $1,500</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_4" className="change_list">
                                 <li>Banana crate value $300 -&gt; $1,200</li>
                                 <li><i>Banana Central buff: all other Banana Research Facilities receive +25% income</i></li>
                                 <li>Income/round $1,500 -&gt; $6,000</li>

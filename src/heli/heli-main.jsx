@@ -86,11 +86,11 @@ export function HeliMain() {
                 <thead>
                     <tr>
                         <th className="top_row path_label">Top Upgrade Path</th>
-                        <th className="top_row upgrade_button">Quad Darts</th>
-                        <th className="top_row upgrade_button">Pursuit</th>
-                        <th className="top_row upgrade_button">Razor Rotors</th>
-                        <th className="top_row upgrade_button">Apache Dartship</th>
-                        <th className="top_row upgrade_button last_upgrade_button">Apache Prime</th>
+                        <th id="top0" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 0)}>Quad Darts</th>
+                        <th id="top1" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 1)}>Pursuit</th>
+                        <th id="top2" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 2)}>Razor Rotors</th>
+                        <th id="top3" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 3)}>Apache Dartship</th>
+                        <th id="top4" className="top_row upgrade_button_off last_upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 4)}>Apache Prime</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -105,12 +105,12 @@ export function HeliMain() {
                     <tr>
                         <th>Changes</th>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_0" className="change_list">
                                 <li>Darts/shot 2 -&gt; 4</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_1" className="change_list">
                                 <li><i>+Pursuit Targeting: Heli Pilot will target/fly toward farthest Bloon along track (equivalent
                                      to First Targeting)</i></li>
                                 <li><i>If Heli set to Patrol Points Targeting, Heli will pursue Bloons that pass in between the two
@@ -118,13 +118,13 @@ export function HeliMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_2" className="change_list">
                                 <li><i>+Razor rotors attack: up to 10 Bloons within 35 units of Heli take 2 damage every 0.45s
                                      (can pop Lead)</i></li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_3" className="change_list">
                                 <li><i>+Machine gun attack: rapidly fires darts: 1 damage, 7 pierce, 0.05s attack cooldown per dart
                                      (cannot pop Lead)</i></li>
                                 <li><i>+Missile array attack: fires 4 homing missiles per shot from up to twice Heli's range: 2 damage,
@@ -135,7 +135,7 @@ export function HeliMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_4" className="change_list">
                                 <li>Machine gun damage 1 -&gt; 5; pierce 7 -&gt; 11; can now pop all Bloon types except Purple</li>
                                 <li>+15 MOAB damage (missile array)</li>
                                 <li>Quad darts replaced with quad lasers (can pop Frozen but not Lead/Purple);

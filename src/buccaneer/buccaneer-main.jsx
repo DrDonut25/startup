@@ -82,11 +82,11 @@ export function BuccaneerMain() {
                 <thead>
                     <tr>
                         <th className="top_row path_label">Top Upgrade Path</th>
-                        <th className="top_row upgrade_button">Faster Shooting</th>
-                        <th className="top_row upgrade_button">Double Shot</th>
-                        <th className="top_row upgrade_button">Destroyer</th>
-                        <th className="top_row upgrade_button">Aircraft Carrier</th>
-                        <th className="top_row upgrade_button last_upgrade_button">Carrier Flagship</th>
+                        <th id="top0" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 0)}>Faster Shooting</th>
+                        <th id="top1" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 1)}>Double Shot</th>
+                        <th id="top2" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 2)}>Destroyer</th>
+                        <th id="top3" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 3)}>Aircraft Carrier</th>
+                        <th id="top4" className="top_row upgrade_button_off last_upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 4)}>Carrier Flagship</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -101,22 +101,22 @@ export function BuccaneerMain() {
                     <tr>
                         <th>Changes</th>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_0" className="change_list">
                                 <li>Attack cooldown 1s -&gt; 0.75s</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_1" className="change_list">
                                 <li>+1 dart/attack</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_2" className="change_list">
                                 <li>Attack cooldown 0.75s -&gt; 0.15s</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_3" className="change_list">
                                 <li><i>+3 mini fighter planes: have infinite range and have 3 different attack types (see below)</i></li>
                                 <li><i>Forward dart attack: 2 darts fired in rapid succession as plane approaches target—2 damage,
                                      4 pierce, attack cooldown 0.18s per dart</i></li>
@@ -127,7 +127,7 @@ export function BuccaneerMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_4" className="change_list">
                                 <li>Buccaneer attack pierce 4 -&gt; 7</li>
                                 <li><i>+3 Ceramic damage (forward dart & radial dart attacks)</i></li>
                                 <li><i>Forward dart attack pierce 4 -&gt; 7</i></li>

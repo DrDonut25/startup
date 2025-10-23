@@ -82,11 +82,11 @@ export function WizardMain() {
                 <thead>
                     <tr>
                         <th className="top_row path_label">Top Upgrade Path</th>
-                        <th className="top_row upgrade_button">Guided Magic</th>
-                        <th className="top_row upgrade_button">Arcane Blast</th>
-                        <th className="top_row upgrade_button">Arcane Mastery</th>
-                        <th className="top_row upgrade_button">Arcane Spikes</th>
-                        <th className="top_row upgrade_button last_upgrade_button">Archmage</th>
+                        <th id="top0" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 0)}>Guided Magic</th>
+                        <th id="top1" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 1)}>Arcane Blast</th>
+                        <th id="top2" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 2)}>Arcane Mastery</th>
+                        <th id="top3" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 3)}>Arcane Spikes</th>
+                        <th id="top4" className="top_row upgrade_button_off last_upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 4)}>Archmage</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -101,20 +101,20 @@ export function WizardMain() {
                     <tr>
                         <th>Changes</th>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_0" className="change_list">
                                 <li>+Projectiles now home in on Bloons</li>
                                 <li>+Wizard now ignores map obstacles</li>
                                 <li>Doubled projectile lifespan</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_1" className="change_list">
                                 <li>Damage 1 -&gt; 2</li>
                                 <li>+50% projectile size</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_2" className="change_list">
                                 <li>+20 range</li>
                                 <li>Attack cooldown 1.1s -&gt; 0.55s</li>
                                 <li>Pierce 3 -&gt; 7</li>
@@ -123,7 +123,7 @@ export function WizardMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_3" className="change_list">
                                 <li>Attack cooldown 0.55s -&gt; 0.275s</li>
                                 <li>Damage 3 -&gt; 6</li>
                                 <li>+10 MOAB damage</li>
@@ -131,7 +131,7 @@ export function WizardMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_4" className="change_list">
                                 <li>Attack cooldown 0.275s -&gt; 0.1375s</li>
                                 <li>Damage 6 -&gt; 8</li>
                                 <li>MOAB bonus damage 10 -&gt; 19</li>

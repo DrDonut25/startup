@@ -82,11 +82,11 @@ export function MortarMain() {
                 <thead>
                     <tr>
                         <th className="top_row path_label">Top Upgrade Path</th>
-                        <th className="top_row upgrade_button">Bigger Blast</th>
-                        <th className="top_row upgrade_button">Bloon Buster</th>
-                        <th className="top_row upgrade_button">Shell Shock</th>
-                        <th className="top_row upgrade_button">The Big One</th>
-                        <th className="top_row upgrade_button last_upgrade_button">The Biggest One</th>
+                        <th id="top0" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 0)}>Bigger Blast</th>
+                        <th id="top1" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 1)}>Bloon Buster</th>
+                        <th id="top2" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 2)}>Shell Shock</th>
+                        <th id="top3" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 3)}>The Big One</th>
+                        <th id="top4" className="top_row upgrade_button_off last_upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 4)}>The Biggest One</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -101,25 +101,25 @@ export function MortarMain() {
                     <tr>
                         <th>Changes</th>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_0" className="change_list">
                                 <li>Blast radius 20 units -&gt; 28 units</li>
                                 <li>Pierce 25 -&gt; 45</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_1" className="change_list">
                                 <li>Damage 2 -&gt; 3</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_2" className="change_list">
                                 <li>Blast radius 28 units -&gt; 38 units</li>
                                 <li><i>+Shockwave blasts: deal 1 damage to up to 45 Bloons within 57-unit radius</i></li>
                                 <li>+Stunning blasts: stun up to 45 Bloons within 19-unit radius for 0.5s</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_3" className="change_list">
                                 <li>Blast radius 38 units -&gt; 58 units</li>
                                 <li>Damage 3 -&gt; 10</li>
                                 <li><i>Shockwave radius 57 units -&gt; 87 units</i></li>
@@ -132,7 +132,7 @@ export function MortarMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_4" className="change_list">
                                 <li>Blast radius 58 units -&gt; 74 units</li>
                                 <li>Damage 10 -&gt; 25</li>
                                 <li>+30 Ceramic/MOAB damage (main blast)</li>

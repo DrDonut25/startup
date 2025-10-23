@@ -82,11 +82,11 @@ export function BoomerangMain() {
                 <thead>
                     <tr>
                         <th className="top_row path_label">Top Upgrade Path</th>
-                        <th className="top_row upgrade_button">Improved Rangs</th>
-                        <th className="top_row upgrade_button">Glaives</th>
-                        <th className="top_row upgrade_button">Glaive Ricochet</th>
-                        <th className="top_row upgrade_button">MOAR Glaives</th>
-                        <th className="top_row upgrade_button last_upgrade_button">Glaive Lord</th>
+                        <th id="top0" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 0)}>Improved Rangs</th>
+                        <th id="top1" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 1)}>Glaives</th>
+                        <th id="top2" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 2)}>Glaive Ricochet</th>
+                        <th id="top3" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 3)}>MOAR Glaives</th>
+                        <th id="top4" className="top_row upgrade_button_off last_upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 4)}>Glaive Lord</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -101,24 +101,24 @@ export function BoomerangMain() {
                     <tr>
                         <th>Changes</th>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_0" className="change_list">
                                 <li>Pierce 4 -&gt; 8</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_1" className="change_list">
                                 <li>Pierce 8 -&gt; 13</li>
                                 <li>Larger projectiles</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_2" className="change_list">
                                 <li>Pierce 13 -&gt; 30</li>
                                 <li><i>Ricochet mechanic: glaives jump from Bloon to Bloon, even past map obstacles</i></li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_3" className="change_list">
                                 <li>Pierce 30 -&gt; 60</li>
                                 <li>Attack speed tripled</li>
                                 <li>+1 Ceramic damage</li>
@@ -127,7 +127,7 @@ export function BoomerangMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_4" className="change_list">
                                 <li>Damage 1 -&gt; 6</li>
                                 <li>Ceramic bonus damage 1 -&gt; 10</li>
                                 <li><i>Infinite ricochet jump distance</i></li>

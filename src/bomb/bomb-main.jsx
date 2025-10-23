@@ -86,11 +86,11 @@ export function BombMain() {
                 <thead>
                     <tr>
                         <th className="top_row path_label">Top Upgrade Path</th>
-                        <th className="top_row upgrade_button">Bigger Bombs</th>
-                        <th className="top_row upgrade_button">Heavy Bombs</th>
-                        <th className="top_row upgrade_button">Really Big Bombs</th>
-                        <th className="top_row upgrade_button">Bloon Impact</th>
-                        <th className="top_row upgrade_button last_upgrade_button">Bloon Crush</th>
+                        <th id="top0" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 0)}>Bigger Bombs</th>
+                        <th id="top1" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 1)}>Heavy Bombs</th>
+                        <th id="top2" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 2)}>Really Big Bombs</th>
+                        <th id="top3" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 3)}>Bloon Impact</th>
+                        <th id="top4" className="top_row upgrade_button_off last_upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 4)}>Bloon Crush</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -105,33 +105,33 @@ export function BombMain() {
                     <tr>
                         <th>Changes</th>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_0" className="change_list">
                                 <li>+20% projectile size</li>
                                 <li>+50% explosion size</li>
                                 <li>Explosion pierce 22 -&gt; 28</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_1" className="change_list">
                                 <li>Damage 1 -&gt; 2</li>
                                 <li>Explosion pierce 28 -&gt; 38</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_2" className="change_list">
                                 <li>Damage 2 -&gt; 4</li>
                                 <li>Explosion pierce 38 -&gt; 80</li>
                                 <li><i>Knockback mechanic: explosions push back non-MOABs by 20 units</i></li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_3" className="change_list">
                                 <li><i>Stun mechanic (in addition to knockback): explosions stun non-MOABs for 1.4s </i></li>
                                 <li>+3 range</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_4" className="change_list">
                                 <li>Damage 3 -&gt; 24</li>
                                 <li><i>Stun duration 1.4s -&gt; 2s</i></li>
                                 <li><i>Can now stun MOABs for 2s and push back MOABs by 5 units</i></li>

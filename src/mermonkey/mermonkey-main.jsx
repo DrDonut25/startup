@@ -86,11 +86,11 @@ export function MermonkeyMain() {
                 <thead>
                     <tr>
                         <th className="top_row path_label">Top Upgrade Path</th>
-                        <th className="top_row upgrade_button">Trident Efficiency</th>
-                        <th className="top_row upgrade_button">Trident Swiftness</th>
-                        <th className="top_row upgrade_button">Abyss Dweller</th>
-                        <th className="top_row upgrade_button">Abyssal Warrior</th>
-                        <th className="top_row upgrade_button last_upgrade_button">Lord of the Abyss</th>
+                        <th id="top0" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 0)}>Trident Efficiency</th>
+                        <th id="top1" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 1)}>Trident Swiftness</th>
+                        <th id="top2" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 2)}>Abyss Dweller</th>
+                        <th id="top3" className="top_row upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 3)}>Abyssal Warrior</th>
+                        <th id="top4" className="top_row upgrade_button_off last_upgrade_button_off" onClick={() => myFunctions.toggleUpgrade('top', 4)}>Lord of the Abyss</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -105,18 +105,18 @@ export function MermonkeyMain() {
                     <tr>
                         <th>Changes</th>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_0" className="change_list">
                                 <li>Attack cooldown 1.2s -&gt; 1.02s</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_1" className="change_list">
                                 <li>Attack cooldown 1.02s -&gt; 0.804s</li>
                                 <li>+50% projectile speed</li>
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_2" className="change_list">
                                 <li><i>+Tentacle attack: 8 tentacles spawn around Mermonkey, pointed in all directions like
                                      a Tack Shooter, but unlike a Tack Shooter, each tentacle attacks independently</i></li>
                                 <li><i>Tentacle stats: 22.5° field of vision, 9 damage, 24 pierce, 3s attack cooldown,
@@ -127,7 +127,7 @@ export function MermonkeyMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_3" className="change_list">
                                 <li><i>Tridents apply slowing effect to BFBs and lower: non-MOABs slowed by 40%,
                                      MOABs/BFBs slowed by 28%</i></li>
                                 <li><i>Tentacle damage 9 -&gt; 18</i></li>
@@ -138,7 +138,7 @@ export function MermonkeyMain() {
                             </ul>
                         </td>
                         <td className="change_cell">
-                            <ul className="change_list">
+                            <ul id="top_change_4" className="change_list">
                                 <li><i>+Water towers can now be placed on land (if they're in range of this Mermonkey)</i></li>
                                 <li><i>Tentacle damage 18 -&gt; 50</i></li>
                                 <li><i>Tentacle pierce 32 -&gt; 80</i></li>
