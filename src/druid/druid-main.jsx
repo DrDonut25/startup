@@ -1,6 +1,7 @@
 import React from 'react';
 
 import '../tower.css';
+import { Upgrade } from '../upgrade.jsx';
 
 export function DruidMain() {
   return (
