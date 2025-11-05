@@ -21,6 +21,7 @@ apiRouter.post('/auth/create', async (req,res) => {
     } else {
         const user = createUser(req.body.username, req.body.password);
 
+        setAuthCookie(res, user.token);
         res.send({ username: user.username});
     }
 });
@@ -28,6 +29,15 @@ apiRouter.post('/auth/create', async (req,res) => {
 //Login existing user
 
 //Logout user
+
+//Helper function used to create cookie storing authToken
+function setAuthCookie(res, authToken) {
+    res.cookie(authCookieName, authToken, {
+        secure: true,
+        httpOnly: true,
+        sameSite: 'strict',
+  });
+}
 
 //Helper function used to create new user objects
 async function createUser(username, password) {
