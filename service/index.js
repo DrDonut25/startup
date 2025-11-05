@@ -8,7 +8,14 @@ let users = [];
 
 const port = process.argv.length > 2 ? process.argv[2] : 3000;
 
+//For parsing JSON objects
 app.use(express.json());
+
+//For tracking authToken cookies
+app.use(cookieParser());
+
+//For serving front-end static hosting
+app.use(express.static('public'));
 
 let apiRouter = express.Router();
 app.use(`/api`, apiRouter);
@@ -36,10 +43,19 @@ apiRouter.post('/auth/login', async (req,res) => {
     } else {
         res.status(401).send({ msg: 'Error: unauthorized' })
     }
-})
+});
 
 //Logout user
-
+apiRouter.delete('/auth/logout', async (req,res) => {
+    //Get user by token (not email, since you need a user that's logged in)
+    const user = getUser('token', req.cookies[authCookieName]);
+    //If user is logged in, delete authToken and clear cookie storing it—set status code to 204 if successful
+    if (user) {
+        delete user.token;
+    }
+    res.clearCookie(authCookieName);
+    res.status(204).end();
+});
 
 //Helper function used to create cookie storing authToken
 function setAuthCookie(res, authToken) {
@@ -72,6 +88,16 @@ async function getUser(field, value) {
     }
     return users.find((user) => user[field] === value);
 }
+
+//Default error handler
+app.use(function (e, req, res, next) {
+    res.status(500).send({ type: e.name, message: e.message });
+});
+
+//For returning to default web page when path is unknown
+app.use((_req, res) => {
+    res.sendFile('index.html', { root: 'public' });
+});
 
 app.listen(port, () => {
   console.log(`Listening on port ${port}`);
