@@ -20,6 +20,8 @@ apiRouter.post('/auth/create', async (req,res) => {
         res.status(409).send({msg: 'Error: this username is already taken'})
     } else {
         const user = createUser(req.body.username, req.body.password);
+
+        res.send({ username: user.username});
     }
 });
 
