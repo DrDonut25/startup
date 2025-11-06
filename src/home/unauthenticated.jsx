@@ -45,8 +45,8 @@ export function Unauthenticated(props) {
                     <input type="password" onChange={(e) => setPassword(e.target.value)} placeholder="password"/>
                 </div>
                 <div>
-                    <button className="btn btn-primary" onClick={() => loginUser()} disabled={!userName || !password}>Login</button>
-                    <button className="btn btn-secondary secondary_button" onClick={() => createUser()} disabled={!userName || !password}>Sign Up</button>
+                    <button className="btn btn-primary" onClick={(e) => {e.preventDefault(); loginUser()}} disabled={!userName || !password}>Login</button>
+                    <button className="btn btn-secondary secondary_button" onClick={(e) => {e.preventDefault(); createUser()}} disabled={!userName || !password}>Sign Up</button>
                 </div>
             </form>
 
