@@ -26,7 +26,7 @@ app.use(`/api`, apiRouter);
 apiRouter.post('/auth/create', async (req,res) => {
     //If user already exists, return 409 error
     if (await getUser('username', req.body.username)) {
-        res.status(409).send({ msg: 'Error: this username is already taken' })
+        res.status(409).send({ msg: 'this username is already taken' })
     } else {
         const user = createUser(req.body.username, req.body.password);
 
@@ -38,12 +38,13 @@ apiRouter.post('/auth/create', async (req,res) => {
 //Login existing user
 apiRouter.post('/auth/login', async (req,res) => {
     //Use bcrypt to compare provided password with stored password hash—return 401 error if passwords do not match
-    const user = getUser('username', req.body.username);
+    const user = await getUser('username', req.body.username);
     if (user && (await bcrypt.compare(req.body.password, user.password))) {
+        user.token = uuid.v4();
         setAuthCookie(res, user.token);
-        res.send({ username: user.username })
+        res.send({ username: user.username });
     } else {
-        res.status(401).send({ msg: 'Error: unauthorized' })
+        res.status(401).send({ msg: 'unauthorized' });
     }
 });
 
