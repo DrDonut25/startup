@@ -95,8 +95,14 @@ export function Upgrade({topHeaders, setTopHeaders, middleHeaders, setMiddleHead
                 }
             } else {
                 if (index == 0) {
-                    setMaxMidTier(4);
-                    setMaxBottomTier(4);
+                    if (middleHeaders[2]) {
+                        setMaxBottomTier(1);
+                    } else if (bottomHeaders[2]) {
+                        setMaxMidTier(1);
+                    } else {
+                        setMaxMidTier(4);
+                        setMaxBottomTier(4);
+                    }
                 } else if (index == 2) {
                     if (hasSelectedUpgrade('middle')) {
                         setMaxMidTier(4);
@@ -121,8 +127,14 @@ export function Upgrade({topHeaders, setTopHeaders, middleHeaders, setMiddleHead
                 }
             } else {
                 if (index == 0) {
-                    setMaxTopTier(4);
-                    setMaxBottomTier(4);
+                    if (topHeaders[2]) {
+                        setMaxBottomTier(1);
+                    } else if (bottomHeaders[2]) {
+                        setMaxTopTier(1);
+                    } else {
+                        setMaxTopTier(4);
+                        setMaxBottomTier(4);
+                    }
                 } else if (index == 2) {
                     if (hasSelectedUpgrade('top')) {
                         setMaxTopTier(4);
@@ -147,8 +159,14 @@ export function Upgrade({topHeaders, setTopHeaders, middleHeaders, setMiddleHead
                 }
             } else {
                 if (index == 0) {
-                    setMaxTopTier(4);
-                    setMaxMidTier(4);
+                    if (middleHeaders[2]) {
+                        setMaxTopTier(1);
+                    } else if (topHeaders[2]) {
+                        setMaxMidTier(1);
+                    } else {
+                        setMaxTopTier(4);
+                        setMaxMidTier(4);
+                    }
                 } else if (index == 2) {
                     if (hasSelectedUpgrade('middle')) {
                         setMaxMidTier(4);
