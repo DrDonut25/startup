@@ -7,8 +7,15 @@ export function AboutMain() {
   const [author, setAuthor] = React.useState("Loading author...");
 
   React.useEffect(() => {
-    setQuote("Words are cheap. Show me the code.");
-    setAuthor("Linus Torvalds");
+    fetch('https://quote.cs260.click')
+      .then((response) => response.json())
+      .then((data) => {
+        setQuote(data.quote);
+        setAuthor(data.author);
+      })
+      .catch();
+    //setQuote("Words are cheap. Show me the code.");
+    //setAuthor("Linus Torvalds");
   }, []);
   
   return (
