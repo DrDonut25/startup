@@ -51,11 +51,11 @@ apiRouter.post('/auth/login', async (req,res) => {
 //Logout user
 apiRouter.delete('/auth/logout', async (req,res) => {
     //Get user by token (not email, since you need a user that's logged in)
-    const user = getUser('token', req.cookies[authCookieName]);
+    const user = await getUser('token', req.cookies[authCookieName]);
     //If user is logged in, delete authToken and clear cookie storing it—set status code to 204 if successful
     if (user) {
         delete user.token;
-        await db.updateUser(user);
+        db.updateUser(user);
     }
     res.clearCookie(authCookieName);
     res.status(204).end();
@@ -86,11 +86,11 @@ async function createUser(username, password) {
 }
 
 //Helper function used to get user by field (username, token, etc.)
-async function getUser(value) {
+async function getUser(field, value) {
     if (!value) {
         return null;
     }
-    if (value === 'token') {
+    if (field === 'token') {
         return db.getUserByToken(value);
     } else {
         return await db.getUserByName(value);
