@@ -57,6 +57,7 @@ apiRouter.delete('/auth/logout', async (req,res) => {
     //If user is logged in, delete authToken and clear cookie storing it—set status code to 204 if successful
     if (user) {
         delete user.token;
+        await db.updateUser(user);
     }
     res.clearCookie(authCookieName);
     res.status(204).end();
