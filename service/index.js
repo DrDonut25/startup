@@ -86,14 +86,14 @@ async function createUser(username, password) {
 }
 
 //Helper function used to get user by field (username, token, etc.)
-async function getUser(field, value) {
+async function getUser(value) {
     if (!value) {
         return null;
     }
     if (value === 'token') {
-        return getUserByToken(value);
+        return db.getUserByToken(value);
     } else {
-        return getUserByUsername(value);
+        return await db.getUserByName(value);
     }
 }
 

@@ -17,12 +17,12 @@ const userCollection = db.collection('startup_user');
 })();
 
 //db access methods
-function getUserByName(username) {
-    return userCollection.findOne({ username: username });
+async function getUserByName(username) {
+    return await userCollection.findOne({ username: username });
 }
 
-function getUserByToken(token) {
-    return userCollection.findOne({ token: token });
+async function getUserByToken(token) {
+    return await userCollection.findOne({ token: token });
 }
 
 //db update methods
