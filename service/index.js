@@ -82,7 +82,7 @@ async function createUser(username, password) {
         password: passwordHash,
         token: uuid.v4(),
     };
-    users.push(user);
+    await db.addUser(user);
 
     return user;
 }
@@ -92,7 +92,11 @@ async function getUser(field, value) {
     if (!value) {
         return null;
     }
-    return users.find((user) => user[field] === value);
+    if (value === 'token') {
+        return getUserByToken(value);
+    } else {
+        return getUserByUsername(value);
+    }
 }
 
 //Default error handler
