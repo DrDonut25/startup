@@ -7,8 +7,6 @@ const db = require('./database.js');
 
 const authCookieName = 'token';
 
-let users = [];
-
 const port = process.argv.length > 2 ? process.argv[2] : 3000;
 
 //For parsing JSON objects
