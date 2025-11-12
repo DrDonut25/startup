@@ -17,8 +17,8 @@ const userCollection = db.collection('startup_user');
 })();
 
 //db access methods
-function getUserByEmail(email) {
-    return userCollection.findOne({ email: email });
+function getUserByName(username) {
+    return userCollection.findOne({ username: username });
 }
 
 function getUserByToken(token) {
