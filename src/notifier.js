@@ -31,8 +31,14 @@ class EventNotifier {
         };
     }
 
-    
-    
+    addHandler(handler) {
+        this.handlers.push(handler);
+    }
+
+    deleteHandler(handler) {
+        this.handlers.filter((h) => h !== handler);
+    }
+
     catchEvent(eventMessage) {
         this.events.push(eventMessage);
         this.events.forEach((event) => {
