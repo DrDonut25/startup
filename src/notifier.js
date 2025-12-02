@@ -17,6 +17,29 @@ class EventNotifier {
         let port = window.location.port;
         const protocol = window.location.protocol === 'http:' ? 'ws' : 'wss';
         this.socket = new WebSocket(`${protocol}://${window.location.hostname}:${port}/ws`);
+        this.socket.onopen = (event) => {
+            this.catchEvent(new EventMessage('Startup', Event.System, { msg: 'connected' }));
+        };
+        this.socket.onclose = (event) => {
+            this.catchEvent(new EventMessage('Startup', Event.System, { msg: 'disconnected' }));
+        }
+        this.socket.onmessage = async (msg) => {
+            try {
+                const event = JSON.parse(await msg.data.text());
+                this.catchEvent(event);
+            } catch {}
+        };
+    }
+
+    
+    
+    catchEvent(eventMessage) {
+        this.events.push(eventMessage);
+        this.events.forEach((event) => {
+            this.handlers.forEach((handler) => {
+                handler(event);
+            });
+        });
     }
 }
 
