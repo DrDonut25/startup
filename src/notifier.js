@@ -1,3 +1,14 @@
+const Event = {
+    System: 'system',
+    Tower: 'tower',
+};
+class EventMessage {
+    constructor(from, type, message) {
+        this.from = from;
+        this.type = type;
+        this.message = message;
+    }
+}
 class EventNotifier {
     events = [];
     handlers = [];
@@ -8,3 +19,6 @@ class EventNotifier {
         this.socket = new WebSocket(`${protocol}://${window.location.hostname}:${port}/ws`);
     }
 }
+
+const Notifier = new EventNotifier();
+export { Event, Notifier };
