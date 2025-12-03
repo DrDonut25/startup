@@ -2,7 +2,7 @@ import React from 'react';
 
 import '../tower.css';
 import { Upgrade } from '../upgrade.jsx';
-import { Event, EventNotifier } from './notifier';
+import { Event, EventNotifier } from './notifier.js';
 
 export function AceMain(props) {
     const username = props.username;

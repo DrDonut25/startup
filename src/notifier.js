@@ -18,6 +18,7 @@ class EventNotifier {
         const protocol = window.location.protocol === 'http:' ? 'ws' : 'wss';
         this.socket = new WebSocket(`${protocol}://${window.location.hostname}:${port}/ws`);
         this.socket.onopen = (event) => {
+            this.broadcastEvent('Startup', Event.Tower, {});
             this.catchEvent(new EventMessage('Startup', Event.System, { msg: 'connected' }));
         };
         this.socket.onclose = (event) => {
