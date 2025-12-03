@@ -7,7 +7,7 @@ import { Authenticated } from './authenticated';
 import { AuthState } from './authState';
 import { Event } from '../notifier.js';
 
-export function HomeMain({ userName, authState, onAuthChange, notifier, events }) {
+export function HomeMain({ userName, authState, onAuthChange, notifier }) {
   return (
     <main>
         <div id="login" className="container-fluid text-light">
