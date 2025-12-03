@@ -30,7 +30,7 @@ export function AceMain(props) {
             }
 
             messageList.push(
-                <li key={i}>{message}</li>
+                <li key={i} style={{color: '#f8f9fa'}}>{message}</li>
             );
         }
 
