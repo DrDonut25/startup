@@ -2,7 +2,7 @@ import React from 'react';
 
 import '../tower.css';
 import { Upgrade } from '../upgrade.jsx';
-import { Event, EventNotifier } from './notifier.js';
+import { Event, Notifier } from '../notifier.js';
 
 export function AceMain(props) {
     const username = props.username;
@@ -23,10 +23,10 @@ export function AceMain(props) {
     const [events, setEvents] = React.useState([]);
 
     React.useEffect(() => {
-        EventNotifier.addHandler(handleEvent);
+        Notifier.addHandler(handleEvent);
 
         return () => {
-            EventNotifier.removeHandler(handleEvent);
+            Notifier.deleteHandler(handleEvent);
         }
     });
 
