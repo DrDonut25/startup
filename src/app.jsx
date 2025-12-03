@@ -184,31 +184,31 @@ export default function App() {
           } exact 
           />
           <Route path='/about' element={<AboutMain />} />
-          <Route path='/ace' element={<AceMain username={userName} events={events}/>}/>
-          <Route path='/alchemist' element={<AlchemistMain />} />
-          <Route path='/banana' element={<BananaMain />} />
-          <Route path='/beasthandler' element={<BeastHandlerMain />} />
-          <Route path='/bomb' element={<BombMain />} />
-          <Route path='/boomerang' element={<BoomerangMain />} />
-          <Route path='/buccaneer' element={<BuccaneerMain />} />
-          <Route path='/dart' element={<DartMain />} />
-          <Route path='/dartling' element={<DartlingMain />} />
-          <Route path='/desperado' element={<DesperadoMain />} />
-          <Route path='/druid' element={<DruidMain />} />
-          <Route path='/engineer' element={<EngineerMain />} />
-          <Route path='/glue' element={<GlueMain />} />
-          <Route path='/heli' element={<HeliMain />} />
-          <Route path='/ice' element={<IceMain />} />
-          <Route path='/mermonkey' element={<MermonkeyMain />} />
-          <Route path='/mortar' element={<MortarMain />} />
-          <Route path='/ninja' element={<NinjaMain />} />
-          <Route path='/sniper' element={<SniperMain />} />
-          <Route path='/spikefactory' element={<SpikeFactoryMain />} />
-          <Route path='/sub' element={<SubMain />} />
-          <Route path='/super' element={<SuperMain />} />
-          <Route path='/tack' element={<TackMain />} />
-          <Route path='/village' element={<VillageMain />} />
-          <Route path='/wizard' element={<WizardMain />} />
+          <Route path='/ace' element={<AceMain username={userName} events={events} />}/>
+          <Route path='/alchemist' element={<AlchemistMain username={userName} events={events} />} />
+          <Route path='/banana' element={<BananaMain username={userName} events={events} />} />
+          <Route path='/beasthandler' element={<BeastHandlerMain username={userName} events={events} />} />
+          <Route path='/bomb' element={<BombMain username={userName} events={events} />} />
+          <Route path='/boomerang' element={<BoomerangMain username={userName} events={events} />} />
+          <Route path='/buccaneer' element={<BuccaneerMain username={userName} events={events} />} />
+          <Route path='/dart' element={<DartMain username={userName} events={events} />} />
+          <Route path='/dartling' element={<DartlingMain username={userName} events={events} />} />
+          <Route path='/desperado' element={<DesperadoMain username={userName} events={events} />} />
+          <Route path='/druid' element={<DruidMain username={userName} events={events} />} />
+          <Route path='/engineer' element={<EngineerMain username={userName} events={events} />} />
+          <Route path='/glue' element={<GlueMain username={userName} events={events} />} />
+          <Route path='/heli' element={<HeliMain username={userName} events={events} />} />
+          <Route path='/ice' element={<IceMain username={userName} events={events} />} />
+          <Route path='/mermonkey' element={<MermonkeyMain username={userName} events={events} />} />
+          <Route path='/mortar' element={<MortarMain username={userName} events={events} />} />
+          <Route path='/ninja' element={<NinjaMain username={userName} events={events} />} />
+          <Route path='/sniper' element={<SniperMain username={userName} events={events} />} />
+          <Route path='/spikefactory' element={<SpikeFactoryMain username={userName} events={events} />} />
+          <Route path='/sub' element={<SubMain username={userName} events={events} />} />
+          <Route path='/super' element={<SuperMain username={userName} events={events} />} />
+          <Route path='/tack' element={<TackMain username={userName} events={events} />} />
+          <Route path='/village' element={<VillageMain username={userName} events={events} />} />
+          <Route path='/wizard' element={<WizardMain username={userName} events={events} />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
 
