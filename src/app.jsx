@@ -113,10 +113,27 @@ import { WizardHeader } from './wizard/wizard-header';
 import { WizardMain } from './wizard/wizard-main';
 import { WizardFooter } from './wizard/wizard-footer';
 
+import { Event, Notifier } from './notifier.js';
+
 export default function App() {
   const [userName, setUserName] = React.useState(localStorage.getItem('userName') || '');
   const currentAuthState = userName ? AuthState.Authenticated : AuthState.Unauthenticated;
   const [authState, setAuthState] = React.useState(currentAuthState);
+
+  //WebSocket
+  const [events, setEvents] = React.useState([]);
+
+  React.useEffect(() => {
+      Notifier.addHandler(handleEvent);
+
+      return () => {
+          Notifier.deleteHandler(handleEvent);
+      }
+  });
+
+  function handleEvent(event) {
+      setEvents([...events, event]);
+  }
   
   return (
     <BrowserRouter>
@@ -161,11 +178,13 @@ export default function App() {
                 setAuthState(authState);
                 setUserName(userName);
               }}
+              notifier = {Notifier}
+              events = {events}
             />
           } exact 
           />
           <Route path='/about' element={<AboutMain />} />
-          <Route path='/ace' element={<AceMain />} />
+          <Route path='/ace' element={<AceMain username={userName} events={events}/>}/>
           <Route path='/alchemist' element={<AlchemistMain />} />
           <Route path='/banana' element={<BananaMain />} />
           <Route path='/beasthandler' element={<BeastHandlerMain />} />

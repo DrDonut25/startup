@@ -5,8 +5,9 @@ import { NavLink } from 'react-router-dom';
 import { Unauthenticated } from './unauthenticated';
 import { Authenticated } from './authenticated';
 import { AuthState } from './authState';
+import { Event } from '../notifier.js';
 
-export function HomeMain({ userName, authState, onAuthChange }) {
+export function HomeMain({ userName, authState, onAuthChange, notifier, events }) {
   return (
     <main>
         <div id="login" className="container-fluid text-light">
@@ -50,7 +51,7 @@ export function HomeMain({ userName, authState, onAuthChange }) {
                             <li><NavLink className="a" to="sniper">Sniper Monkey</NavLink></li>
                             <li><NavLink className="a" to="sub">Monkey Sub</NavLink></li>
                             <li><NavLink className="a" to="buccaneer">Monkey Buccaneer</NavLink></li>
-                            <li><NavLink className="a" to="ace">Monkey Ace</NavLink></li>
+                            <li><NavLink className="a" onClick={() => notifier.broadcastEvent(userName, Event.Tower, {})} to="ace">Monkey Ace</NavLink></li>
                             <li><NavLink className="a" to="heli">Heli Pilot</NavLink></li>
                             <li><NavLink className="a" to="mortar">Mortar Monkey</NavLink></li>
                             <li><NavLink className="a" to="dartling">Dartling Gunner</NavLink></li>

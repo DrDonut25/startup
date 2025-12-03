@@ -2,7 +2,7 @@ import React from 'react';
 
 import '../tower.css';
 import { Upgrade } from '../upgrade.jsx';
-import { Event, Notifier } from '../notifier.js';
+import { Event } from '../notifier.js';
 
 export function AceMain(props) {
     const username = props.username;
@@ -19,35 +19,22 @@ export function AceMain(props) {
 
     let myFunctions = {};
 
-    //WebSocket
-    const [events, setEvents] = React.useState([]);
-
-    React.useEffect(() => {
-        Notifier.addHandler(handleEvent);
-
-        return () => {
-            Notifier.deleteHandler(handleEvent);
-        }
-    });
-
-    function handleEvent(event) {
-        setEvents([...events, event]);
-    }
-
     function createMessageList() {
         const messageList = [];
-        for (let i = 0; i < events.length; i++) {
+        for (let i = 0; i < props.events.length; i++) {
             let message = 'N/A';
-            if (events[i].type === Event.Tower) {
-                message = `${username} is upgrading Monkey Ace`;
-            } else if (events[i].type === Event.System) {
-                message = events[i].message.msg;
+            if (props.events[i].type === 'tower') {
+                message = `${props.events[i].from} is upgrading Monkey Ace`;
+            } else if (props.events[i].type === 'system') {
+                message = props.events[i].message.msg;
             }
 
             messageList.push(
                 <li key={i}>{message}</li>
             );
         }
+
+        return messageList;
     }
 
   return (
