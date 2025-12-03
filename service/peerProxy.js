@@ -11,7 +11,7 @@ function peerProxy(httpServer) {
             wss.clients.forEach((client) => {
                 //check that client is either not current user and that client is currently logged in
                 if (client !== ws && client.readyState === WebSocket.OPEN) {
-                    ws.send(data);
+                    client.send(data);
                 }
             });
         });
