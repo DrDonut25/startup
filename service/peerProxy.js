@@ -22,7 +22,17 @@ function peerProxy(httpServer) {
         })
 
         //ping logged-in clients to ensure they're still active
-        
+        setInterval(() => {
+            wss.clients.forEach((client) => {
+                if (!client.isAlive) {
+                    return client.terminate();
+                }
+
+                //set isAlive to false for client, then ping—if client is alive, ping function will set isAlive back to true
+                client.isAlive = true;
+                client.ping();
+            })
+        },10000);
     });
 }
 
