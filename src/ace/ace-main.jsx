@@ -2,6 +2,7 @@ import React from 'react';
 
 import '../tower.css';
 import { Upgrade } from '../upgrade.jsx';
+import { Event, EventNotifier } from './notifier';
 
 export function AceMain() {
     const [topHeaders, setTopHeaders] = React.useState(Array(5).fill(false));
@@ -15,6 +16,26 @@ export function AceMain() {
     const [maxBottomTier, setMaxBottomTier] = React.useState(4);
 
     let myFunctions = {};
+
+    //WebSocket
+    const [events, setEvents] = React.useState([]);
+
+    React.useEffect(() => {
+        EventNotifier.addHandler(handleEvent);
+
+        return () => {
+            EventNotifier.removeHandler(handleEvent);
+        }
+    });
+
+    function handleEvent(event) {
+        setEvents([...events, event]);
+    }
+
+    function createMessageList() {
+        const messageList = [];
+        
+    }
 
   return (
     <main>
