@@ -4,7 +4,9 @@ import '../tower.css';
 import { Upgrade } from '../upgrade.jsx';
 import { Event, EventNotifier } from './notifier';
 
-export function AceMain() {
+export function AceMain(props) {
+    const username = props.username;
+    
     const [topHeaders, setTopHeaders] = React.useState(Array(5).fill(false));
     const [middleHeaders, setMiddleHeaders] = React.useState(Array(5).fill(false));
     const [bottomHeaders, setBottomHeaders] = React.useState(Array(5).fill(false));
@@ -34,7 +36,18 @@ export function AceMain() {
 
     function createMessageList() {
         const messageList = [];
-        
+        for (let i = 0; i < events.length; i++) {
+            let message = 'N/A';
+            if (events[i].type === Event.Tower) {
+                message = `${username} is upgrading Monkey Ace`;
+            } else if (events[i].type === Event.System) {
+                message = events[i].message.msg;
+            }
+
+            messageList.push(
+                <li key={i}>{message}</li>
+            );
+        }
     }
 
   return (
@@ -90,12 +103,7 @@ export function AceMain() {
         </table>
         
         <div className="websocket">
-            <ul>
-                <li style={{color: '#f8f9fa'}}>You selected "Rapid Fire"</li>
-                <li style={{color: '#f8f9fa'}}>You selected "Lots More Darts"</li>
-                <li style={{color: '#f8f9fa'}}>You selected "Sharper Darts"</li>
-                <li style={{color: 'lightcoral'}}>Error: you cannot select upgrades from more than two paths at once</li>
-            </ul>
+            <ul>{createMessageList()}</ul>
         </div>
         
         <div className="upgrade_table_container">
