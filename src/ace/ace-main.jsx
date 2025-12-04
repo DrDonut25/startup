@@ -24,7 +24,7 @@ export function AceMain(props) {
         for (let i = 0; i < props.events.length; i++) {
             let message = 'N/A';
             if (props.events[i].type === 'tower') {
-                message = `${props.events[i].from} is upgrading Monkey Ace`;
+                message = `${props.events[i].from} is upgrading ${props.events[i].message.tower}`;
             } else if (props.events[i].type === 'system') {
                 message = props.events[i].message.msg;
             }

@@ -36,46 +36,46 @@ export function HomeMain({ userName, authState, onAuthChange, notifier }) {
                     <div className="primary tower_container">
                         <h3 className="tower_heading">Primary Monkeys</h3>
                         <menu>
-                            <li><NavLink className="a" onClick={() => notifier.broadcastEvent(userName, Event.Tower, {})} to="dart">Dart Monkey</NavLink></li>
-                            <li><NavLink className="a" onClick={() => notifier.broadcastEvent(userName, Event.Tower, {})} to="boomerang">Boomerang Monkey</NavLink></li>
-                            <li><NavLink className="a" onClick={() => notifier.broadcastEvent(userName, Event.Tower, {})} to="bomb">Bomb Shooter</NavLink></li>
-                            <li><NavLink className="a" onClick={() => notifier.broadcastEvent(userName, Event.Tower, {})} to="tack">Tack Shooter</NavLink></li>
-                            <li><NavLink className="a" onClick={() => notifier.broadcastEvent(userName, Event.Tower, {})} to="ice">Ice Monkey</NavLink></li>
-                            <li><NavLink className="a" onClick={() => notifier.broadcastEvent(userName, Event.Tower, {})} to="glue">Glue Gunner</NavLink></li>
-                            <li><NavLink className="a" onClick={() => notifier.broadcastEvent(userName, Event.Tower, {})} to="desperado">Desperado</NavLink></li>
+                            <li><NavLink className="a" onClick={() => notifier.broadcastEvent(userName, Event.Tower, {tower: 'Dart Monkey'})} to="dart">Dart Monkey</NavLink></li>
+                            <li><NavLink className="a" onClick={() => notifier.broadcastEvent(userName, Event.Tower, {tower: 'Boomerang Monkey'})} to="boomerang">Boomerang Monkey</NavLink></li>
+                            <li><NavLink className="a" onClick={() => notifier.broadcastEvent(userName, Event.Tower, {tower: 'Bomb Shooter'})} to="bomb">Bomb Shooter</NavLink></li>
+                            <li><NavLink className="a" onClick={() => notifier.broadcastEvent(userName, Event.Tower, {tower: 'Tack Shooter'})} to="tack">Tack Shooter</NavLink></li>
+                            <li><NavLink className="a" onClick={() => notifier.broadcastEvent(userName, Event.Tower, {tower: 'Ice Monkey'})} to="ice">Ice Monkey</NavLink></li>
+                            <li><NavLink className="a" onClick={() => notifier.broadcastEvent(userName, Event.Tower, {tower: 'Glue Gunner'})} to="glue">Glue Gunner</NavLink></li>
+                            <li><NavLink className="a" onClick={() => notifier.broadcastEvent(userName, Event.Tower, {tower: 'Desperado'})} to="desperado">Desperado</NavLink></li>
                         </menu>
                     </div>
                     <div className="military tower_container">
                         <h3 className="tower_heading">Military Monkeys</h3>
                         <menu>
-                            <li><NavLink className="a" onClick={() => notifier.broadcastEvent(userName, Event.Tower, {})} to="sniper">Sniper Monkey</NavLink></li>
-                            <li><NavLink className="a" onClick={() => notifier.broadcastEvent(userName, Event.Tower, {})} to="sub">Monkey Sub</NavLink></li>
-                            <li><NavLink className="a" onClick={() => notifier.broadcastEvent(userName, Event.Tower, {})} to="buccaneer">Monkey Buccaneer</NavLink></li>
-                            <li><NavLink className="a" onClick={() => notifier.broadcastEvent(userName, Event.Tower, {})} to="ace">Monkey Ace</NavLink></li>
-                            <li><NavLink className="a" onClick={() => notifier.broadcastEvent(userName, Event.Tower, {})} to="heli">Heli Pilot</NavLink></li>
-                            <li><NavLink className="a" onClick={() => notifier.broadcastEvent(userName, Event.Tower, {})} to="mortar">Mortar Monkey</NavLink></li>
-                            <li><NavLink className="a" onClick={() => notifier.broadcastEvent(userName, Event.Tower, {})} to="dartling">Dartling Gunner</NavLink></li>
+                            <li><NavLink className="a" onClick={() => notifier.broadcastEvent(userName, Event.Tower, {tower: 'Sniper Monkey'})} to="sniper">Sniper Monkey</NavLink></li>
+                            <li><NavLink className="a" onClick={() => notifier.broadcastEvent(userName, Event.Tower, {tower: 'Monkey Sub'})} to="sub">Monkey Sub</NavLink></li>
+                            <li><NavLink className="a" onClick={() => notifier.broadcastEvent(userName, Event.Tower, {tower: 'Monkey Buccaneer'})} to="buccaneer">Monkey Buccaneer</NavLink></li>
+                            <li><NavLink className="a" onClick={() => notifier.broadcastEvent(userName, Event.Tower, {tower: 'Monkey Ace'})} to="ace">Monkey Ace</NavLink></li>
+                            <li><NavLink className="a" onClick={() => notifier.broadcastEvent(userName, Event.Tower, {tower: 'Heli Pilot'})} to="heli">Heli Pilot</NavLink></li>
+                            <li><NavLink className="a" onClick={() => notifier.broadcastEvent(userName, Event.Tower, {tower: 'Mortar Monkey'})} to="mortar">Mortar Monkey</NavLink></li>
+                            <li><NavLink className="a" onClick={() => notifier.broadcastEvent(userName, Event.Tower, {tower: 'Dartling Gunner'})} to="dartling">Dartling Gunner</NavLink></li>
                         </menu>
                     </div>
                     <div className="magic tower_container">
                         <h3 className="tower_heading">Magic Monkeys</h3>
                         <menu>
-                            <li><NavLink className="a" onClick={() => notifier.broadcastEvent(userName, Event.Tower, {})} to="wizard">Wizard Monkey</NavLink></li>
-                            <li><NavLink className="a" onClick={() => notifier.broadcastEvent(userName, Event.Tower, {})} to="super">Super Monkey</NavLink></li>
-                            <li><NavLink className="a" onClick={() => notifier.broadcastEvent(userName, Event.Tower, {})} to="ninja">Ninja Monkey</NavLink></li>
-                            <li><NavLink className="a" onClick={() => notifier.broadcastEvent(userName, Event.Tower, {})} to="alchemist">Alchemist</NavLink></li>
-                            <li><NavLink className="a" onClick={() => notifier.broadcastEvent(userName, Event.Tower, {})} to="druid">Druid</NavLink></li>
-                            <li><NavLink className="a" onClick={() => notifier.broadcastEvent(userName, Event.Tower, {})} to="mermonkey">Mermonkey</NavLink></li>
+                            <li><NavLink className="a" onClick={() => notifier.broadcastEvent(userName, Event.Tower, {tower: 'Wizard Monkey'})} to="wizard">Wizard Monkey</NavLink></li>
+                            <li><NavLink className="a" onClick={() => notifier.broadcastEvent(userName, Event.Tower, {tower: 'Super Monkey'})} to="super">Super Monkey</NavLink></li>
+                            <li><NavLink className="a" onClick={() => notifier.broadcastEvent(userName, Event.Tower, {tower: 'Ninja Monkey'})} to="ninja">Ninja Monkey</NavLink></li>
+                            <li><NavLink className="a" onClick={() => notifier.broadcastEvent(userName, Event.Tower, {tower: 'Alchemist'})} to="alchemist">Alchemist</NavLink></li>
+                            <li><NavLink className="a" onClick={() => notifier.broadcastEvent(userName, Event.Tower, {tower: 'Druid'})} to="druid">Druid</NavLink></li>
+                            <li><NavLink className="a" onClick={() => notifier.broadcastEvent(userName, Event.Tower, {tower: 'Mermonkey'})} to="mermonkey">Mermonkey</NavLink></li>
                         </menu>
                     </div>
                     <div className="support tower_container">
                         <h3 className="tower_heading">Support Monkeys</h3>
                         <menu>
-                            <li><NavLink className="a" onClick={() => notifier.broadcastEvent(userName, Event.Tower, {})} to="banana">Banana Farm</NavLink></li>
-                            <li><NavLink className="a" onClick={() => notifier.broadcastEvent(userName, Event.Tower, {})} to="spikefactory">Spike Factory</NavLink></li>
-                            <li><NavLink className="a" onClick={() => notifier.broadcastEvent(userName, Event.Tower, {})} to="village">Monkey Village</NavLink></li>
-                            <li><NavLink className="a" onClick={() => notifier.broadcastEvent(userName, Event.Tower, {})} to="engineer">Engineer Monkey</NavLink></li>
-                            <li><NavLink className="a" onClick={() => notifier.broadcastEvent(userName, Event.Tower, {})} to="beasthandler">Beast Handler</NavLink></li>
+                            <li><NavLink className="a" onClick={() => notifier.broadcastEvent(userName, Event.Tower, {tower: 'Banana Farm'})} to="banana">Banana Farm</NavLink></li>
+                            <li><NavLink className="a" onClick={() => notifier.broadcastEvent(userName, Event.Tower, {tower: 'Spike Factory'})} to="spikefactory">Spike Factory</NavLink></li>
+                            <li><NavLink className="a" onClick={() => notifier.broadcastEvent(userName, Event.Tower, {tower: 'Monkey Village'})} to="village">Monkey Village</NavLink></li>
+                            <li><NavLink className="a" onClick={() => notifier.broadcastEvent(userName, Event.Tower, {tower: 'Engineer Monkey'})} to="engineer">Engineer Monkey</NavLink></li>
+                            <li><NavLink className="a" onClick={() => notifier.broadcastEvent(userName, Event.Tower, {tower: 'Beast Handler'})} to="beasthandler">Beast Handler</NavLink></li>
                         </menu>
                     </div>
                 </nav>

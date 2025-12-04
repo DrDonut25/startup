@@ -15,6 +15,24 @@ export function AlchemistMain() {
         const [maxBottomTier, setMaxBottomTier] = React.useState(4);
     
         let myFunctions = {};
+
+    function createMessageList() {
+        const messageList = [];
+        for (let i = 0; i < props.events.length; i++) {
+            let message = 'N/A';
+            if (props.events[i].type === 'tower') {
+                message = `${props.events[i].from} is upgrading ${props.events[i].message.tower}`;
+            } else if (props.events[i].type === 'system') {
+                message = props.events[i].message.msg;
+            }
+
+            messageList.push(
+                <li key={i} style={{color: '#f8f9fa'}}>{message}</li>
+            );
+        }
+
+        return messageList;
+    }
   
   return (
     <main>
