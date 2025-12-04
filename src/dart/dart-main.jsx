@@ -87,12 +87,7 @@ export function DartMain(props) {
         </table>
         
         <div className="websocket">
-            <ul>
-                <li style={{color: '#f8f9fa'}}>You selected "Quick Shots"</li>
-                <li style={{color: '#f8f9fa'}}>You selected "Very Quick Shots"</li>
-                <li style={{color: '#f8f9fa'}}>You selected "Long Range Darts"</li>
-                <li style={{color: 'lightcoral'}}>Error: you cannot select upgrades from more than two paths at once</li>
-            </ul>
+            <ul>{createMessageList()}</ul>
         </div>
 
         <div className="upgrade_table_container">

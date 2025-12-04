@@ -87,12 +87,7 @@ export function SniperMain(props) {
         </table>
         
         <div className="websocket">
-            <ul>
-                <li style={{color: '#f8f9fa'}}>You selected "Full Metal Jacket"</li>
-                <li style={{color: '#f8f9fa'}}>You selected "Large Calibre"</li>
-                <li style={{color: '#f8f9fa'}}>You selected "Night Vision Goggles"</li>
-                <li style={{color: 'lightcoral'}}>Error: you cannot select upgrades from more than two paths at once</li>
-            </ul>
+            <ul>{createMessageList()}</ul>
         </div>
 
         <div className="upgrade_table_container">

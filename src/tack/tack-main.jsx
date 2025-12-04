@@ -87,12 +87,7 @@ export function TackMain(props) {
         </table>
         
         <div className="websocket">
-            <ul>
-                <li style={{color: '#f8f9fa'}}>You selected "Faster Shooting"</li>
-                <li style={{color: '#f8f9fa'}}>You selected "Even Faster Shooting"</li>
-                <li style={{color: '#f8f9fa'}}>You selected "More Tacks"</li>
-                <li style={{color: 'lightcoral'}}>Error: you cannot select upgrades from more than two paths at once</li>
-            </ul>
+            <ul>{createMessageList()}</ul>
         </div>
 
         <div className="upgrade_table_container">

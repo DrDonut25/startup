@@ -87,12 +87,7 @@ export function BuccaneerMain(props) {
         </table>
         
         <div className="websocket">
-            <ul>
-                <li style={{color: '#f8f9fa'}}>You selected "Faster Shooting"</li>
-                <li style={{color: '#f8f9fa'}}>You selected "Double Shot"</li>
-                <li style={{color: '#f8f9fa'}}>You selected "Grape Shot"</li>
-                <li style={{color: 'lightcoral'}}>Error: you cannot select upgrades from more than two paths at once</li>
-            </ul>
+            <ul>{createMessageList()}</ul>
         </div>
 
         <div className="upgrade_table_container">

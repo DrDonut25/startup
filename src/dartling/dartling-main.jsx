@@ -87,12 +87,7 @@ export function DartlingMain(props) {
         </table>
         
         <div className="websocket">
-            <ul>
-                <li style={{color: '#f8f9fa'}}>You selected "Focused Firing"</li>
-                <li style={{color: '#f8f9fa'}}>You selected "Laser Shock"</li>
-                <li style={{color: '#f8f9fa'}}>You selected "Advanced Targeting"</li>
-                <li style={{color: 'lightcoral'}}>Error: you cannot select upgrades from more than two paths at once</li>
-            </ul>
+            <ul>{createMessageList()}</ul>
         </div>
 
         <div className="upgrade_table_container">

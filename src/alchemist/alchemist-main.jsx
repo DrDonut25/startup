@@ -91,12 +91,7 @@ export function AlchemistMain(props) {
         </table>
         
         <div className="websocket">
-            <ul>
-                <li style={{color: '#f8f9fa'}}>You selected "Larger Potions"</li>
-                <li style={{color: '#f8f9fa'}}>You selected "Acidic Mixture Dip"</li>
-                <li style={{color: '#f8f9fa'}}>You selected "Faster Throwing"</li>
-                <li style={{color: 'lightcoral'}}>Error: you cannot select upgrades from more than two paths at once</li>
-            </ul>
+            <ul>{createMessageList()}</ul>
         </div>
 
         <div className="upgrade_table_container">

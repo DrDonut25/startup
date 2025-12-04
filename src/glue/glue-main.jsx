@@ -99,12 +99,7 @@ export function GlueMain(props) {
         </table>
         
         <div className="websocket">
-            <ul>
-                <li style={{color: '#f8f9fa'}}>You selected "Glue Soak"</li>
-                <li style={{color: '#f8f9fa'}}>You selected "Corrosive Glue"</li>
-                <li style={{color: '#f8f9fa'}}>You selected "Bigger Globs"</li>
-                <li style={{color: 'lightcoral'}}>Error: you cannot select upgrades from more than two paths at once</li>
-            </ul>
+            <ul>{createMessageList()}</ul>
         </div>
 
         <div className="upgrade_table_container">

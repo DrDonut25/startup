@@ -75,12 +75,7 @@ export function BananaMain(props) {
         </table>
         
         <div className="websocket">
-            <ul>
-                <li style={{color: '#f8f9fa'}}>You selected "Increased Production"</li>
-                <li style={{color: '#f8f9fa'}}>You selected "Greater Production"</li>
-                <li style={{color: '#f8f9fa'}}>You selected "Long Life Bananas"</li>
-                <li style={{color: 'lightcoral'}}>Error: you cannot select upgrades from more than two paths at once</li>
-            </ul>
+            <ul>{createMessageList()}</ul>
         </div>
         
         <div className="upgrade_table_container">
