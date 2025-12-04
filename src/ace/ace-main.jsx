@@ -2,11 +2,8 @@ import React from 'react';
 
 import '../tower.css';
 import { Upgrade } from '../upgrade.jsx';
-import { Event } from '../notifier.js';
 
-export function AceMain(props) {
-    const username = props.username;
-    
+export function AceMain(props) {    
     const [topHeaders, setTopHeaders] = React.useState(Array(5).fill(false));
     const [middleHeaders, setMiddleHeaders] = React.useState(Array(5).fill(false));
     const [bottomHeaders, setBottomHeaders] = React.useState(Array(5).fill(false));

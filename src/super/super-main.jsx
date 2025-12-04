@@ -3,7 +3,7 @@ import React from 'react';
 import '../tower.css';
 import { Upgrade } from '../upgrade.jsx';
 
-export function SuperMain() {
+export function SuperMain(props) {
     const [topHeaders, setTopHeaders] = React.useState(Array(5).fill(false));
     const [middleHeaders, setMiddleHeaders] = React.useState(Array(5).fill(false));
     const [bottomHeaders, setBottomHeaders] = React.useState(Array(5).fill(false));
@@ -15,6 +15,24 @@ export function SuperMain() {
     const [maxBottomTier, setMaxBottomTier] = React.useState(4);
 
     let myFunctions = {};
+
+    function createMessageList() {
+        const messageList = [];
+        for (let i = 0; i < props.events.length; i++) {
+            let message = 'N/A';
+            if (props.events[i].type === 'tower') {
+                message = `${props.events[i].from} is upgrading ${props.events[i].message.tower}`;
+            } else if (props.events[i].type === 'system') {
+                message = props.events[i].message.msg;
+            }
+
+            messageList.push(
+                <li key={i} style={{color: '#f8f9fa'}}>{message}</li>
+            );
+        }
+
+        return messageList;
+    }
 
   return (
     <main>
